@@ -1,0 +1,49 @@
+//- ---------------------------- menu ------------------------------- //
+mixin menu
+	div#menu
+
+//- ---------------------------- footer ------------------------------- //
+mixin footer
+	div.container-fluid
+		div.row-fluid
+			div.span#footer
+			
+mixin footer-interno
+	div.container-fluid
+		div.row-fluid
+			div.span#footer-2
+			
+//- ---------------------------- banner ------------------------------- //
+mixin banner
+	div.banner-home#banner-home
+
+//- ---------------------------- paginador ------------------------------- //
+mixin link(href, name)
+	//- attributes == {class: "btn"}
+	a(href=href)= name
+	
+	//- +link('/foo', 'foo')(class="btn")
+
+mixin paginador(linkatras, class1, Anterior, linkadelante, class2, Siguiente)
+	div.container-fluid
+		div.row-fluid
+			ul.pager
+				li.previous
+					a(href=linkatras class=class1)= Anterior
+				li.next
+					a(href=linkadelante class=class2)= Siguiente
+
+//- ---------------------------- material modulo ------------------------------- //
+mixin material-modulo(id)
+	div.container-fluid
+		div.row-fluid.wow.fadeInUp.material-modulo
+			div(id=id)
+				
+				
+				
+				
+				
+				
+				
+				
+				
