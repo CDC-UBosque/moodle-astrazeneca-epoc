@@ -11,9 +11,17 @@
 	
 	overflow-y: visible;
 	
+	.codigo-modulo{
+			p{
+				text-align: center;
+				font-size: .6rem;
+			}
+		}
+	
 	.content-cc{
-		//padding: 2rem 2rem 0;
 		box-sizing: border-box;
+		
+		
 		
 		p{
 			font-family: $font_hel_light;

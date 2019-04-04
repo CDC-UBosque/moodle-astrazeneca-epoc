@@ -14,6 +14,14 @@
 		
 		h2{
 			max-width: initial;
+			
+			span{
+				background: none;
+				color: $color_text_black !important;
+				margin: 0 0 1rem;
+				padding: 0;
+			}
+			
 		}
 		
 		.thumbnails{
