@@ -1,0 +1,95 @@
+$mobile: 380px;
+$mobile-medida: 380; //tamaño para calculo
+$tablet-3: 500px;
+$tablet-2: 600px;
+$tablet-1: 700px;
+$tablet: 788px; //768px;
+$desktop-small: 980px;
+$desktop-medida: 1180; // tamaño descontando padding para calculo
+
+// -----------------------
+// color text
+// -----------------------
+$color_text: #175493;
+
+// -----------------------
+// general colors
+// -----------------------
+$color_brand_blue:  #175493;
+$color_brand_light_blue:  #9AB2CC;
+$color_brand_bright_blue:  #7AD1E4;
+$color_light_background:  #E6EFF6;
+$color_brand_salmon: #F36C68;
+
+$color_dark_blue:  #005383;
+$color_light_blue: #00BCE5;
+$color_yellow: #F3C200;
+$color_orange: #EE9900;
+$color_red: #D44D24;
+$color_aqua: #1BBAB9;
+$color_white: #FFFFFF;
+
+// -----------------------
+// font sizes
+// -----------------------
+$font_banner_titles: 36px;
+$font_titles: 24px;
+$font_txt: 16px;
+
+// -----------------------
+// font family helevetica neue condensed
+// -----------------------
+/* title program-card font style */
+$font_family: 'Acherus_Grotesque',sans-serif;
+
+@mixin font_universal ($font_family_line_height: $line_height,
+$font_family_weight: $weight,
+$font_family_size: $size,
+$font_family_color: $color) {
+  font-size: $font_family_size;
+  line-height: $font_family_line_height;
+  font-weight: $font_family_weight;
+  font-family: $font_family;
+  color: $font_family_color;
+}
+
+@mixin bg-laterales($color, $width: $bg-demasia-width) {
+    position: relative;
+    &::before,
+    &::after {
+        content: "";
+        background-color: $color;
+        width: $width;
+        height: 100%;
+        position: absolute;
+        top: 0px;
+    }
+    &::before {
+        left: 100%;
+    }
+    &::after {
+        right: 100%;
+    }
+}
+
+
+$font_hel_light: 'HelveticaNeueLTStd-Lt'; // light
+$font_hel_light_italic: 'HelveticaNeueLTStd-LtCnO'; // light condensed oblique
+$font_hel_black_italic: 'HelveticaNeueLTStd-BlkCnO'; // black condensed oblique
+$font_hel_black: 'HelveticaNeueLTStd-BlkCn'; // black condensed
+$font_hel_medium: 'HelveticaNeueLTStd-MdCn'; // medium condensed
+$font_hel_light_cond: 'HelveticaNeueLTStd-LtCn'; // light condensed
+
+// -----------------------
+// font family myriad pro
+// -----------------------
+$font_myr_black_italic: 'MyriadPro-BlackCondIt'; // black condensed italic
+$font_myr_semibold_condensed: 'MyriadPro-SemiboldCond';  // semibold condensed
+$font_myr_semi: 'MyriadPro-SemiCn'; // semicondensed
+$font_myr_semibold_italic: 'MyriadPro-SemiboldSemiExtIt'; // semibold semiextended italic
+$font_myr_semicondensed_italic: 'MyriadPro-SemiCnIt'; // semicondensed italic
+$font_myr_condensed_italic: 'MyriadPro-CondIt'; // condensed italic
+$font_myr_semibold: 'MyriadPro-Semibold'; // semibold
+$font_myr_light: 'MyriadPro-Light'; // light
+$font_myr_bold_italic: 'MyriadPro-BoldCondIt'; // bold condensed italic
+$font_myr_light_italic: 'MyriadPro-LightIt'; // light italic

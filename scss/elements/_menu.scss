@@ -1,0 +1,376 @@
+// -----------------------
+// menu
+// -----------------------
+
+
+.curso-cc .content-cc,
+#region-main .curso-cc .content-cc{
+	
+	#menu_curso{
+		position: relative;
+		top: -32px;
+		@include max-width;
+		
+		@media (max-width: 767px){
+			top: -6px;
+		}
+		
+	}
+	
+	nav {
+    
+		.menu-toggle{
+			display: none;
+			background: $color_brand_bright_blue;
+			margin: auto;
+			box-sizing: border-box;
+			padding: 1rem;
+			text-align: left;
+			@include font_universal (
+				$font_family_line_height: 20px,
+				$font_family_weight: 800,
+				$font_family_size: 18px,
+				$font_family_color: $color_brand_blue
+			);
+			
+			@media (max-width: 766px){
+				display: block;
+			}
+			
+			&:hover{
+			  color: $color_brand_bright_blue;
+			  background-color: $color_brand_blue;
+			  cursor: pointer;
+			}
+			
+		}
+		
+		ul{
+			
+			margin: 0 !important;
+			padding: 0;
+			list-style: none;
+			width: 100%;
+			max-width: initial;
+			
+			display: flex;
+		    flex-direction: row;
+		    justify-content: center;
+		    align-items: stretch;	
+				    
+			@media screen and (max-width: 1100px) and (min-width: 767px){
+				flex-wrap: wrap;
+				    
+			}
+		    
+		    @media (min-width: 767px){
+			    display: flex !important;
+		    }
+		    
+		    @media (max-width: 766px){
+			    display: none;
+			    //flex-direction: column;
+			    flex-wrap: wrap;
+		    }
+			
+			&:before,
+			&:after{
+				content: "";
+				display: table;
+			}
+			
+			&:after{
+				clear:both;
+			}
+			
+			.home{
+				background: $color_white;
+				position: relative;
+				flex-grow: 1;
+				border: 2px solid $color_brand_blue;
+				box-sizing: border-box;
+				text-align: center;
+				list-style-type: none;
+				margin: 0;
+				
+				@media screen and (max-width: 900px) and (min-width: 767px){
+					width: 100%;
+					padding-bottom: 1rem;
+					text-align: center;
+					margin: 0;
+				}
+				
+				@media screen and (max-width: 766px){
+					padding: 1rem;
+					width: 100%;
+				}
+				
+				/*&:after{
+					position: absolute;
+					height: 70%;
+					width: 2px;
+					background: $color_brand_blue;
+					right: -2%;
+					content: "";
+					top: 15%;
+					z-index: 2;
+				}*/
+				
+				a{
+					
+					display: block;
+					top: 23%;
+					padding: 0 0.3rem;
+					
+					.fa{
+						color: $color_brand_blue;
+						font-size: xx-large;
+					}
+					
+				}
+				
+			}
+			
+			.dropdown{
+				position: relative;
+				box-sizing: border-box;
+				flex-grow: 1;
+				float: left;
+				list-style-type: none;
+				flex-basis: 10%;
+				margin: 0 .2rem 0 0;
+				background: $color_brand_blue;
+				
+				@media screen and (max-width: 1100px) and (min-width: 767px){
+					width: 50%;
+					flex-basis: initial;
+					margin: 0;
+				}
+				
+				@media screen and (max-width: 766px){
+					width: 50%;
+					flex-basis: initial;
+					margin: 0;
+				}
+				
+				/*&:nth-child(1){
+				    background: $color_brand_light_blue;
+				    
+				    a{
+						color: $color_brand_blue;
+					}
+				    
+				    .dropdown-menu{
+					    background: $color_brand_light_blue;
+				     
+						li{
+							background: $color_brand_light_blue;
+							
+							a{
+								color: $color_brand_blue;
+							}
+							
+						}
+				     
+				    }
+				    
+				}*/
+				
+				&:last-child{
+					margin-right: 0;
+				}
+				
+				a{
+					position: relative;
+					display: block;
+					padding: 1rem;
+					text-decoration: none;
+					border: 0;
+					border-radius: 0;
+					word-break: break-word;
+					text-transform: uppercase;
+					
+					@include font_universal (
+						$font_family_line_height: 20px,
+						$font_family_weight: 600,
+						$font_family_size: 16px,
+						$font_family_color: $color_brand_bright_blue
+					);
+					
+					&:after{
+						position: static;
+						content: "\f107";
+						font-family: 'FontAWesome';
+						background: transparent;
+						margin-left: 10px;
+						position: absolute;
+						right: 1rem;
+					}
+					
+					&:hover{
+						background: $color_brand_light_blue;
+						color: $color_brand_blue;
+					}
+					
+				}
+				
+				&:hover{
+					
+					.dropdown-menu{
+						display: flex;
+					    flex-direction: column;
+					    top: 100%;
+					    opacity: 1;
+					    width: auto;
+					    visibility: visible;
+					    margin-top: 0;
+					    box-shadow: none;
+					    border: 0;
+					    border-radius: 0;
+					    display: block !important;
+					    width: 150%;
+						border: 2px solid $color_brand_bright_blue;
+						border-top: 0;
+					    
+					}
+					
+				}
+				
+				.dropdown-menu{
+					opacity: 1;
+					visibility: visible;
+					width: initial;
+					position: absolute;
+					top: 200%;
+					opacity: 0;
+					visibility: hidden;
+					background-color: $color_white;
+					transition: all 250ms;
+					border: 0;
+					border-radius: 0;
+					display: flex;
+					flex-direction: column;
+					box-sizing: border-box;
+					padding: 0 1rem;
+					
+					&:before{
+						content: "";
+						width: 0;
+						height: 0;
+						border-left: 8px solid transparent;
+						border-right: 8px solid transparent;
+						border-bottom: 8px solid $color_white;
+						margin-top: -8px;
+						margin-left: 1rem;
+					}
+					
+					.divider{
+						height: 2px;
+						display: block !important;
+						display: none;
+						
+						&:nth-last-child(-1n+2){
+							background: initial;
+						}
+						
+					}
+					
+					li{
+						width: 100%;
+						border: 0;
+						margin: 0;
+						flex-grow: 1;
+						list-style-type: none;
+						
+						a{
+							width: auto;
+							display: block;
+							padding: 1rem 0.5rem;
+							box-sizing: border-box;
+							position: relative;
+							transition: all ease-in-out .2s;
+							white-space: pre-wrap; /* css-3 */    
+						    white-space: -moz-pre-wrap; /* Mozilla, since 1999 */
+						    white-space: -pre-wrap; /* Opera 4-6 */    
+						    white-space: -o-pre-wrap; /* Opera 7 */    
+						    word-wrap: break-word; /* Internet Explorer 5.5+ */
+						    text-transform: lowercase;
+						    @include font_universal (
+								$font_family_line_height: 18px,
+								$font_family_weight: 600,
+								$font_family_size: 15px,
+								$font_family_color: $color_brand_blue
+							);
+						    
+							
+							&:after{
+								display: none;
+							}
+							
+							&:before{
+								position: absolute;
+								content:"";
+								background: $color_brand_salmon;
+								left: 0;
+								width: 100%;
+								height: 2px;
+								bottom: 3%;
+								transition: all ease-in-out .2s;
+							}
+							
+							&:hover{
+								//color: #F22613;
+								background: none;
+								
+								&:before{
+									height: 0;
+								}
+								
+							}
+							
+						}
+						
+						&:nth-last-child(-1n+2){
+							background: $color_white;
+							padding: 0 1rem;
+							margin: -0.2rem -1rem -0.4rem;
+							
+							a{
+								color: $color_brand_blue;
+								&:hover{
+									&:before{
+										background: $color_text;
+									}
+								}
+							}
+							
+							&:last-child{
+								margin-bottom: 0.3rem;
+							}
+							
+						}
+						
+					}
+					
+				}
+				
+			}
+			
+		}
+	
+	}
+	
+}
+
+/* responsive */
+@media (max-width: 766px) {
+  nav > ul > li.dropdown:hover .dropdown-menu {
+    display: block;
+  }
+  nav > ul > li.dropdown .dropdown-menu {
+    display: none;
+    position: relative;
+    margin: auto;
+    background-color: #F22613;
+  }
+}

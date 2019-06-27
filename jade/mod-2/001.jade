@@ -1,0 +1,160 @@
+include ../mixins.jade
+
+//- Head html tag
+include ../includes/header.jade
+
+//- Content
+div.curso-cc
+			
+	div.container-fluid
+		div.row-fluid
+			article.content-cc.article
+			
+				div.first_part
+					//- banner modulo
+					+banner('banner-2')
+				
+					//- menu
+					+menu
+			
+				+titulos-modulo('Módulo 2. Prevención Secundaria.')
+				
+				p Objetivo:  
+				
+				ul
+					li Reconocer los elementos diagnósticos principales para la detección temprana de la EPOC y las herramientas necesarias para estructurar un plan de tratamiento individualizado, que permita mejorar la calidad de vida y retrasar la progresión de la enfermedad. 
+					
+				h3 1. Manifestaciones Clínicas de la EPOC
+				
+				p La presencia de tos crónica con o sin esputo y disnea, asociados a los factores de riesgo tratados en el módulo 1 en pacientes mayores de 40 años (tabaquismo, exposición al humo de biomasa, etc.) debe hacer sospechar la EPOC.  Aunque los síntomas de la EPOC pueden preceder la aparición de la obstrucción de la vía aérea por varios años y su manifestación es variable, la tos y el esputo se presentan en más de un 30% de los pacientes con la enfermedad (1). El impacto de los síntomas sobre la calidad de vida, el aumento de la intensidad de estos, o un episodio agudo de hospitalización, pueden llevar a consultar al paciente por primera vez por la EPOC (2)
+				
+				//- Acordion
+				div.accordion#accordion2
+					div.accordion-group
+						div.accordion-heading
+							a.accordion-toggle(data-toggle='collapse' data-parent='#accordion2' href='#collapseOne')
+								span Disnea
+						div#collapseOne.accordion-body.collapse.in
+							div.accordion-inner
+								p Es descrita por el paciente como una sensación de dificultad o necesidad de mayor esfuerzo para respirar, pesadez en el pecho, jadeo o asfixia. Es un síntoma cardinal de la EPOC y que en mayor medida afecta negativamente la calidad de vida del paciente. Debido a la variedad interindividuo que puede presentarse con este síntoma, se recomienda su medición con la escala MRCm 
+									a(href='#tabla1') (Ver Tabla 1) 
+									| (2)
+								
+					div.accordion-group
+						div.accordion-heading
+							a.accordion-toggle(data-toggle='collapse' data-parent='#accordion2' href='#collapseTwo')
+								span Tos
+						div#collapseTwo.accordion-body.collapse
+							div.accordion-inner
+								p Puede llegar a ser el primer síntoma en presentarse de manera intermitente hasta llegar a ser permanente. Aunque es un síntoma frecuente en la EPOC, puede estar asociado a otras patologías como: 
+								ul
+									li Asma
+									li Cáncer pulmonar
+									li Tuberculosis
+									li Bronquiectasias
+									li Falla cardiaca
+									li Fibrosis quística
+									li Enfermedad intersticial
+									li Reflujo gastroesofágico
+									li Medicaciones como los inhibidores de la enzima convertidora de angiotensina. (2) 
+									
+					div.accordion-group
+						div.accordion-heading
+							a.accordion-toggle(data-toggle='collapse' data-parent='#accordion2' href='#collapse3')
+								span Expectoración
+						div#collapse3.accordion-body.collapse
+							div.accordion-inner
+								p En la EPOC se aumenta la producción y viscosidad del esputo. La bronquitis crónica es definida como la presencia de expectoración por tres o más meses seguidos por mínimo dos años(2). 
+								p El aumento en el volumen de expectoración está relacionado con el inicio de una exacerbación de la enfermedad. Así mismo una cantidad excesiva de la misma (más de 30 ml al día) debe hacer sospechar bronquiectasias (2)
+								
+					div.accordion-group
+						div.accordion-heading
+							a.accordion-toggle(data-toggle='collapse' data-parent='#accordion2' href='#collapse4')
+								span Sibilancias con opresión torácica
+						div#collapse4.accordion-body.collapse
+							div.accordion-inner
+								p Son síntomas con mucha variabilidad y no específicos de la EPOC. Son secundarias a la hiperreactividad bronquial en el fenotipo mixto ASMA/EPOC. (2)
+								
+					div.accordion-group
+						div.accordion-heading
+							a.accordion-toggle(data-toggle='collapse' data-parent='#accordion2' href='#collapse5')
+								span Pérdida de peso y anorexia
+						div#collapse5.accordion-body.collapse
+							div.accordion-inner
+								p Se relacionan con la severidad de la EPOC. También pueden indicar la presencia de otras condiciones como cáncer pulmonar y tuberculosis (2)
+								
+					div.accordion-group
+						div.accordion-heading
+							a.accordion-toggle(data-toggle='collapse' data-parent='#accordion2' href='#collapse6')
+								span Síncope
+						div#collapse6.accordion-body.collapse
+							div.accordion-inner
+								p Se puede presentar durante los episodios de tos debido al aumento de la presión intratorácica. (2)
+								
+					div.accordion-group
+						div.accordion-heading
+							a.accordion-toggle(data-toggle='collapse' data-parent='#accordion2' href='#collapse7')
+								span Edema de miembros inferiores
+						div#collapse7.accordion-body.collapse
+							div.accordion-inner
+								p Indica la presencia de insuficiencia cardiaca de origen derecho y cor pulmonale. (2)
+								
+					div.accordion-group
+						div.accordion-heading
+							a.accordion-toggle(data-toggle='collapse' data-parent='#accordion2' href='#collapse8')
+								span Depresión / ansiedad
+						div#collapse8.accordion-body.collapse
+							div.accordion-inner
+								p Siempre tener en cuenta la presencia de síntomas depresivos o de ansiedad, pues estas enfermedades son comorbilidades frecuentes en la EPOC, con una prevalencia de hasta el 26% y se asocian a mayores exacerbaciones y mal pronóstico (3,4)
+								
+								
+				//- Table
+				table.table.table-striped#tabla1
+					caption Tabla 1. Escala MRCm (Medical Research Council)(2)
+					thead
+						tr
+							th Grado
+							th Dificultad respiratoria
+					tbody
+						tr
+							td 0
+							td Ausencia de disnea excepto al realizar ejercicio intenso
+						tr
+							td 1
+							td Disnea al andar deprisa o al subir una cuesta poco pronunciada
+						tr
+							td 2
+							td Incapacidad para mantener el paso de otras personas de la misma edad, caminando en llano, debido a la dificultad respiratoria, o tener que parar a descansar al andar en llano al propio paso
+						tr
+							td 3
+							td Tener que parar a descansar al andar unos 100 metros o a los pocos minutos de andar en llano
+						tr
+							td 4
+							td La disnea impide al paciente salir de casa o aparece con actividades como vestirse o desvestirse
+
+									
+									
+								
+							
+				//- progeso
+				div.progreso
+					h2 progreso
+					div#progreso10
+						
+						
+				
+						
+				
+				//- Material modulo
+				+material-modulo('material-mod-2')
+				
+				//- progrso y contador
+				+paginador('#', 'disabled', 'https://ubosquemoodle.unbosque.edu.co/mod/book/view.php?id=301274&chapterid=9027', 'forward')
+	
+
+//- Final part of body
+//- Page transitions js
+include ../includes/js-body-ends.jade
+		
+		
+			

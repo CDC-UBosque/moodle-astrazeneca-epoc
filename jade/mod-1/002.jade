@@ -1,0 +1,80 @@
+include ../mixins.jade
+
+//- Head html tag
+include ../includes/header.jade
+
+//- Content
+div.curso-cc
+			
+	div.container-fluid
+		div.row-fluid
+			article.content-cc.article
+			
+				div.first_part
+					//- banner modulo
+					+banner('banner-1')
+				
+					//- menu
+					+menu
+			
+				+titulos-modulo('Módulo 1. Prevención Primaria.')
+					
+				h3 Etiología
+				
+				p Los mecanismos etiológicos y patogénicos mejor estudiados son los provocados por el humo del cigarrillo mientras que hay menos trabajos relacionados con agentes contaminantes y productos derivados de la combustión de biomasa u otros inhalantes (1,2,3). En estudios de cohortes prospectivos se estima que el riesgo absoluto de desarrollar EPOC entre fumadores está entre el 25 y el 30% y se ha demostrado que el riesgo es proporcional al consumo acumulado de tabaco, de tal forma que el riesgo pasa del 260% en los fumadores de 15-30 paquetes al año, al 510% en los fumadores de más de 30 paquetes al año (4). 
+
+				p Es importante tener en cuenta la interacción compleja entre algunos genes estudiados y el medio ambiente, dado que incluso menos del 50% de los fumadores pesados desarrolla EPOC durante su vida (1).
+
+				p En general, las diferentes sustancias lesivas inhaladas desencadenan un proceso inflamatorio crónico persistente en el tiempo. La interrelación entre la inflamación producida por los agentes nocivos del cigarrillo y las infecciones respiratorias contribuye a potenciar el daño. La inflamación es un mecanismo activo y progresivo con picos de aumento durante las exacerbaciones de la EPOC. La desactivación de este mecanismo es cada vez más difícil a medida que la enfermedad progresa y se establece el daño estructural(1,2,3).
+
+				p Dado el papel patogénico del tabaquismo y la baja respuesta a los esfuerzos para dejar de fumar de algunos pacientes, se ha visto el incremento del uso de los  cigarrillos electrónicos;  los hallazgos de la Encuesta Nacional de Entrevistas de Salud de 2014 y 2015 (NHIS, por sus siglas en inglés) (5) indican que el uso de estos elementos por parte de los fumadores actuales y anteriores con EPOC es sustancial, este cambio  puede reducir el consumo de cigarrillos lo que puede producir considerables beneficios respiratorios en la EPOC, solo un trabajo limitado ha abordado el impacto en la salud del uso de los cigarrillos electrónicos en usuarios con EPOC preexistente, en donde se concluyó  un descenso significativo en las exacerbaciones respiratorias anuales y mejora el estado general de salud. Sin embargo, se requieren más estudios con metodologías rigurosas y mejores estudios sobre los mejores estándares de seguridad y calidad para proteger a los consumidores (6).
+
+
+
+				p El cigarrillo genera daños a lo largo de toda la vía aérea por 2 mecanismos (7):
+				
+				ul
+					li El estrés oxidativo con inflamación crónica.
+					li La destrucción del parénquima pulmonar.
+					
+				//- imagen o video				
+				div.banner-video
+					div.span9
+						div#video
+							figure.galeria
+								a.example-image-link(href='https://ubosquemoodle.unbosque.edu.co/diseno/cursos/nuevo-EPOC/images/mod-1/001.jpg' data-lightbox='example-1')
+									img.example-image(src='https://ubosquemoodle.unbosque.edu.co/diseno/cursos/nuevo-EPOC/images/mod-1/001.jpg' alt='Módulo 1. Prevención Primaria.')
+					div.span3
+						div.img-footer
+							span Gráfica 1. Etiología. Elaboración propia
+							
+				
+				p Los diferentes agresores inhalados desencadenan un proceso inflamatorio crónico persistente en el tiempo. La interrelación entre la inflamación producida por los agentes nocivos del cigarrillo y las infecciones respiratorias contribuye a potenciar el daño. La inflamación es un mecanismo activo y progresivo con picos de aumento durante las exacerbaciones de la EPOC. La desactivación de este mecanismo es cada vez más difícil a medida que la enfermedad progresa y se establece el daño estructural (1,2,3).
+
+				p La inflamación crónica produce engrosamiento de la pared bronquial con disminución del calibre de la vía aérea y pérdida de los anclajes bronquiales. Las consecuencias funcionales son la obstrucción al flujo aéreo y colapso, destrucción alveolar y pérdida del retroceso elástico entre otros. Este daño es precoz y tiene repercusiones sistémicas con manifestaciones extrapulmonares (cardiovasculares, músculo esquelético, grasa corporal, etc.) (1,2,4).
+				
+				
+				
+							
+				//- progeso
+				div.progreso
+					h2 progreso
+					div#progreso20
+						
+						
+				
+						
+				
+				//- Material modulo
+				+material-modulo('material-mod-1')
+				
+				//- progrso y contador
+				+paginador('https://ubosquemoodle.unbosque.edu.co/mod/book/view.php?id=301266&chapterid=9016', 'back', 'https://ubosquemoodle.unbosque.edu.co/mod/book/view.php?id=301266&chapterid=9018', 'forward')
+	
+
+//- Final part of body
+//- Page transitions js
+include ../includes/js-body-ends.jade
+		
+		
+			

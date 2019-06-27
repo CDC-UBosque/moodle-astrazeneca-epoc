@@ -1,0 +1,81 @@
+// -----------------------
+// banner home
+// -----------------------
+
+.curso-cc,
+#region-main .curso-cc{
+	
+	#footer,
+	#footer-2{
+		background: none;
+	    @include max-width;
+	    @include display-grid;
+	    @include grid-parent-3-columns (1fr, 1fr, 1fr);
+	    margin: 2rem auto;
+	    grid-column-gap: 1rem;
+	    grid-row-gap: 1rem;
+	    
+	    @media (max-width: 767px){
+		    @include grid-parent-1-columns (1fr);
+	    }
+	    
+	    >div{
+		    justify-self: center;
+		    
+		    img{
+			    max-height: initial;
+			    max-width: 170px;
+		    }
+		    
+		    &:nth-child(1){
+			    @include grid-child-column (1, 4);
+			    @include grid-child-row (1, 2);
+			    
+			    @media (max-width: 767px){
+				    @include grid-child-column (1, 2);
+			    }
+			    
+		    }
+		    
+		    &:nth-child(2){
+			    @include grid-child-column (1, 2);
+			    @include grid-child-row (2, 3);
+			    
+			    @media (max-width: 767px){
+				    @include grid-child-column (1, 2);
+				    @include grid-child-row (2, 3);
+			    }
+			    
+		    }
+		    
+		    &:nth-child(3){
+			    @include grid-child-column (2, 3);
+			    @include grid-child-row (2, 3);
+			    
+			    @media (max-width: 767px){
+				    @include grid-child-column (1, 2);
+				    @include grid-child-row (3, 4);
+			    }
+			    
+		    }
+		    
+		      &:nth-child(4){
+			    @include grid-child-column (3, 4);
+			    @include grid-child-row (2, 3);
+			    
+			    @media (max-width: 767px){
+				    @include grid-child-column (1, 2);
+				    @include grid-child-row (4, 5);
+			    }
+			    
+		    }
+		    
+	    }
+	    
+	}
+	
+}
+
+/*#footer #myBtn{
+	display: block;
+}*/

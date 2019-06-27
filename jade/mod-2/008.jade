@@ -1,0 +1,386 @@
+include ../mixins.jade
+
+//- Head html tag
+include ../includes/header.jade
+
+//- Content
+div.curso-cc
+			
+	div.container-fluid
+		div.row-fluid
+			article.content-cc.article
+			
+				div.first_part
+					//- banner modulo
+					+banner('banner-2')
+				
+					//- menu
+					+menu
+			
+				+titulos-modulo('Módulo 2. Prevención Secundaria.')
+				
+				h3 8. Componentes del Tratamiento de la EPOC 
+				
+				//- texto resaltado
+				div
+					div.resaltado-txt
+						div.span2
+							+icon_danger
+						div.span10
+							p Punto clave: El tratamiento de la EPOC se constituye por componentes farmacológicos y no farmacológicos. Se debe enfocar no solo a los síntomas, sino a disminuir o eliminar los factores de riesgo como el tabaquismo o exposición a contaminantes ambientales, la inmunoprofilaxis, la educación sobre el uso de los tratamientos inhalados, en el reconocimiento de las exacerbaciones y a ofrecer la rehabilitación adecuada para disminuir la progresión del declive funcional
+							
+				h3 8.1. Enfoque general: 
+				
+				//- Acordion
+				div.accordion#accordion2
+					div.accordion-group
+						div.accordion-heading
+							a.accordion-toggle(data-toggle='collapse' data-parent='#accordion2' href='#collapseOne')
+								span Inmunoprofilaxis
+						div#collapseOne.accordion-body.collapse.in
+							div.accordion-inner
+								p Neumococo: Se recomienda la vacuna polisacárido  (PPSV23) para los pacientes con EPOC menores a 65 años que presentan un VEF1 &lt;40% y/o comorbilidades, con un refuerzo a los 5 años. (1,18)
+								p Para los pacientes mayores de 65 años que no han recibido vacunación contra neumococo, se recomienda la aplicación de la vacuna conjugada (PCV13) con posterior aplicación de PPSV23 en un intervalo no mayor de 12 meses. (18)
+								
+								//- imagen o video				
+								div.banner-video
+									div.span9
+										div#video
+											figure.galeria
+												a.example-image-link(href='https://ubosquemoodle.unbosque.edu.co/diseno/cursos/nuevo-EPOC/images/mod-2/019.jpg' data-lightbox='example-1')
+													img.example-image(src='https://ubosquemoodle.unbosque.edu.co/diseno/cursos/nuevo-EPOC/images/mod-2/019.jpg' alt='Módulo 2. Prevención Secundaria.')
+									div.span3
+										div.img-footer
+											span Imagen tomada de:  IPTC Photo Metadata. 
+												a(href='https://pixnio.com/people/female-women/vaccinations-are-readily-available-for-such-common-adult-illnesses-as-influenza-pneumococcal-disease-and-herpes' target='_blank') https://pixnio.com/people/female-women/vaccinations-are-readily-available-for-such-common-adult-illnesses-as-influenza-pneumococcal-disease-and-herpes
+
+								
+					div.accordion-group
+						div.accordion-heading
+							a.accordion-toggle(data-toggle='collapse' data-parent='#accordion2' href='#collapseTwo')
+								span Influenza
+						div#collapseTwo.accordion-body.collapse
+							div.accordion-inner
+								p Se recomienda la vacunación anual contra influenza a todos los pacientes independiente del grado de severidad. Esta intervención ha demostrado reducir el número de hospitalizaciones por infección respiratoria del tracto inferior, exacerbaciones y la mortalidad en pacientes con EPOC (recomendación B Gold 2019) (1,19 )
+								
+					div.accordion-group
+						div.accordion-heading
+							a.accordion-toggle(data-toggle='collapse' data-parent='#accordion2' href='#collapse3')
+								span Cesación de Tabaco
+						div#collapse3.accordion-body.collapse
+							div.accordion-inner
+								p Intervenciones continuas y estructuradas para la cesación de tabaco puede llevar al abandono hasta en un 25% de los casos (1). Esta intervención disminuye la disminución del VEF1 (20) y se fundamenta en manejo farmacológico con terapia de reemplazo de nicotina, bupropion y vareniciclina; y consejería y terapia comportamental. 
+								p Esta estrategia es conocida como intervención breve (las 5 As) y el Ministerio de Salud y Protección Social recomienda la aplicación de los tres primeros pasos en el transcurso de cualquier consulta. (21)
+								+icon_book_more_info('https://www.minsalud.gov.co/sites/rid/Lists/BibliotecaDigital/RIDE/VS/PP/ENT/abece-consejeria-breve.pdf') 
+								
+								
+				//- Table
+				table.table.table-striped
+					caption Tabla 7.
+					thead
+						tr
+							th Paso
+							th Estrategia
+					tbody
+						tr
+							td 1. Averiguar
+							td Identificar consumidores de tabaco interrogando de manera respetuosa en cada consulta y generando el registro correspondiente en la historia clínica. 
+						tr
+							td 2. Asesorar
+							td Aconsejar a todos los consumidores de tabaco el dejar de fumar. Esta intervención debe tener información clara, amistosa y oportuna.  
+						tr
+							td 3.  Apreciar
+							td Valorar la disponibilidad a abandonar el consumo de tabaco. Se pregunta al consumidor si tiene voluntad de abandonar el tabaco en un tiempo determinado.  
+						tr
+							td 4. Ayudar
+							td Ofrecer ayuda en la estructuración de un plan para dejar de fumar. 
+						tr
+							td 5. Arreglar
+							td Agendar control de seguimiento o remitir a un especialista si es necesario. 
+						tr
+							td(colspan='2').small Tabla modificada por el autor de:  Global Strategy for the Diagnosis, Management, and Prevention of Chronic Obstructive Lung Disease 2019 y del ABCÉ Cesación del consume de Tabaco: Consejería breve. Ministerio de Salud y Protección social. 
+							
+				h3 Educación: Se debe proveer educación adecuada en: (1,7,22)
+				
+				p Disminución de la exposición a factores de riesgo 
+				
+				h3 Video-clip: Uso adecuado de los inhaladores de dosis medida 
+				
+				div.banner-video.wow.fadeInUp
+					div.span12
+						div#video
+							div.embed-container
+								iframe(src="https://www.youtube.com/embed/iyo7-pbFeIM" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen)
+								
+				h3 Video-clip: Uso adecuado de los inhaladores de dosis medida con inhalocámara 
+				
+				div.banner-video.wow.fadeInUp
+					div.span12
+						div#video
+							div.embed-container
+								iframe(src="https://www.youtube.com/embed/Ru3n4gYLhPs" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen)
+								
+				h3 Video-clip: Uso adecuado de los inhaladores de polvo seco  
+				
+				div.banner-video.wow.fadeInUp
+					div.span12
+						div#video
+							div.embed-container
+								iframe(src="https://www.youtube.com/embed/gu0EYVasP0I" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen)
+								
+				ul
+					li Reconocimiento y manejo de las exacerbaciones
+					li Manejo de la disnea
+					li Uso de la oxigenoterapia
+					li Decisiones de fin de vida
+					
+				h3 Nutrición
+				
+				p Se debe animar al paciente a llevar una dieta saludable para mantener un índice de masa corporal entre 21 y 24.9, ya que en los pacientes con sobrepeso y obesidad se aumenta la disnea y los pacientes con IMC &lt; a 21 pueden tener caquexia pulmonar, con debilidad diafragmática y sobrevida reducida.  En relación a lo anterior, el índice BODE, que realiza una valoración multidimensional pronóstica para realizar 1 a 2 veces por año, utiliza el IMC cuando no se tiene una caminata en 6 minutos, le da un punto a los pacientes que tengan un IMC &lt; 21 (22)
+				
+				h3 8.2. Manejo farmacológico de la EPOC estable
+				
+				p La base del tratamiento de la EPOC son los broncodilatadores, ya que producen la relajación del musculo listo bronquial, aumento del calibre de la vía aérea y disminución de la resistencia del flujo espiratorio con incremento del VEF1. (1)
+
+				p Estos medicamentos son administrados de manera regular por vía inhalada para disminuir el impacto de los síntomas. Para el mantenimiento, la elección recomendada son los broncodilatadores de larga duración, ya que los de corta duración se reservan principalmente para episodios de agudización. (1) 
+
+				p A continuación, se describen las características farmacológicas más importantes de los medicamentos en inhaloterapia usados en el manejo de la EPOC (Tabla 9):
+				
+				//- Table
+				table.table.table-striped
+					caption Tabla 9. Características de los principales fármacos usados en la EPOC.
+					thead
+						tr
+							th Grupo
+							th Tipo 
+							th Mecanismo de acción principal
+							th Efectos adversos
+					tbody
+						tr
+							td(rowspan='3') Broncodilatadores
+							td Agonistas beta adrenérgicos
+							td Interacción con los receptores beta 2 aumentando los niveles de AMP cíclico, lo cual disminuye los niveles de calcio intracelular y disminuye la fosforilación de la miosina. (23)
+								br/ Inhibición de la liberación de mediadores por las células inflamatorias, reducción de la permeabilidad vascular e incremento del aclaramiento mucociliar.(24)
+							td Temblores, taquicardia, hipocalemia, alteración de la relación ventilación/perfusión, alteraciones metabólicas en lípidos, glucosa e insulina. (23)
+							
+						tr
+							td Antagonistas muscarínicos
+							td Antagonismo competitivo con la acetilcolina endógena por bloqueo predominante de receptores M1 y M3. Esto disminuye el tono vagal y la broncoconstricción. (23)
+								br/ Disminución de la producción bronquial de moco. (23)
+							td Sequedad de boca, sensación amarga en boca, glaucoma, broncoconstricción paradójica. (23)
+							
+						tr
+							td Metilxantinas
+							td Inhibición no se selectiva de la fosfodiesterasa. (23) 
+								br/ Antagonista del receptor de la adenosina. (23) 
+								br/ Liberación de interleucina 10. (23) 
+								br/ Efectos sobre la apoptosis y la transcripción de genes. (23)
+
+							td De acuerdo a concentración plasmática: Cefalea, náuseas, vomito, dolor abdominal, ansiedad, arritmias. (23)
+						
+						tr
+							td Corticoides inhalados
+							td -
+							td Unión al Receptor de Glucocorticoide (GR) intra citosólico, disminuyendo la transcripción de compuestos proinflamatorios como el AP-1 y el NF-kB. (23)
+							td Supresión del eje hipotálamo -hipófisis- suprarrenal (dependiendo de la dosis y tiempo de uso), osteoporosis, cataratas, glaucoma, diabetes, dislipidemias, neumonía, candidiasis orofaríngea, disfonía, tos. (23)
+							
+						tr
+							td Inhibidores de la fosfodiesterasa
+							td -
+							td Incremento del AMP cíclico intracelular. 
+								br/ Modulación de la actividad inflamatoria por efecto sobre mastocitos, eosinófilos, neutrófilos, linfocitos T y macrófagos.
+
+							td Náuseas y vomito. 
+
+				p A continuación se presentan las pautas de manejo según la clasificación de severidad multivariable de la enfermedad ABCD y el seguimiento de la enfermedad: (1)
+				
+				//- imagen o video				
+				div.banner-video
+					div.span9
+						div#video
+							figure.galeria
+								a.example-image-link(href='https://ubosquemoodle.unbosque.edu.co/diseno/cursos/nuevo-EPOC/images/mod-2/020.jpg' data-lightbox='example-1')
+									img.example-image(src='https://ubosquemoodle.unbosque.edu.co/diseno/cursos/nuevo-EPOC/images/mod-2/020.jpg' alt='Módulo 2. Prevención Secundaria.')
+					div.span3
+						div.img-footer
+							span Figura 8. Algoritmo de manejo de la EPOC
+							
+				p Abreviaciones usadas: SAMA: Antimuscarínicos de acción corta; SABA: B2 agonistas de acción corta; LAMA: Antimuscarínicos de acción prolongada; LABA: B2 agonistas de acción larga; ICS: Corticoide inhalado.
+				p <i class="fa fa-arrow-left" aria-hidden="true"></i>A Des escalonar: Cuando el corticoide no tiene una indicación adecuada, se presentan efectos adversos o falta de respuesta. 
+				p <i class="fa fa-arrow-down" aria-hidden="true"></i>B Si el paciente viene recibiendo combinación LABA+ICS en la valoración inicial y no hay respuesta, escalonar a terapia triple LABA+LAMA+ICS
+				p <i class="fa fa-arrow-right" aria-hidden="true"></i>C Considerar en Eosinófilos iguales o mayores a 300 o si los eosinófilos son igual o mayor a 100 asociado a dos exacerbaciones moderadas o a una hospitalización.
+				p Tomada y modificado por el autor de Global Strategy for the Diagnosis, Management, and Prevention of Chronic Obstructive Lung Disease 2019 Report. 2018 Nov 14. Pág. 92-93
+				
+				p Se recomienda realizar la clasificación al inicio del tratamiento según el esquema ABCD, para diseñar mejor los objetivos del mismo (1).
+				
+				ul
+					li Pacientes del grupo A: Tienen síntomas controlados o mínimos y bajo riesgo de exacerbación. El inicio de tratamiento es con broncodilatadores de acción corta o larga. Si la respuesta es satisfactoria en el control de los síntomas, continuar manejo.(1)
+					li Pacientes del grupo B: Son más sintomáticos con bajo riesgo de exacerbación. Su tratamiento inicial puede ser con broncodilatadores de acción prolongada LAMA o LABA solos o en combinación LAMA/LABA según el control de síntomas y la severidad de la disnea(1,7).
+					li Pacientes del grupo C: Tienen síntomas más controlados, pero presentan alto riesgo de exacerbación. Se recomienda inicio de monoterapia con LAMA (1). 
+					li Pacientes del grupo D: Tienen más síntomas y a su vez un alto riesgo de exacerbación. La terapia de inicio puede ser con LAMA. Sin embargo la combinación de LAMA/LABA se debe iniciar si los síntomas son muy severos (CAT >20) o la disnea compromete de manera importante la calidad de vida y la funcionalidad del paciente. 
+					li En pacientes con asociación con asma/EPOC o conteo de eosinófilos ≥ 300 Se recomienda corticoide inhalado (ICS)  asociado a LABA. (1,7)
+					
+				p Una vez se instaura el tratamiento inicial con la inhaloterapia recomendada (Ver Tabla 10), se debe realizar seguimiento y toma de decisiones, como lo ilustra la figura 8, de acuerdo al control de la disnea y la necesidad de prevención de exacerbaciones. 
+				
+				//- texto resaltado
+				div
+					div.resaltado-txt
+						div.span2
+							+icon_danger
+						div.span10
+							p Punto clave: Recordar en la revaloración no buscar únicamente el escalonamiento terapéutico. También se debe evaluar la técnica adecuada en el uso del dispositivo, la exposición a los factores de riesgo y la presencia de comorbilidades psíquicas y somáticas.
+
+				
+				//- Table
+				table.table.table-striped
+					caption Tabla 10.  Inhalo terapia usada en la EPOC.
+					thead
+						tr
+							th Nombre Genérico
+							th Presentación
+							th Dosis
+						tr
+							th(colspan='3') Beta2 agonistas de acción corta (SABA)
+					tbody
+						tr
+							td Salbutamol
+							td - 100 - 200 mcg (MDI, DPI, SPN)
+							td 
+								ul
+									li Crisis aguda: 1 a 2 puff a necesidad
+									li Mantenimiento: 1-2 puff 4 veces día
+						tr
+							td Terbutalina
+							td - 400 – 500 mcg (DPI)
+							td 
+								ul
+									li Agudo: 1 a 2 inhalaciones a necesidad máximo 6 al día
+									
+					thead
+						tr
+							th(colspan='3') Antimuscarínicos de corta acción (SAMA)
+					tbody
+						tr
+							td Bromuro de ipratropio
+							td . 20 mcg – 40 mcg (MDI, SPN)o
+							td 2  puff  3 a 4 veces día
+							
+					thead
+						tr
+							th(colspan='3') Productos Combinados SABA - SAMA
+					tbody
+						tr
+							td Bromuro de ipratropio + fenoterol hidrobromuro
+							td - 250mcg + 500mcg/ml (SPN)
+							td 3 a 6 aplicaciones al día
+						tr
+							td Bromuro de ipratropio + Salbutamol sulfate
+							td - 0.2mg + 1 mg /ml (SPN)
+							td 1 inhalación 4 veces día.
+							
+					thead
+						tr
+							th(colspan='3') Beta2 agonistas de larga acción
+					tbody
+						tr
+							td Maleato de indacaterol
+							td - 150mcg (DPI)
+							td 150mcg al día
+						tr
+							td Salmeterol
+							td - 50mcg  (MDI, DPI)
+							td - 50mcg dos veces día
+						tr
+							td Formoterol
+							td - 6 y 12 mcg (DPI) - 12mcg (SPN)
+							td 12 a 24 mcg dos veces al día
+							
+					thead
+						tr
+							th(colspan='3') Antimuscarínicos de larga acción  (LAMA)
+					tbody
+						tr
+							td Bromuro de Aclinidio
+							td - 400 mcg (MDI, DPI)
+							td - 400 mcg dos veces día
+						tr
+							td Bromuro de glicopirronio
+							td - 50mcg (DPI)
+							td - 50mcg al día
+						tr
+							td Bromuro de tiotropio
+							td - 2.5 - 18mc (DPI, SMI)
+							td -18mcg día 
+								br/ - 5 mcg día
+						tr
+							td Bromuro de umecledinio
+							td - 62.5mcg (DPI)
+							td 62.5mcg al dìa
+							
+					thead
+						tr
+							th(colspan='3') Combinación de Corticoide inhalado (IC) con LABA
+					tbody
+						tr
+							td Formotetol fumarato con budesonida
+							td -200mcg/6mcg; 400mcg/12mcg (DPI) - 200mcg/6mcg (MDI)
+							td 400mcg/12mcg dos veces día
+						tr
+							td Furoato de fluticasona con vilanterol
+							td -100mcg/25mcg; 200Mcg/25mcg (DPI)
+							td - 100mcg/25 mcg una vez al día
+						tr
+							td Salmeterol con fluticasona
+							td - 125/25mcg y 250/25mcg (MDI, DPI)
+							td 125/25mcg o 250/25mcg dos veces día
+							
+					thead
+						tr
+							th(colspan='3') Combinación LAMA+LABA
+					tbody
+						tr
+							td Aclidinio + furoato de fomoterol
+							td - 400/12mcg (DPI)
+							td 400/12mcg dos veces día
+						tr
+							td Indacaterol + glicopirronio
+							td - 110/50 mcg (DPI)
+							td 110/50 mcg una vez al día
+						tr
+							td Tiotropio + olodaterol
+							td - 2.5/2.5 mcg (SMI)
+							td 5/5mcg al día
+						tr
+							td Umecledinio + vilanterol
+							td -  62.5/25 mcg (DPI)
+							td 62.5/25 mcg al día
+						tr
+							td(colspan='3').small Modificado por el autor de referencias 1 y 25
+								br/ Abreviaciones: MDI: metered dose inhaler ( Inhalador dosis medida); DPI: Dry powder inhaler (inhalador de polvo seco); SMI: Soft mist inhaler (inhalador de niebla fina); SPN: Solución para nebulizar
+
+
+
+				
+							
+				//- progeso
+				div.progreso
+					h2 progreso
+					div#progreso80
+						
+						
+				
+						
+				
+				//- Material modulo
+				+material-modulo('material-mod-2')
+				
+				//- progrso y contador
+				+paginador('https://ubosquemoodle.unbosque.edu.co/mod/book/view.php?id=301274&chapterid=9032', 'back', 'https://ubosquemoodle.unbosque.edu.co/mod/book/view.php?id=301274&chapterid=9034', 'forward')
+	
+
+//- Final part of body
+//- Page transitions js
+include ../includes/js-body-ends.jade
+		
+		
+			

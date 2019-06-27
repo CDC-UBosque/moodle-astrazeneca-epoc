@@ -1,0 +1,83 @@
+include ../mixins.jade
+
+//- Head html tag
+include ../includes/header.jade
+
+//- Content
+div.curso-cc
+			
+	div.container-fluid
+		div.row-fluid
+			article.content-cc.article
+			
+				div.first_part
+					//- banner modulo
+					+banner('banner-1')
+				
+					//- menu
+					+menu
+			
+				+titulos-modulo('Módulo 1. Prevención Primaria.')
+					
+				h3 Glosario 
+				
+				ul
+					li 
+						strong PREVENCIÓN PRIMARIA: 
+						| Medidas orientadas a evitar la aparición de una enfermedad o problema de salud mediante el control de los factores causales y los factores predisponentes o condicionantes.
+
+					li 
+						strong EPOC: 
+						| Enfermedad Pulmonar Obstructiva Crónica.
+
+					li 
+						strong PLATINO: 
+						| Proyecto Latinoamericano de Investigación en Obstrucción Pulmonar.
+
+					li 
+						strong PREPOCOL: 
+						| Estudio de la prevalencia de la Enfermedad Pulmonar Obstructiva Crónica en pacientes mayores de 40 años, para Colombia.
+
+					li 
+						strong CDC: 
+						|Centers for Disease Control and Prevention.
+
+					li 
+						strong OMS: 
+						| Organización Mundial de la salud.
+
+					li 
+						strong BOLD: 
+						| Burden of Obstructive Lung Diseases.
+
+					li 
+						strong EPI- SCAN: 
+						| The Epidemiologic Study of COPD in Spain.
+
+					li 
+						strong HIPERCAPNIA: 
+						| Aumento de la presión parcial del dióxido de carbono (CO2) en la sangre, producida, por hipoventilación alveolar o por desequilibrios en la relación ventilación-perfusión pulmonar.
+							
+							
+				//- progeso
+				div.progreso
+					h2 progreso
+					div#progreso80
+						
+						
+				
+						
+				
+				//- Material modulo
+				+material-modulo('material-mod-1')
+				
+				//- progrso y contador
+				+paginador('https://ubosquemoodle.unbosque.edu.co/mod/book/view.php?id=301266&chapterid=9021', 'back', 'https://ubosquemoodle.unbosque.edu.co/mod/book/view.php?id=301266&chapterid=9023', 'forward')
+	
+
+//- Final part of body
+//- Page transitions js
+include ../includes/js-body-ends.jade
+		
+		
+			

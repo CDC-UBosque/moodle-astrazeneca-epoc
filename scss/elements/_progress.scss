@@ -1,0 +1,43 @@
+// -----------------------
+// lightbox
+// -----------------------
+
+.curso-cc,
+#region-main .curso-cc{
+	
+	.progreso{
+		margin: 3rem 0 4rem;
+		
+		.progress{
+			height: 6px;
+			background: $color_brand_blue;
+			@include max-width;
+			margin: 1rem auto;
+			overflow: visible;
+			.bar{
+				
+			}
+		}
+		
+		.progress-striped .bar{
+			position: relative;
+			height: 14px;
+			top: -4px;
+			background-color: $color_brand_blue;
+			
+			&:after{
+				content: "";
+				width: 8px;
+				height: 36px;
+				position: absolute;
+				border: 5px solid $color_white;
+				right: -8px;
+				top: -15px;
+				background: $color_brand_salmon;
+			}
+						
+		}
+		
+	}
+	
+}

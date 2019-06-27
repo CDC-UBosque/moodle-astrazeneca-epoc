@@ -1,0 +1,67 @@
+// -----------------------
+// banner home
+// -----------------------
+
+.curso-cc::-webkit-scrollbar {
+    width:0!important;
+}
+
+.curso-cc,
+#region-main .curso-cc{
+	
+	overflow-y: visible;
+	
+	.content-cc{
+		//padding: 2rem 2rem 0;
+		box-sizing: border-box;
+		
+		.fa{
+			width: auto;
+		}
+		
+		.first_part{
+			margin-bottom: 1rem;
+		}
+		
+		p{
+			@include max-width;
+		}
+		
+		.row-fluid{
+			margin-top: 2rem;
+			
+			div[ class*="span12"]{
+				margin-left: 0;
+			}
+			
+		}
+		
+		iframe#resourceobject{
+			width:100% !important;
+		}
+		
+		ul, ol{
+			@include max-width;
+			margin: 0 auto 1rem !important;
+		    padding-left: 5rem;
+			
+			li{
+				margin-bottom: 1rem;
+				@include font_universal (
+					$font_family_line_height: 24px,
+					$font_family_weight: 300,
+					$font_family_size: 16px,
+					$font_family_color: $color_brand_blue
+				);
+			}
+			
+		}
+		
+		a{
+			color: $color_brand_salmon;
+			transition: all .2s ease-in-out;
+		}
+		
+	}
+	
+}

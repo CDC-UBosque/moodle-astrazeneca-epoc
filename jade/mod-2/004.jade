@@ -1,0 +1,142 @@
+include ../mixins.jade
+
+//- Head html tag
+include ../includes/header.jade
+
+//- Content
+div.curso-cc
+			
+	div.container-fluid
+		div.row-fluid
+			article.content-cc.article
+			
+				div.first_part
+					//- banner modulo
+					+banner('banner-2')
+				
+					//- menu
+					+menu
+			
+				+titulos-modulo('Módulo 2. Prevención Secundaria.')
+				
+				h3 4. Otras Pruebas de función pulmonar usadas en EPOC
+				
+				p Las pruebas de función pulmonar ayudan al diagnóstico, seguimiento y pronóstico de las enfermedades respiratorias. Por la evaluación y los datos que pueden aportar al clínico se pueden clasificar en (12): 
+				
+				ol
+					li Pruebas de mecánica respiratoria
+					li Pruebas intercambio gaseoso
+					li Pruebas de ejercicio. 
+					
+					
+				h3 Capacidad de difusión del CO
+					
+				//- imagen o video				
+				div.banner-video
+					div.span9
+						div#video
+							figure.galeria
+								a.example-image-link(href='https://ubosquemoodle.unbosque.edu.co/diseno/cursos/nuevo-EPOC/images/mod-2/016.jpg' data-lightbox='example-1')
+									img.example-image(src='https://ubosquemoodle.unbosque.edu.co/diseno/cursos/nuevo-EPOC/images/mod-2/016.jpg' alt='Módulo 2. Prevención Secundaria.')
+					div.span3
+						div.img-footer
+							span Figura 6. Membrana alveolocapilar. Imagen tomada de: 
+								a(href='https://commons.wikimedia.org/w/index.php?curid=46639201' target='_blank') https://commons.wikimedia.org/w/index.php?curid=46639201
+								
+				p En esta prueba el paciente inhala una pequeña cantidad de CO, junto con una mezcla de helio y aire mediante una boquilla. El paciente realiza una inhalación rápida hasta alcanzar la capacidad pulmonar total y posterior a aguantar la respiración por 10 segundos, realiza una expiración rápida (volumen residual) y se obtiene una muestra del gas exhalado para realizar el cálculo de la difusión de CO. A través de esta prueba de puede conocer indirectamente el área vascular disponible para el intercambio gaseoso, mediante la capacidad de transferencia de monóxido de carbono. Esta se puede ver vista afectada por el enfisema en la EPOC y su extensión. Para que se manifieste una anormalidad en la prueba es necesario un compromiso mayor al 50% de la membrana alveolo capilar. (13)
+				
+				h3 Indicaciones (13): 
+				
+				ul
+					li Enfisema moderado a grave
+					li Disnea o limitación funcional que no corresponde al compromiso del VEF1 (no proporcional al grado de obstrucción)
+					
+				h3 Volúmenes y capacidades pulmonares 
+				
+				p Se realiza mediante la prueba de pletismografía corporal, con la cual se puede obtener el volumen total de gas intratorácico así no esté en contacto con la vía aérea (por ejemplo en las  bulas enfisematosas) (14) 
+				
+				
+				//- imagen o video				
+				div.banner-video
+					div.span9
+						div#video
+							figure.galeria
+								a.example-image-link(href='https://ubosquemoodle.unbosque.edu.co/diseno/cursos/nuevo-EPOC/images/mod-2/017.jpg' data-lightbox='example-1')
+									img.example-image(src='https://ubosquemoodle.unbosque.edu.co/diseno/cursos/nuevo-EPOC/images/mod-2/017.jpg' alt='Módulo 2. Prevención Secundaria.')
+					div.span3
+						div.img-footer
+							span Imagen tomada de
+								a(href='https://creativecommons.org/licenses/by-sa/3.0' target='_blank') https://creativecommons.org/licenses/by-sa/3.0
+								| , from Wikimedia Commons
+
+
+				p Aunque no se realiza de rutina en pacientes con EPOC, vale la pena obtenerla al menos durante la valoración inicial y tiene su indicación cuando la espirometría muestra una disminución en la capacidad vital forzada. Su principio se basa en producto del atrapamiento aéreo se produce un cierre prematuro de las vías aéreas durante la espiración, aumentando el volumen residual y de la capacidad pulmonar total hasta en un 120% de su valor predicho. Por el contrario, si hay una disminución de la capacidad pulmonar total mayor a 80% se debe sospechar un proceso restrictivo. (13) 
+				p En un paciente con EPOC, el volumen residual está aumentado y la capacidad inspiratoria, reducida (13,14).
+				p Los volúmenes que son medidos con mayor frecuencia son (15): 
+				
+				ul
+					li Capacidad Vital (CV): Es el volumen máximo exhalado posterior a una inhalación máxima 
+					li Capacidad residual funcional: Cantidad de remanente en el pulmón tras una respiración habitual.
+					li Volumen residual: Volumen de aire remanente en el pulmón posterior a una exhalación forzada
+					li Volumen de reserva espiratoria: es la diferencia entre el volumen residual y capacidad residual funcional 
+					li Capacidad inspiratoria: máxima inspiración desde el final de la inspiración habitual hasta la capacidad pulmonar total. 
+					li Capacidad pulmonar total: Volumen en los pulmones después de una inspiración forzada. 
+					
+				h3 Indicaciones: (13,15)
+
+				ol
+					li Medición de gas atrapado o atrapamiento aéreo.
+					li Establecer el diagnóstico de alteración restrictiva 
+					li Establecer el diagnóstico de alteración mixta (obstructiva y restrictiva) 
+					li Valoración de riesgo quirúrgico 
+					li Evaluación de incapacidad laboral 
+					li Cuantificación del espacio aéreo no ventilado
+					
+				h3 Contraindicaciones: (13)
+				
+				p Son las mismas que se mencionaron en la espirometría.
+				
+				//- Acordion
+				div.accordion#accordion2
+					div.accordion-group
+						div.accordion-heading
+							a.accordion-toggle(data-toggle='collapse' data-parent='#accordion2' href='#collapseOne')
+								span Gasimetría arterial y oximetría de pulso
+						div#collapseOne.accordion-body.collapse.in
+							div.accordion-inner
+								p Se recomienda realizar gasometría en el paciente con EPOC al inicio de las investigaciones diagnósticas, sobre todo cuando el VEF1 se encuentra reducido por debajo del 40% de su valor teórico. (13)
+								p También ante la sospecha de insuficiencia respiratoria o cardíaca, la cual se caracteriza clínicamente por cianosis central, edemas periféricos o distensión venosa yugular. El diagnóstico de insuficiencia respiratoria se establece cuando la presión arterial de O2 (PaO2) es inferior a 60 mmHg con o sin hipercapnia asociada (presión arterial de CO2 [PaCO2] > 45 mmHg). La monitorización de la saturación arterial de O2 (SaO2) mediante oxímetro de pulso es muy útil para el seguimiento de pacientes y permite ahorrar gasometrías, sobre todo en situación de agudización. La indicación de oxigenoterapia debe basarse, no obstante, en el valor de la PaO2 (mayor a 45 mmHg) y no en el de SaO2 (14). 
+
+								
+					div.accordion-group
+						div.accordion-heading
+							a.accordion-toggle(data-toggle='collapse' data-parent='#accordion2' href='#collapseTwo')
+								span Test de ejercicio y evaluación de la actividad física
+						div#collapseTwo.accordion-body.collapse
+							div.accordion-inner
+								p La medición de la reducción en la capacidad de realizar actividad física mediante el test de caminata en 6 minutos la prueba de caminata de carga progresiva es un indicador importante del estado de salud y el pronóstico de la enfermedad (1) ya que proveen una medición objetiva de la dificultad para movilizarse. 
+
+
+							
+				//- progeso
+				div.progreso
+					h2 progreso
+					div#progreso40
+						
+						
+				
+						
+				
+				//- Material modulo
+				+material-modulo('material-mod-2')
+				
+				//- progrso y contador
+				+paginador('https://ubosquemoodle.unbosque.edu.co/mod/book/view.php?id=301274&chapterid=9028', 'back', 'https://ubosquemoodle.unbosque.edu.co/mod/book/view.php?id=301274&chapterid=9030', 'forward')
+	
+
+//- Final part of body
+//- Page transitions js
+include ../includes/js-body-ends.jade
+		
+		
+			

@@ -1,0 +1,81 @@
+// -----------------------
+// typography
+// -----------------------
+
+.curso-cc,
+#page-mod-book-view #region-main .curso-cc,
+#region-main .curso-cc{
+	
+	@include font_universal (
+		$font_family_line_height: 24px,
+		$font_family_weight: 300,
+		$font_family_size: 16px,
+		$font_family_color: $color_brand_blue
+	);
+	
+	
+	h1{
+		text-transform: uppercase;
+		@include max-width;
+		@include font_universal (
+			$font_family_line_height: 30px,
+			$font_family_weight: 800,
+			$font_family_size: 24px,
+			$font_family_color: $color_brand_blue
+		);
+	}
+	
+	h2{
+		text-transform: uppercase;
+		letter-spacing: 0.1rem;
+		@include max-width;
+		@include font_universal (
+			$font_family_line_height: 25px,
+			$font_family_weight: 800,
+			$font_family_size: 20px,
+			$font_family_color: $color_brand_blue
+		);
+		color: $color_brand_blue !important;
+		margin: 0 auto 1rem !important;
+		display: block;
+		
+	}
+	
+	h3{
+		text-transform: uppercase;
+		@include max-width;
+		@include font_universal (
+			$font_family_line_height:23px,
+			$font_family_weight: 800,
+			$font_family_size: 18px,
+			$font_family_color: $color_brand_blue
+		);
+		display: block;
+		margin-bottom: 1rem;
+		margin-top: 2rem;
+	}
+	
+	h4{
+		text-transform: uppercase;
+		@include max-width;
+		@include font_universal (
+			$font_family_line_height:23px,
+			$font_family_weight: 800,
+			$font_family_size: 18px,
+			$font_family_color: $color_brand_blue
+		);
+		display: block;
+		margin-bottom: 1rem;
+		margin-top: 2rem;
+	}
+	
+	p{
+		@include font_universal (
+			$font_family_line_height: 24px,
+			$font_family_weight: 300,
+			$font_family_size: 16px,
+			$font_family_color: $color_brand_blue
+		);
+	}
+	
+}

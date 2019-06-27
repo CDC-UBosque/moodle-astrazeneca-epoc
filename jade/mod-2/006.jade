@@ -1,0 +1,136 @@
+include ../mixins.jade
+
+//- Head html tag
+include ../includes/header.jade
+
+//- Content
+div.curso-cc
+			
+	div.container-fluid
+		div.row-fluid
+			article.content-cc.article
+			
+				div.first_part
+					//- banner modulo
+					+banner('banner-2')
+				
+					//- menu
+					+menu
+			
+				+titulos-modulo('Módulo 2. Prevención Secundaria.')
+				
+				h3 6. Diagnóstico diferencial
+				
+				p A continuación, se listan las principales entidades que pueden hacer diagnóstico diferencial. Pique sobre cada una para aprender sus puntos más relevantes.
+				
+				//- Acordion
+				div.accordion#accordion2
+					div.accordion-group
+						div.accordion-heading
+							a.accordion-toggle(data-toggle='collapse' data-parent='#accordion2' href='#collapseOne')
+								span Asma
+						div#collapseOne.accordion-body.collapse.in
+							div.accordion-inner
+								ul
+									li Inicio en etapas tempranas de la vida.
+									li Síntomas de presentación y evolución variable
+									li Sintomatología predominantemente en la noche y en la mañana
+									li Asociación con alergia, rinitis, eczema.
+									li Historia familiar
+								+icon_book_more_info('https://www.aafp.org/dam/AAFP/documents/journals/fpm/COPD-Asthma.pdf')
+
+								
+					div.accordion-group
+						div.accordion-heading
+							a.accordion-toggle(data-toggle='collapse' data-parent='#accordion2' href='#collapseTwo')
+								span Insuficiencia cardiaca
+						div#collapseTwo.accordion-body.collapse
+							div.accordion-inner
+								ul
+									li Estertores basales finos a la auscultación
+									li Evidencia de silueta cardiaca agrandada en la radiografía de tórax
+									li Edemas periféricos
+									li Historia de enfermedad coronaria o cardiomiopatía isquémica
+									li Evidencia de restricción de volumen sin obstrucción en las pruebas de función pulmonar
+
+								+icon_book_more_info('https://www.mitepocwiki.net/glosario/insuficiencia-cardiaca-enfermedad-pulmonar-obstructiva-cronica-epoc/')
+								
+					div.accordion-group
+						div.accordion-heading
+							a.accordion-toggle(data-toggle='collapse' data-parent='#accordion2' href='#collapse3')
+								span Bronquiectasias
+						div#collapse3.accordion-body.collapse
+							div.accordion-inner
+								ul
+									li Volumen de la expectoración muy aumentado
+									li Asociación frecuente a sobreinfección bacteriana
+									li Estertores crepitantes
+									li Hipocratismo digital
+									li Engrosamiento bronquial en la radiografía o Tomografía de tórax.
+
+
+								+icon_book_more_info('https://erj.ersjournals.com/content/45/2/310')
+								
+					div.accordion-group
+						div.accordion-heading
+							a.accordion-toggle(data-toggle='collapse' data-parent='#accordion2' href='#collapse4')
+								span Tuberculosis
+						div#collapse4.accordion-body.collapse
+							div.accordion-inner
+								ul
+									li Presentación a cualquier edad 
+									li Infiltrados pulmonares en la radiografía
+									li Confirmación con baciloscopia y/o cultivo
+									li Alta prevalencia local o viaje a áreas de riesgo
+
+
+
+								+icon_book_more_info('http://bdigital.ces.edu.co:8080/repositorio/bitstream/10946/3846/1/Tuberculosis_Enfermedad_Pulmonar.pdf')
+								
+					div.accordion-group
+						div.accordion-heading
+							a.accordion-toggle(data-toggle='collapse' data-parent='#accordion2' href='#collapse5')
+								span Bronquiolitis obliterante
+						div#collapse5.accordion-body.collapse
+							div.accordion-inner
+								ul
+									li Presentación en la juventud
+									li Antecedentes de artritis reumatoide 
+									li Exposición a humo
+									li Áreas hipodensas en la imagen en expiración de la tomografía de tórax
+									
+					div.accordion-group
+						div.accordion-heading
+							a.accordion-toggle(data-toggle='collapse' data-parent='#accordion2' href='#collapse6')
+								span Pan bronquiolitis difusa
+						div#collapse6.accordion-body.collapse
+							div.accordion-inner
+								ul
+									li Principalmente en hombres no fumadores
+									li Alta asociación con sinusitis crónica 
+									li Opacidades nodulares pequeñas centro lobulares, difusas e hiperinsuflación en la tomografía de tórax. 
+
+				p (17)
+							
+				//- progeso
+				div.progreso
+					h2 progreso
+					div#progreso60
+						
+						
+				
+						
+				
+				//- Material modulo
+				+material-modulo('material-mod-2')
+				
+				//- progrso y contador
+				+paginador('https://ubosquemoodle.unbosque.edu.co/mod/book/view.php?id=301274&chapterid=9030', 'back', 'https://ubosquemoodle.unbosque.edu.co/mod/book/view.php?id=301274&chapterid=9032', 'forward')
+	
+
+//- Final part of body
+//- Page transitions js
+include ../includes/js-body-ends.jade
+		
+		
+			

@@ -1,0 +1,89 @@
+// -----------------------
+// material modulo
+// -----------------------
+
+.curso-cc,
+#region-main .curso-cc,
+#page-mod-book-view #region-main .curso-cc{
+	
+	.material-modulo{
+		
+		background: $color_white;
+		padding: 2rem 0 1rem;
+		box-sizing: border-box;
+		@include max-width;
+		
+		h2{
+			max-width: initial;
+		}
+		
+		.thumbnails{
+			
+			padding: 0;
+			
+			.thumbnail{
+				background: $color_white;
+			    border: 0;
+			    border-radius: 0;
+			    box-shadow: none;
+			    padding: 0;
+			    
+			    img{
+				    width: 100%;
+				    border: 2px solid $color_brand_bright_blue;
+			    }
+			    
+			    .caption{
+				    color: $color_text;
+				    padding: 1rem 0rem;
+				    
+				    h3{
+					    text-transform: initial;
+					    @include font_universal (
+							$font_family_line_height: 24px,
+							$font_family_weight: 500,
+							$font_family_size: 16px,
+							$font_family_color: $color_brand_blue
+						);
+					    display: block;
+					    margin: 0 0 .5rem;
+				    }
+				    
+				    p{
+					    @include font_universal (
+							$font_family_line_height: 18px,
+							$font_family_weight: 300,
+							$font_family_size: 13px,
+							$font_family_color: $color_brand_blue
+						);
+						
+						&:last-child{
+							text-align: center;
+						}
+					    
+					    a{
+						    border: none;
+						    @include font_universal (
+								$font_family_line_height: 18px,
+								$font_family_weight: 300,
+								$font_family_size: 13px,
+								$font_family_color: $color_brand_blue
+							);
+						    background: $color_brand_bright_blue;
+						    &:hover{
+							    color: $color_brand_light_blue;
+						    }
+						    
+					    }
+					    
+				    }
+				    
+			    }
+			    
+			}
+			
+		}
+		
+	}
+	
+}

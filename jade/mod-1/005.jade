@@ -1,0 +1,144 @@
+include ../mixins.jade
+
+//- Head html tag
+include ../includes/header.jade
+
+//- Content
+div.curso-cc
+			
+	div.container-fluid
+		div.row-fluid
+			article.content-cc.article
+			
+				div.first_part
+					//- banner modulo
+					+banner('banner-1')
+				
+					//- menu
+					+menu
+			
+				+titulos-modulo('Módulo 1. Prevención Primaria.')
+					
+				h3 Fisiología y fisiopatología
+				
+				h4 1. Fisiología Respiratoria: 
+				
+				p La fisiología respiratoria inicia con los conceptos evolutivos de adquisición de energía y la interacción entre el medio ambiente y los seres vivos, a través del intercambio químico de los gases en los pulmones para la obtención de energía (18).
+
+				p El humano evolutivamente ha llegado a necesitar de un sistema especializado (sistema respiratorio) y ha adquirido durante las adaptaciones a los diferentes ambientes de exposición los mecanismos para tal fin (ventilación, perfusión, difusión e intercambio gaseoso, entre otros). Por tanto, el proceso de la respiración inicia con la captación de aire del ambiente hacia los pulmones, continua con el intercambio de gases en la membrana alveolocapilar y posteriormente el transporte de los gases de los pulmones hacia los tejidos y de ellos su retorno al medio ambiente (18).
+
+				p En su paso por las vías respiratorias (cavidades nasales, la tráquea, bronquios) el aire es humidificado y el vapor de agua diluye ligeramente la mezcla de los gases y la presión parcial de oxígeno (PO2) en el aire traqueal disminuye ligeramente (aprox. en 10 mmHg) de su valor ambiente de 159 mmHg a 149 mmHg. En su llegada a los alvéolos la composición difiere considerablemente del aire ambiente, pues el dióxido de carbono proveniente de la sangre penetra constantemente en los alvéolos. Estas presiones representan las presiones medias ejercidas por las moléculas de oxígeno (O2) y dióxido de carbono (CO2) contra las paredes alveolares de la membrana alveolocapilar (18).
+
+				p Las presiones a nivel alveolar se mantienen con variaciones muy pequeñas (con el ciclo ventilatorio) debido a que con cada respiración aún se mantiene un volumen residual funcional (volumen considerable), que desempeña un papel amortiguador de las variaciones de la mezcla de gases a nivel alveolar, es por esto por lo que con cada inspiración las presiones parciales de los gases alveolares permanecen relativamente estables, en condiciones normales. Sin embargo, pequeñas variaciones en el ciclo ventilatorio o en la composición de la mezcla de gases tienen grandes efectos fisiológicos (18).
+				
+				//- imagen o video				
+				div.banner-video
+					div.span9
+						div#video
+							figure.galeria
+								a.example-image-link(href='https://ubosquemoodle.unbosque.edu.co/diseno/cursos/nuevo-EPOC/images/mod-1/011.jpg' data-lightbox='example-1')
+									img.example-image(src='https://ubosquemoodle.unbosque.edu.co/diseno/cursos/nuevo-EPOC/images/mod-1/011.jpg' alt='Módulo 1. Prevención Primaria.')
+					div.span3
+						div.img-footer
+							span Aparato respiratorio superior e inferior, b y c) difusión de gases desde el alveolo hasta el capilar pulmonar. Tomada de https://www.portaleducativo.net/quinto-basico/14/Sistema-respiratorio
+							
+							
+				p El aparato respiratorio, su mecánica y los mecanismos de transporte de O2 y CO2 se suman para cumplir dos propósitos principalmente: la difusión inmediata de O2 desde el alvéolo a la sangre en el capilar pulmonar y el movimiento de CO2 en la dirección opuesta (18).
+
+				p Los movimientos de O2 y CO2 a través de la barrera alveolocapilar se producen por difusión simple. El transporte de gases al azar obedece a la Ley de Fick, donde las moléculas del gas pasan de las zonas de alta concentración a áreas de baja concentración. Aunque la difusión de los gases per se no implica gasto energético, el cuerpo hace el trabajo activo (la ventilación y la circulación) para crear los gradientes de concentración por el cual O2 y el CO2 están en el ambiente físico propicio para que difundan (18).
+
+				p Por otro lado, desde el punto de vista funcional, el aparato respiratorio constituye un sistema complejo en el que intervienen diferentes factores y variables físicas por lo cual para la adecuada interpretación de las pruebas de función pulmonar se deben tener en cuenta los diferentes volúmenes pulmonares que intervienen en la fisiopatología pulmonar(18).
+				p Los volúmenes pulmonares  se pueden dividir en dinámicos aquellos que se movilizan con la respiración, y estáticos, aquellos que no se movilizan; estos últimos son  el volumen residual (VR) y todas las capacidades pulmonares que lo incluyen, los cuales son la  capacidad residual funcional (CRF) y capacidad pulmonar total (CPT) (18).
+				p La capacidad pulmonar total  es el volumen de gas al final de una inspiración máxima, es la sumatoria de la capacidad vital y del volumen residual  y  corresponde a una medida del tamaño pulmonar (18).
+				p  La capacidad vital espiratoria es el volumen de gas exhalado después de una inspiración máxima y la inspiratoria es el volumen que puede ser inspirado después de una espiración máxima. La capacidad vital es la suma de la capacidad inspiratoria  y del volumen de reserva espiratoria(18).
+				p De manera precoz la obstrucción crónica al flujo puede comenzar con atrapamiento aéreo y aumento del volumen residual como única alteración funcional , manteniendo una espirometría dentro de parámetros normales (18,20).			
+				
+				//- imagen o video				
+				div.banner-video
+					div.span9
+						div#video
+							figure.galeria
+								a.example-image-link(href='https://ubosquemoodle.unbosque.edu.co/diseno/cursos/nuevo-EPOC/images/mod-1/012.jpg' data-lightbox='example-1')
+									img.example-image(src='https://ubosquemoodle.unbosque.edu.co/diseno/cursos/nuevo-EPOC/images/mod-1/012.jpg' alt='Módulo 1. Prevención Primaria.')
+					div.span3
+						div.img-footer
+							span Grafica 5 . Volúmenes pulmonares normales. Elaboración propia. 
+							
+							
+				//- imagen o video				
+				div.banner-video
+					div.span9
+						div#video
+							figure.galeria
+								a.example-image-link(href='https://ubosquemoodle.unbosque.edu.co/diseno/cursos/nuevo-EPOC/images/mod-1/013.jpg' data-lightbox='example-1')
+									img.example-image(src='https://ubosquemoodle.unbosque.edu.co/diseno/cursos/nuevo-EPOC/images/mod-1/013.jpg' alt='Módulo 1. Prevención Primaria.')
+					div.span3
+						div.img-footer
+							span Grafica 6 . Alteración de volúmenes pulmonares en la EPOC. Elaboración propia. Adaptado de Peces-Barba G. Fisiopatologia del atrapamiento aéreo en la EPOC. Servicio de Neumologia, Fundación Jímenez Díaz.Rev Patol Respiratoria 2005; 8(Supl. 2): 255-261
+							
+							
+				
+				h4 2. Fisiopatología: 
+				
+				p La inhalación aguda de aire contaminado con partículas nocivas como los productos de la combustión, el humo del cigarrillo y sus derivados, causa inflamación aguda de la vía aérea en toda su extensión, con el desarrollo de la EPOC, esta respuesta es modificada y aumentada en relación al tiempo de exposición y las particularidades del individuo (1,4,19).
+				p La exposición al humo del tabaco puede afectar a las vías respiratorias grandes, finas (≤2 mm de diámetro) y alvéolos. Los cambios en las grandes vías originan tos y esputo, en tanto que los de las vías de menor calibre y los alvéolos causan alteraciones funcionales. Pueden coexistir en casi todos los individuos con EPOC un enfisema y alteraciones de las vías menores; no obstante, no parecen estar mecánicamente relacionados uno con otro y las contribuciones de cada elemento de la obstrucción varían de una persona a otra (4,19).
+				
+				
+				//- imagen o video				
+				div.banner-video
+					div.span9
+						div#video
+							figure.galeria
+								a.example-image-link(href='https://ubosquemoodle.unbosque.edu.co/diseno/cursos/nuevo-EPOC/images/mod-1/014.jpg' data-lightbox='example-1')
+									img.example-image(src='https://ubosquemoodle.unbosque.edu.co/diseno/cursos/nuevo-EPOC/images/mod-1/014.jpg' alt='Módulo 1. Prevención Primaria.')
+					div.span3
+						div.img-footer
+							span Grafica 7. Fisiopatologia de la EPOC. Elaboración propia
+							
+							
+				p Los cambios fisiopatológicos de la EPOC incluyen la inflamación crónica, aumento de las células y los mediadores inflamatorios en las diferentes zonas del pulmón, además se presentan cambios estructurales como consecuencia del daño y los fenómenos de reparación de forma repetitiva. Estos cambios estructurales se encuentran en la vía aérea, en el parénquima pulmonar y en la vasculatura pulmonar y conducen a la alteración de la fisiología respiratoria, llevando al atrapamiento de aire en la vía aérea y progresiva limitación para el flujo aéreo (1,4).
+
+				p Todas las estructuras del sistema respiratorio se ven afectadas, particularmente el mayor daño funcional está en los bronquiolos de menos de 2 mm de diámetro (Bronquiolos terminales) y el esqueleto elástico de los pulmones, lo cual lleva a todas las alteraciones funcionales del aparato respiratorio y sus manifestaciones clínicas. Los cambios persisten a pesar del retiro de la exposición a la noxa y es precoz en la evolución de la enfermedad (1,2).
+				p El resultado final de la inflamación crónica es el engrosamiento de la pared bronquial, disminución de su calibre, la destrucción alveolar con agrandamiento de los espacios aéreos y la pérdida de los anclajes bronquiales. Las consecuencias funcionales son la obstrucción al flujo aéreo, el colapso espiratorio del árbol bronquial y la pérdida del retroceso elástico (1,2).
+
+				p Diferentes mecanismos como el estrés oxidativo, y a nivel enzimático, el desbalance entre proteasas y anti-proteasas están involucrados en el desarrollo de esta enfermedad. El atrapamiento del aire en la vía aérea, la limitación del flujo aéreo, el aumento de la resistencia con disminución de la elasticidad de la vía aérea, anormalidades en el intercambio gaseoso con hipoxemia e hipercapnia, hipersecreción de moco, hipertensión pulmonar, disminución de los mecanismos de defensa respiratoria que facilita exacerbaciones son entre otros efectos ocasionados por la enfermedad (1,19).
+
+				p Al mismo tiempo y por diversos mecanismos se activan manifestaciones sistémicas de la enfermedad que provocan efectos extrapulmonares; es decir, no se limitan al sistema respiratorio y se presenta un compromiso de otros sistemas como el cardiovascular, músculo esquelético, e inclusive afecta la salud mental generando trastornos del ánimo, dentro de los que se pueden resaltar la ansiedad y la depresión (1,19)
+
+				p A nivel inmunológico los macrófagos y neutrófilos son en su mayoría los intermediarios celulares  identificados que favorecen la liberación de citoquinas y otros mediadores inflamatorios en el epitelio de las vías respiratorias. La exposición a sustancias como el humo de cigarrillo estimula al macrófago y en general aumenta la producción de sustancias inflamatorias como interferones y citoquinas (IL-8)  las cuales activan los neutrófilos perpetuando la respuesta inflamatoria (21). Por otro lado, la acción del eosinófilo tiene un papel importante dado que se ha demostrado su relación con la inflamación en las vías aéreas en los pacientes con EPOC, aunque es desconocida la prevalencia de los pacientes con EPOC e inflamación eosinofílica, se ha demostrado que los pacientes con un conteo de eosinófilos superior en el esputo tienen mayor riesgo de exacerbaciones (22).
+							
+				//- imagen o video				
+				div.banner-video
+					div.span9
+						div#video
+							figure.galeria
+								a.example-image-link(href='https://ubosquemoodle.unbosque.edu.co/diseno/cursos/nuevo-EPOC/images/mod-1/016.jpg' data-lightbox='example-1')
+									img.example-image(src='https://ubosquemoodle.unbosque.edu.co/diseno/cursos/nuevo-EPOC/images/mod-1/016.jpg' alt='Módulo 1. Prevención Primaria.')
+					div.span3
+						div.img-footer
+							span Imagen 1. Mediadores inmunológicos en la enfermedad pulmonar obstructiva crónica. Tomada de C.R. Keenan et al. / Pharmacology & Therapeutics 150 (2015) 81–93.
+							
+							
+							
+				//- progeso
+				div.progreso
+					h2 progreso
+					div#progreso50
+						
+						
+				
+						
+				
+				//- Material modulo
+				+material-modulo('material-mod-1')
+				
+				//- progrso y contador
+				+paginador('https://ubosquemoodle.unbosque.edu.co/mod/book/view.php?id=301266&chapterid=9019', 'back', 'https://ubosquemoodle.unbosque.edu.co/mod/book/view.php?id=301266&chapterid=9021', 'forward')
+	
+
+//- Final part of body
+//- Page transitions js
+include ../includes/js-body-ends.jade
+		
+		
+			

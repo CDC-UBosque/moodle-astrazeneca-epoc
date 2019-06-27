@@ -1,0 +1,43 @@
+include ../mixins.jade
+
+//- Head html tag
+include ../includes/header.jade
+
+//- Content
+div.curso-cc
+			
+	div.container-fluid
+		div.row-fluid
+			div.content-cc
+			
+				div.first_part
+					//- banner modulo
+					+banner('banner-1')
+				
+					//- menu
+					+menu
+			
+				+titulos-modulo('Módulo 1. Prevención Primaria.')
+					
+				h3 Presentación Módulo 1
+				
+				div.banner-video.wow.fadeInUp
+					div.span12
+						div#video
+							div.embed-container
+								iframe(src="https://ubosquemoodle.unbosque.edu.co/diseno/cursos/nuevo-EPOC/PDF/mod-1/EPOC-MODULO-1.pdf" frameborder="0" allowfullscreen)
+
+
+	//- Material modulo
+	+material-modulo('material-mod-1')
+	
+	//- progrso y contador
+	+menu-simple
+							
+
+//- Final part of body
+//- Page transitions js
+include ../includes/js-body-ends.jade
+		
+		
+			

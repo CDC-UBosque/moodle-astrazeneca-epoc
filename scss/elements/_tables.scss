@@ -1,0 +1,117 @@
+// -----------------------
+// tables
+// -----------------------
+
+.curso-cc,
+#region-main .curso-cc{
+	
+	.table{
+		padding: 1rem 0;
+		box-sizing: border-box;
+		//display: inline-table;
+		@include max-width;
+		margin: 3rem auto;
+		
+		caption{
+			margin-bottom: 1rem;
+			text-align: left;
+			@include font_universal (
+				$font_family_line_height: 22px,
+				$font_family_weight: 600,
+				$font_family_size: 18px,
+				$font_family_color: $color_brand_blue
+			);
+		}
+		
+		thead{
+			th{
+				background: $color_brand_blue;
+				border-left: 1px solid $color_white;
+				border-right: 1px solid $color_white;
+				vertical-align: middle;
+				text-align: center;
+				@include font_universal (
+					$font_family_line_height: 22px,
+					$font_family_weight: 800,
+					$font_family_size: 16px,
+					$font_family_color: $color_white
+				);
+				
+				&:first-child{
+					border-left: 0px;
+				}
+				
+				&:last-child{
+					border-right: 0px;
+				}
+				
+			}
+		}
+		
+		tr{
+			
+			td{
+				border-top: 1px solid $color_brand_blue;
+				border-bottom: 1px solid $color_brand_blue;
+				border-left: 1px solid $color_brand_blue;
+				border-right: 1px solid $color_brand_blue;
+				line-height: initial;
+				text-align: center;
+				padding: 0.5rem 0.4rem;
+				@include font_universal (
+					$font_family_line_height: 22px,
+					$font_family_weight: 300,
+					$font_family_size: 16px,
+					$font_family_color: $color_text
+				);
+				
+				&:first-child{
+					border-left: 0px;
+				}
+				
+				&:last-child{
+					border-right: 0px;
+				}
+				
+				ul{
+					text-align: left;
+					
+					li{
+						
+					}
+					
+				}
+				
+			}
+			
+			&:nth-child(even){
+				
+				td{
+					background: $color_brand_bright_blue;
+				}
+				
+			}
+			
+			&:last-child{
+				
+				td{
+					border-bottom: 0px;
+				}
+				
+			}
+			
+			.small{
+				background:  transparentize($color_brand_bright_blue, 0.7) !important; 
+				@include font_universal (
+					$font_family_line_height: 18px,
+					$font_family_weight: 300,
+					$font_family_size: 12px,
+					$font_family_color: $color_text
+				);
+			}
+			
+		}
+		
+	}
+	
+}

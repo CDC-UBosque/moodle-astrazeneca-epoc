@@ -1,0 +1,82 @@
+include ../mixins.jade
+
+//- Head html tag
+include ../includes/header.jade
+
+//- Content
+div.curso-cc
+			
+	div.container-fluid
+		div.row-fluid
+			article.content-cc.article
+			
+				div.first_part
+					//- banner modulo
+					+banner('banner-1')
+				
+					//- menu
+					+menu
+			
+				+titulos-modulo('Módulo 1. Prevención Primaria.')
+					
+				h3 Promoción de la salud
+				
+				p Las enfermedades directamente relacionadas con el consumo de tabaco son numerosas, muchas de ellas prevenibles y mitigables si se deja de fumar. La enfermedad pulmonar obstructiva crónica aparece en un 15 a 20% de los fumadores, siendo otra causa de casi un 90% de los cánceres broncopulmonares, que a su vez constituyen un 30% de las neoplasias en los hombres (23).
+				p Adicionalmente, la dependencia asociada a el consumo de tabaco requiere la aplicación de intervenciones que lleven a promover el abandono del consumo y tratar la dependencia a esta sustancia, estas intervenciones están enfocadas a la atención del individuo y de la población en general, teniendo en cuenta colectivos poblaciones específicas tales como, mujeres embarazadas, adultos mayores y pacientes con enfermedades crónicas (23).
+				p En general los modelos multidisciplinarios de prevención primaria, liderados por el médico de atención primaria quieren realizar una búsqueda activa de los pacientes con factor de riesgo: 
+				
+				ul
+					li Prevención a la exposición a biomasa (fomentar la cesación de la exposición en caso de que sea un antecedente (24).
+					li Búsqueda activa de pacientes con exposición ocupacional (24).
+					li Búsqueda activa de pacientes con exposición activa o pasiva al humo del cigarrillo (24).
+				
+				h3 INDIVIDUAL:
+				
+				p Las acciones más efectivas para el control del tabaquismo abarcan varios niveles en la sociedad, por un lado, el deseo del individuo para dejar el hábito; por otro lado, las acciones en el plano político que se relacionan con la restricción de la oferta y el desestimulo de la demanda; a nivel individual, existe evidencia sobre la efectividad que los tratamientos de cesación que además pueden ayudar a reducir la carga de enfermedades asociadas con este factor de riesgo. Por lo tanto; la consejería, la terapia farmacológica y la combinación de todas estas alternativas tienen eficacia demostrada para la cesación del tabaquismo. La consejería, es entendida como la orientación y el apoyo para dejar de fumar, se considera como una intervención de primera línea y su uso sistemático se propone en todo fumador que entra contacto con los servicios de salud (23,25,26).Esta puede ser aplicada por un profesional de salud capacitado, la cual puede ser realizada con los pasos de las cinco A (Averiguar, Aconsejar, Evaluar (Apreciar), Ayudar y Organizar (Acompañar)) y más exactamente de los tres primeros pasos (Averiguar, Aconsejar y Apreciar) nos ayudan a discriminar que personas requieren una terapia intensiva que incluye una entrevista motivacional. La implementación de esta consejería puede hacerse entre 3 y 10 minutos dentro de las consultas habituales o requerir una terapia intensiva que puede llevar más de 10 minutos y ser específica al tema (26, 27).
+				
+				h3 COLECTIVA:
+				
+				p Las intervenciones colectivas son complementarias a las atenciones individuales también  orientadas a apoyar la motivación de cesación del consumo. Es importante tener en cuenta que la estrategia que se genere debe incluir información de carácter preventivo, positiva y utilizando los medios de comunicación tanto masivos como alternativos. Asimismo, el diseño de material informativo y educativo tanto impreso como audiovisual (23,25,26).
+				
+				h3 POBLACIONAL: 
+				
+				p Las Intervenciones a nivel poblacional están soportadas básicamente a partir de la entrada en vigencia de la ley antitabaco, el Ministerio de la Protección Social, incorporará en el Plan Nacional de Salud Pública las estrategias y acciones para identificar y promover la atención y demanda de servicios de cesación para dejar de fumar. Las IPSs y las EPSs, deberán identificar el factor de riesgo de consumo de tabaco dentro de su población, informar a esa población los riesgos para su salud por el hábito de consumir tabaco o derivados de este y brindarle al usuario los servicios del PBS que le ayuden a manejar el factor de riesgo, por otro lado a nivel ambiental  las Administradores de Riesgos Profesionales deben desarrollar estrategias para brindar, permanentemente, información y educación a sus afiliados para garantizar ambientes laborales ciento por ciento (100%) libres de humo (25,26).
+
+				p Otra medida que pretende lograr un impacto en la prevención de enfermedades pulmonares en la población está relacionada al aumento reciente del material particulado en el aire de Bogotá, en los primeros meses de 2019, se decretó la Alerta Amarilla, esta medida busca controlar el grado de  contaminación ambiental que tiene un impacto directo sobre la salud humana dada las concentraciones de gases nitrogenados que están relacionadas con la quema de combustibles fósiles que generalmente proviene de la quema de combustible; por lo cual se recomendó una serie de medidas que buscan impactar positivamente en la salud de la población. El uso de tapabocas en especial a la población infantil y adultos mayores; el cual se entrega de manera regular por parte de los funcionarios del distrito en los sectores de mayor contaminación (28).
+
+				p Una nueva medida que aparece en el panorama referente a las herramientas existentes para la cesación del hábito de fumar y que además tienen un impacto a nivel poblacional; está relacionada con la aparición de los nuevos cigarrillos electrónicos y los dispositivos electrónicos de entrega de nicotina; se resume en varios estudios la experiencia inicial en el hábito de fumar en algunos grupos poblacionales como por ejemplo los adolescentes y adultos jóvenes. Por otro lado, una elección personal de algunos individuos que están interesados en la cesación del tabaquismo como alternativa o método opcional de ayuda para dejar el tabaco. La gran mayoría de las personas que eligen estas opciones lo hacen  sin una consulta previa a su médico de atención primaria, este comportamiento activa una alerta acerca de los potenciales riesgos en la salud de los individuos que usan estos dispositivos a mediano y largo plazo, por el momento se debe considerar que la evidencia existente no establece un impacto en términos de beneficio en la reducción de consumo de tabaco, al igual se deben establecer políticas de salud pública donde se regule y establezcan parámetros de comercialización de restricción como medida terapéutica opcional para la cesación del tabaquismo y en educación para todos las personas interesadas en el uso de estos dispositivos (29).
+				
+				//- imagen o video				
+				div.banner-video
+					div.span9
+						div#video
+							figure.galeria
+								a.example-image-link(href='https://ubosquemoodle.unbosque.edu.co/diseno/cursos/nuevo-EPOC/images/mod-1/017.jpg' data-lightbox='example-1')
+									img.example-image(src='https://ubosquemoodle.unbosque.edu.co/diseno/cursos/nuevo-EPOC/images/mod-1/017.jpg' alt='Módulo 1. Prevención Primaria.')
+					div.span3
+						div.img-footer
+							span Gráfica 8. Intervenciones de consejería para la cesación de la adicción al tabaco (22,23,24).
+							
+							
+				//- progeso
+				div.progreso
+					h2 progreso
+					div#progreso70
+						
+						
+				
+						
+				
+				//- Material modulo
+				+material-modulo('material-mod-1')
+				
+				//- progrso y contador
+				+paginador('https://ubosquemoodle.unbosque.edu.co/mod/book/view.php?id=301266&chapterid=9020', 'back', 'https://ubosquemoodle.unbosque.edu.co/mod/book/view.php?id=301266&chapterid=9022', 'forward')
+	
+
+//- Final part of body
+//- Page transitions js
+include ../includes/js-body-ends.jade
+		
+		
+			

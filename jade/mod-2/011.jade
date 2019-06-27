@@ -1,0 +1,116 @@
+include ../mixins.jade
+
+//- Head html tag
+include ../includes/header.jade
+
+//- Content
+div.curso-cc
+			
+	div.container-fluid
+		div.row-fluid
+			article.content-cc.article
+			
+				div.first_part
+					//- banner modulo
+					+banner('banner-2')
+				
+					//- menu
+					+menu
+			
+				+titulos-modulo('Módulo 2. Prevención Secundaria.')
+				
+				h3 Glosario
+				
+				ol
+					li 
+						b Alfa 1 anti tripsina: 
+						| Enzima inhibidora de la proteasa, una proteína que se produce en el hígado y que protege los pulmones y el mismo hígado. Los adultos con deficiencia grave de AAT presentarán enfisema.
+					li 
+						b Broncodilatador: 
+						| Medicamento cuya acción farmacológica causa que los bronquios y bronquiolos de los pulmones se dilaten, provocando una disminución en la resistencia aérea y permitiendo así el flujo de aire.
+					li 
+						b Bronquiestasia: 
+						| Afección pulmonar crónica en la que las paredes de las vías respiratorias están anormalmente extendidas y engrosadas debido a la inflamación e infección. Bronquiectasia significa “vías respiratorias dilatadas"
+					li 
+						b CAT: 
+						| Del termino en inglés COPD Assessment Test. Se trata de un cuestionario que permite evaluar el impacto de la EPOC sobre la calidad de vida de una persona. Su puntaje va hasta los 40 puntos y clasifica la severidad del impacto de la enfermedad así: 
+					li 
+						b Bajo impacto (1-10 puntos): 
+						| la mayoría de los días son «días buenos», pero la EPOC es la causa de alguna de sus limitaciones.
+					li 
+						b Impacto medio (11-20 puntos): 
+						| existen pocos «días buenos» en una semana y la EPOC es uno de los principales problemas del paciente.
+					li 
+						b Impacto alto (21-30 puntos): 
+						| no hay «días buenos» en una semana media normal y la EPOC es el problema más importante.
+					li 
+						b Impacto muy alto (31-40 puntos): 
+						| la limitación que produce la enfermedad es máxima.
+					li 
+						b Espirometria: 
+						| Técnica de exploración de la función respiratoria que mide los flujos y los volúmenes respiratorios útiles para el diagnóstico y el seguimiento de patologías respiratorias.
+					li 
+						b Exacerbación: 
+						| Se trata de un cambio agudo en la situación clínica basal del paciente, en los cuales se presenta aumento de los síntomas. 	
+					li 
+						b Fenotipo de la enfermedad: 
+						| Se define como aquellos atributos de la enfermedad que solos o combinados describen las diferencias entre individuos con EPOC en relación a parámetros que tienen significado clínico.
+					li 
+						b Hiperreactividad Bronquial: 
+						| Respuesta exagerada de la mucosa bronquial ante noxas externas como infecciones, contaminantes ambientales o medicamentos y responsable del origen de un broncoespamo. 
+					li 
+						b IC: 
+						| Corticoide inhalado del término en inglés Inhaled corticoid.
+					li 
+						b Indice BODE: 
+						| (Body mass index, airflow Obstruction, Dysnea and Excercise capacity index). Clasificación de EPOC según cuatro variables: IMC, FEV1, Disnea y Distancia caminada en 6 min (en metros). Se suman puntos (0-10).
+					li 
+						b LAMA: 
+						| Antimuscarínico de acción prolongada del término en inglés Long action muscarinic antagonist.
+					li 
+						b LABA: 
+						| Beta agonista de acción prolongada del término en inglés Long action beta agonist. 
+					li 
+						b MRCm: 
+						|	Escala de disnea del Medical Research Council (MRC) modificada. Permite clasificar el espectro de la disnea desde no tener dificultad hasta casi la imposibilidad para la misma 
+					li 
+						b SABA: 
+						| Beta agonistas de corta acción del término en inglés Short action beta agonist. 
+					li 
+						b SAMA: 
+						| Antimuscarínico de acción corta del término en inglés Short action muscarinic antagonist. 
+					li 
+						b Tabaquismo: 
+						| Enfermedad crónica sistémica perteneciente al grupo de las adicciones cauda por la adicción al tabaco y  principalmente, por uno de sus componentes activos, la nicotina
+					li 
+						b Tamización: 
+						| La acción de examinar un grupo de personas para separar aquellos sanos de los que tienen una condición patológica oculta o alto riesgo de padecerla, generalmente mediante el uso de pruebas diagnósticas o criterios clínicos.
+
+
+
+
+
+				
+							
+				//- progeso
+				div.progreso
+					h2 progreso
+					div#progreso100
+						
+						
+				
+						
+				
+				//- Material modulo
+				+material-modulo('material-mod-2')
+				
+				//- progrso y contador
+				+paginador('https://ubosquemoodle.unbosque.edu.co/mod/book/view.php?id=301274&chapterid=9035', 'back', '#', 'disabled')
+	
+
+//- Final part of body
+//- Page transitions js
+include ../includes/js-body-ends.jade
+		
+		
+			

@@ -1,0 +1,212 @@
+include ../mixins.jade
+
+//- Head html tag
+include ../includes/header.jade
+
+//- Content
+div.curso-cc
+			
+	div.container-fluid
+		div.row-fluid
+			article.content-cc.article
+			
+				div.first_part
+					//- banner modulo
+					+banner('banner-2')
+				
+					//- menu
+					+menu
+			
+				+titulos-modulo('Módulo 2. Prevención Secundaria.')
+				
+				h3 5. Valoración del impacto en la calidad de vida y riesgo de exacerbaciones
+				
+				p El impacto de la EPOC en la calidad de vida de los pacientes va mucho más allá de la disnea y el compromiso obstructivo evidenciado en la espirometría. 
+				p Por lo anterior se han propuesto herramientas disponibles en la práctica clínica, que permiten realizar un análisis del impacto en la calidad de vida y del estado de la enfermedad (1). 
+				p Las recomendadas para uso en consultorio por la GOLD (1) son: 
+				
+				ol
+					li COPD assesment test (CAT) 
+						a(href='http://www.catestonline.org/english/index_SpainLA.htm' target='_blank') (http://www.catestonline.org/english/index_SpainLA.htm)
+
+					li The COPD Control Questionnarie 
+						a(href='ttp://ccq.nl/' target='_blank') (http://ccq.nl/)
+						
+				p
+					i Pique en el link enfrente de cada cuestionario para ir al sitio web y conocerlo.
+					
+				p Aunque con estos cuestionarios no se categoriza a los pacientes en grupos de severidad, si permiten diseñar un tratamiento individualizado y realizar un control del impacto en la calidad de vida con las medidas terapéuticas instauradas (1). 
+				p Se recomienda que el clínico o educador en EPOC explique estas herramientas al paciente, para que sean diligenciadas por este antes de ingresar a la consulta. 
+
+				p La exacerbación se refiere a un estado de empeoramiento agudo de los síntomas que requiere uso de terapia adicional a la instaurada y el número de episodios presentados es proporcional al riesgo de padecerlas. Se considera como exacerbador frecuente al paciente que presenta 2 o más episodios por año (1). Trataremos este tema más adelante en este mismo capítulo. 
+				
+				h3 BODE y BODEx
+				
+				p El BODE y BODEx son índices de valoración multidimensional que permite identificar la gravedad de la enfermedad y permiten una aproximación al pronóstico (1). En caso de no tener la caminata en 6 minutos, se puede realizar el BODEx. Sin embargo, este último es útil en EPOC con obstrucción de vía aérea 1 y 2. En todos los pacientes con puntuación BODEx >	5 puntos, se debe realizar test de ejercicio para precisar nivel de gravedad. (16)
+				p Se recomienda seguir al paciente con BODE/BODEx mínimo una vez al año y dos veces al año en los pacientes con mayor gravedad. (7)
+
+				//- Table
+				table.table.table-striped
+					caption Tabla 6: Índices BODE y BODEx
+					thead
+						tr
+							th(colspan='6') ÍNDICE BODE
+					thead
+						tr
+							th Componentes
+							th Variables
+							th(colspan='4') Puntuación
+					tbody
+						tr
+							td B
+							td IMC (kg/m<sup>2</sup>)
+							td >21
+							td ≤21
+							td 
+							td
+						tr
+							td O
+							td FEV1 (%)
+							td ≥65
+							td 50-64
+							td 36-49
+							td ≤35
+						tr
+							td D
+							td Disnea (mMRC)*
+							td 0-1
+							td 2
+							td 3
+							td 4
+						tr
+							td E
+							td 6 minutos (m)
+							td ≥350
+							td 250 – 349
+							td ≥150-249
+							td ≤ 149
+							
+				//- Table
+				table.table.table-striped
+					thead
+						tr
+							th Clasificación
+							th Puntaje
+							th Sobrevida a 4 años
+					tbody
+						tr
+							td 1. Leve
+							td 0 -2 puntos
+							td 80%
+						tr
+							td 2. Moderada
+							td 3-4  puntos
+							td 67%
+						tr
+							td 3. Grave
+							td 5 – 6 puntos
+							td 57%
+						tr
+							td 4. Muy grave
+							td 7 – 10 puntos
+							td 18%
+							
+							
+				//- Table
+				table.table.table-striped
+					thead
+						tr
+							th(colspan='6') ÍNDICE BODEx
+					thead
+						tr
+							th Componentes
+							th Variables
+							th(colspan='4') Puntuación
+					tbody
+						tr
+							td 
+							td 
+							td 0
+							td 1
+							td 2
+							td 3
+						tr
+							td B
+							td IMC (kg/m<sup>2</sup>)
+							td >21
+							td ≤21
+							td 
+							td
+						tr
+							td O
+							td FEV1 (%)
+							td ≥65
+							td 50-64
+							td 36-49
+							td ≤35
+						tr
+							td D
+							td Disnea (mMRC)*
+							td 0-1
+							td 2
+							td 3
+							td 4
+						tr
+							td Ex
+							td Exacerbaciones graves
+							td 0
+							td 1-2
+							td ≥3
+							td 
+							
+							
+				//- Table
+				table.table.table-striped
+					thead
+						tr
+							th Clasificación
+							th Puntaje
+							th Sobrevida a 4 años
+					tbody
+						tr
+							td 1. Leve
+							td 0 -2 puntos
+							td 80%
+						tr
+							td 2. Moderada
+							td 3-4  puntos
+							td 67%
+						tr
+							td 3. Grave
+							td 5 – 6 puntos
+							td 57%
+						tr
+							td 4. Muy grave
+							td 7 – 10 puntos
+							td 18%
+
+				p Tomado y modificado por el autor de referencia 7 y 16.
+
+							
+				//- progeso
+				div.progreso
+					h2 progreso
+					div#progreso50
+						
+						
+				
+						
+				
+				//- Material modulo
+				+material-modulo('material-mod-2')
+				
+				//- progrso y contador
+				+paginador('https://ubosquemoodle.unbosque.edu.co/mod/book/view.php?id=301274&chapterid=9029', 'back', 'https://ubosquemoodle.unbosque.edu.co/mod/book/view.php?id=301274&chapterid=9031', 'forward')
+	
+
+//- Final part of body
+//- Page transitions js
+include ../includes/js-body-ends.jade
+		
+		
+			

@@ -1,0 +1,185 @@
+include ../mixins.jade
+
+//- Head html tag
+include ../includes/header.jade
+
+//- Content
+div.curso-cc
+			
+	div.container-fluid
+		div.row-fluid
+			article.content-cc.article
+			
+				div.first_part
+					//- banner modulo
+					+banner('banner-1')
+				
+					//- menu
+					+menu
+			
+				+titulos-modulo('Módulo 1. Prevención Primaria.')
+					
+				h3 Factores del huésped
+				
+				//- imagen o video				
+				div.banner-video
+					div.span9
+						div#video
+							figure.galeria
+								a.example-image-link(href='https://ubosquemoodle.unbosque.edu.co/diseno/cursos/nuevo-EPOC/images/mod-1/008.jpg' data-lightbox='example-1')
+									img.example-image(src='https://ubosquemoodle.unbosque.edu.co/diseno/cursos/nuevo-EPOC/images/mod-1/008.jpg' alt='Módulo 1. Prevención Primaria.')
+					div.span3
+						div.img-footer
+							span Gráfica 2. Factores del huésped. Imágenes tomadas de Internet en los siguientes vínculos:  https://pixabay.com/es/hombre-usuario-perfil-persona42934/. https://commons.wikimedia.org/wiki/File:PDB_1qlp_EBI.jpg - https://ast.wikipedia.org/wiki/Asma - https://pixabay.com/es/pulmones-pulm%C3%B3n-icono-respiraci%C3%B3n-2803208/
+							
+							
+				//- Table
+				table.table.table-striped
+					caption Tabla 2. Factores ambientales. Factores del huésped.
+					thead
+						tr
+							th Factores Ambientales
+							th Referencia
+					tbody
+						tr
+							td Edad mayor de 60 años
+							td (1)
+						tr
+							td Fumador actual
+							td (1)
+						tr
+							td Ex fumador
+							td (1)
+						tr
+							td Género masculino
+							td (1)
+						tr
+							td Exposición al  humo de leña >10 años
+							td (1)
+						tr
+							td Nivel Educativo
+							td (1)
+						tr
+							td Gases ocupacionales
+							td (1)
+						tr
+							td Polvo ocupacional > 10 años
+							td (1)
+						tr
+							td Historia de TBC
+							td (1)
+						tr
+							td Fumador pasivo 
+							td (1,3)
+						tr
+							td Exposición al carbón 
+							td (1)
+						tr
+							td Infecciones respiratorias en infancia 
+							td (1)
+						tr
+							td Historia familiar de EPOC 
+							td (1)
+						tr
+							td Contaminación ambiental 
+							td (1,3)
+					thead
+						tr
+							th Factores del Huésped
+							th Referencia
+					tbody
+						tr
+							td Deficiencia de α-1-antitripsina.
+							td (1)
+						tr
+							td Hiperreactividad bronquial.
+							td (1)
+						tr
+							td Crecimiento del pulmón.
+							td (1,4)
+				
+				
+				h4 Factores protectores: 
+				
+				//- Acordion
+				div.accordion#accordion2
+					div.accordion-group
+						div.accordion-heading
+							a.accordion-toggle(data-toggle='collapse' data-parent='#accordion2' href='#collapseOne')
+								span Estado nutricional
+						div#collapseOne.accordion-body.collapse.in
+							div.accordion-inner
+								p Como en otras condiciones patológicas crónicas, el efecto del estado nutricional y sus alteraciones (bajo IMC, sobrepeso y la obesidad) son frecuentes en la EPOC. La presencia de IMC bajo (&lt;20 kg/m2) se asocia con mayor mortalidad y se correlaciona con menor capacidad de la difusión con monóxido de carbono, un IMC &lt;21 kg/m2 se asocia con mayor disnea si se le compara con IMC entre 21 y 28. De otro lado no hay un consenso específico sobre el impacto de la obesidad en la mortalidad de los pacientes con EPOC.  (2,4).
+								p Es importante que en  aquellos pacientes con desnutrición se piense en el uso de suplementos nutricionales, dado que promueve el aumento significativo de peso, mejora la fuerza de los músculos respiratorios, la calidad de vida, los índices de masa grasa, masa libre de grasa, lo cual se ve reflejado en el estado general del paciente (1,2,4).
+								
+					div.accordion-group
+						div.accordion-heading
+							a.accordion-toggle(data-toggle='collapse' data-parent='#accordion2' href='#collapseTwo')
+								span Actividad física
+						div#collapseTwo.accordion-body.collapse
+							div.accordion-inner
+								p Generalmente los pacientes que tienen diagnóstico de EPOC realizan menos actividad física diaria que los individuos sanos de su misma edad o fumadores sin EPOC. La medición objetiva de la actividad física diaria constituye un factor pronóstico independiente de mortalidad por todas las causas, así como de hospitalización por exacerbación grave. Es importante estimular y prescribir actividad física regular, al menos 30 minutos tres veces por semana dado que mejora el estado cardiovascular, reduce el riesgo de hospitalizaciones y mortalidad (1,2,4).
+				
+				
+				h4 Epidemiología:
+				
+				p La EPOC representa la cuarta causa de mortalidad a nivel mundial; con un impacto importante a nivel económico y social. La OMS calcula que para el año 2020 la EPOC será la quinta causa de discapacidad por años de vida perdidos y la tercera causa de mortalidad a nivel mundial. Según una revisión sistemática y metaanálisis, de estudios realizados en 28 países entre 1999 y 2004, la EPOC es más prevalente en personas mayores de 40 años, en hombres y en pacientes fumadores y exfumadores que en no fumadores. (1,3,4)
+
+				p En Europa, existen varios estudios donde la prevalencia oscila entre el 4 y el 10%, en el estudio de Halbert RJ y Cols. 2006, la prevalencia estimada es de un 7,4%, en países como España, la prevalencia de la EPOC es del 9,1% especialmente en edades comprendidas entre los 40 y los 70 años (8,13).
+
+				p En los Estados Unidos según los reportes del CDC se calculó para el 2011 una prevalencia del 6.3% (14).
+
+				p El proyecto latinoamericano para la investigación de la enfermedad pulmonar obstructiva (PLATINO) examinó la prevalencia de los hallazgos en la espirometría dados por la  limitación del flujo de aire post-broncodilatador en personas mayores de 40 años, en las principales ciudades de los siguientes países de América Latina: Brasil, Chile, México, Uruguay y Venezuela; en cada país, la prevalencia de la EPOC aumentó considerablemente con la edad, con una mayor prevalencia entre aquellas personas mayores de 60 años. En general según los resultados la prevalencia oscila entre el 7,8% y un 19,7% en Ciudad de México (México) y Montevideo (Uruguay) respectivamente (1,15).
+
+				p En Colombia, según el estudio PREPOCOL, desarrollado por Caballero y colaboradores, la prevalencia de la EPOC fue de 8,9%, siendo mayor en hombres (13,6%) que en mujeres (6,6%). En este mismo estudio se observó un aumento en la prevalencia en los mayores de 60 años al igual que en el estudio PLATINO, con un 12,4% para el grupo de pacientes de 60 a 69 años y de 25,3% en los mayores de 70 años. Según el análisis por ciudades, a diferentes altitudes se observaron diferencias en la prevalencia de la EPOC, por ejemplo, en Barranquilla con una altitud baja (1500m) la prevalencia fue del 6,2% comparada con Medellín que se encuentra a una altitud media (1500 a 2500m) y su prevalencia fue de 13,5%. Para Bogotá, a pesar de ser una ciudad con altitud en el límite superior de la altitud media (2640m), la prevalencia no fue superior (8,5%) (15,16).
+				
+				
+				//- imagen o video				
+				div.banner-video
+					div.span9
+						div#video
+							figure.galeria
+								a.example-image-link(href='https://ubosquemoodle.unbosque.edu.co/diseno/cursos/nuevo-EPOC/images/mod-1/009.jpg' data-lightbox='example-1')
+									img.example-image(src='https://ubosquemoodle.unbosque.edu.co/diseno/cursos/nuevo-EPOC/images/mod-1/009.jpg' alt='Módulo 1. Prevención Primaria.')
+					div.span3
+						div.img-footer
+							span Gráfica 3. Prevalencia en Colombia (16). 
+							
+				p El programa Burden of Obstructive Lung Diseases (BOLD) también ha utilizado una metodología estandarizada que comprende cuestionarios y espirometría pre y post-broncodilatador para evaluar la prevalencia y factores de riesgo para la EPOC en personas de 40 años o más en todo el mundo. Las encuestas se han completado en 29 países y los resultados han reportado una prevalencia de EPOC de 10.1% en general, 11.8% para los hombres, y 8,5% para las mujeres (17).
+				
+				//- imagen o video				
+				div.banner-video
+					div.span9
+						div#video
+							figure.galeria
+								a.example-image-link(href='https://ubosquemoodle.unbosque.edu.co/diseno/cursos/nuevo-EPOC/images/mod-1/010.jpg' data-lightbox='example-1')
+									img.example-image(src='https://ubosquemoodle.unbosque.edu.co/diseno/cursos/nuevo-EPOC/images/mod-1/010.jpg' alt='Módulo 1. Prevención Primaria.')
+					div.span3
+						div.img-footer
+							span Gráfica 4. Epidemiología de la EPOC (13,15,16)
+				
+				p La morbilidad por EPOC puede verse afectada por otras afecciones crónicas concomitantes (por ejemplo, enfermedades cardiovasculares, trastornos musculoesqueléticos, diabetes mellitus) que están relacionados con el tabaquismo, el envejecimiento y la EPOC. Estas condiciones crónicas pueden significativamente perjudicar el estado de salud del paciente, además de interferir con el manejo de la EPOC y son los principales impulsores de hospitalizaciones y costos para pacientes con EPOC(1,2,4)
+				
+							
+				//- progeso
+				div.progreso
+					h2 progreso
+					div#progreso40
+						
+						
+				
+						
+				
+				//- Material modulo
+				+material-modulo('material-mod-1')
+				
+				//- progrso y contador
+				+paginador('https://ubosquemoodle.unbosque.edu.co/mod/book/view.php?id=301266&chapterid=9018', 'back', 'https://ubosquemoodle.unbosque.edu.co/mod/book/view.php?id=301266&chapterid=9020', 'forward')
+	
+
+//- Final part of body
+//- Page transitions js
+include ../includes/js-body-ends.jade
+		
+		
+			

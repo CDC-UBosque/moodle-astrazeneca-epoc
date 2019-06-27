@@ -1,0 +1,108 @@
+// -----------------------
+// material modulo
+// -----------------------
+
+.curso-cc,
+#region-main .curso-cc{
+	
+	.btn-primary{
+		background: $color_brand_light_blue;
+		border: 1px solid $color_brand_light_blue;
+		color: $color_white;
+	    border-radius: 0;
+	    padding: 0.6rem 1rem 0.3rem;
+	    text-shadow: none;
+	    font-family: $font_hel_medium;
+	    font-size: 16px;
+	    line-height: initial;
+	    transition: all ease-in-out .2s;
+	    text-decoration: none;
+	    
+	    .fa{
+		    width: initial;
+		}
+	    
+	    &:hover{
+		    background: $color_white;
+			border: 1px solid $color_brand_light_blue;
+			color: $color_brand_light_blue;
+	    }
+	}
+	
+	.pager{
+		
+		li{
+			
+			a{
+				background: $color_brand_blue;
+			    color: $color_white;
+			    border-radius: 0;
+			    border: 1px solid $color_brand_blue;
+			    padding: 0.8rem 1rem 0.5rem;
+			    font-family: $font_hel_medium;
+			    font-size: 16px;
+			    line-height: initial;
+			    text-decoration: none;
+			    
+			    .fa{
+				    width: initial;
+			    }
+			    
+			    &:hover{
+				    background: $color_brand_blue;
+				    color: $color_white;
+				    border-radius: 0;
+				    border: 1px solid $color_white;
+				    text-decoration: none;
+			    }
+			    
+			}
+			
+		}
+		
+		.disabled{
+			a{
+				opacity: 0.2;
+				&:hover{
+					background: $color_brand_blue;
+				    color: $color_white;
+				    border: 1px solid $color_brand_blue;
+				}
+			}
+		}
+		
+	}
+	
+	.menuanchorbot{
+		
+		a{
+			background: $color_brand_bright_blue;
+		    border-radius: 0;
+		    border: 1px solid $color_brand_bright_blue;
+		    padding: 0.8rem 1rem 0.5rem;
+		    @include font_universal (
+				$font_family_line_height: 16px,
+				$font_family_weight: 300,
+				$font_family_size: 13px,
+				$font_family_color: $color_brand_blue
+			);
+		    line-height: initial;
+		    text-decoration: none;
+		    display: inline-block;
+		    
+		    .fa{
+			    width: initial;
+		    }
+		    
+		    &:hover{
+			    background: $color_brand_blue;
+			    color: $color_brand_bright_blue;
+			    border-radius: 0;
+			    border: 1px solid $color_brand_bright_blue;
+		    }
+		    
+		}
+		
+	}
+	
+}

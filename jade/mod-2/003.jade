@@ -1,0 +1,539 @@
+include ../mixins.jade
+
+//- Head html tag
+include ../includes/header.jade
+
+//- Content
+div.curso-cc
+			
+	div.container-fluid
+		div.row-fluid
+			article.content-cc.article
+			
+				div.first_part
+					//- banner modulo
+					+banner('banner-2')
+				
+					//- menu
+					+menu
+			
+				+titulos-modulo('Módulo 2. Prevención Secundaria.')
+				
+				h3 3. Diagnóstico de la EPOC
+				
+				p En el punto anterior se habló sobre los síntomas y signos más frecuentes en los estadios iniciales de la EPOC. Muy lejos de ser una excepción en el proceso de razonamiento clínico, para el diagnóstico de la EPOC, es de vital importancia explorar el motivo de consulta, los antecedentes médicos, personales, sociales y familiares del paciente, el conocimiento previo de la enfermedad y las expectativas y los mitos asociados a la misma. Todo lo anterior nos ayudará a realizar un diagnóstico completo, oportuno y a definir las conductas de intervención médica, educativa, de rehabilitación o paliativas que se puedan ofrecer al paciente y a su familia.  Sin embargo, es importante recordar que el diagnóstico definitivo se hace con una Espirometría, que presente un cociente VEF1/CVF (Volumen espiratorio en el primer segundo/capacidad vital forzada) post broncodilatador menor de 0,70.(1)
+					
+				div.banner-video.wow.fadeInUp
+					div.span12
+						div#video
+							div.embed-container
+								iframe(src="https://www.youtube.com/embed/njmDVtrGsRM" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen)
+					
+					
+				//- imagen o video				
+				div.banner-video
+					div.span9
+						div#video
+							figure.galeria
+								a.example-image-link(href='https://ubosquemoodle.unbosque.edu.co/diseno/cursos/nuevo-EPOC/images/mod-2/001.jpg' data-lightbox='example-1')
+									img.example-image(src='https://ubosquemoodle.unbosque.edu.co/diseno/cursos/nuevo-EPOC/images/mod-2/001.jpg' alt='Módulo 2. Prevención Secundaria.')
+					div.span3
+						div.img-footer
+							span Gráfico 1. Componentes diagnósticos de la EPOC. Modificado de Global Strategy for the Diagnosis, Management, and Prevention of Chronic Obstructive Lung Disease 2019 Report. 2018 Nov 14.
+							
+							
+				h3 Espirometría
+				
+				p La espirometría evalúa la capacidad ventilatoria de un individuo de acuerdo con su edad, género y estatura, mediante la realización de una inspiración máxima hasta  espiración máxima (9).
+				
+				//- imagen o video				
+				div.banner-video
+					div.span9
+						div#video
+							figure.galeria
+								a.example-image-link(href='https://ubosquemoodle.unbosque.edu.co/diseno/cursos/nuevo-EPOC/images/mod-2/002.jpg' data-lightbox='example-1')
+									img.example-image(src='https://ubosquemoodle.unbosque.edu.co/diseno/cursos/nuevo-EPOC/images/mod-2/002.jpg' alt='Módulo 2. Prevención Secundaria.')
+					div.span3
+						div.img-footer
+							span Fuente de la Imagen: 
+								a(href='https://es.m.wikipedia.org/wiki/Archivo:DoingSpirometry.JPG' target='_blank') https://es.m.wikipedia.org/wiki/Archivo:DoingSpirometry.JPG
+								
+								
+				p Para su realización, se le pide al usuario que se siente y su nariz se ocluye con una pinza especial. Se le indica respirar por una boquilla unida a un sistema que mide el volumen de aire, el tiempo y la velocidad de entrada y salida del aire (9). 
+				
+				p El paciente respira normalmente y al final de una espiración normal se le pide que tome aire hasta llenar todo el pulmón y que bote el aire lo más rápido posible hasta que ya no salga más. (9)
+				
+				//- imagen o video				
+				div.banner-video
+					div.span9
+						div#video
+							figure.galeria
+								a.example-image-link(href='https://ubosquemoodle.unbosque.edu.co/diseno/cursos/nuevo-EPOC/images/mod-2/003.jpg' data-lightbox='example-1')
+									img.example-image(src='https://ubosquemoodle.unbosque.edu.co/diseno/cursos/nuevo-EPOC/images/mod-2/003.jpg' alt='Módulo 2. Prevención Secundaria.')
+					div.span3
+						div.img-footer
+							span Fuente de la Imagen: National Heart Lung and Blood Insitute (NIH) - National Heart Lung and Blood Insitute (NIH) /File:Spirometry NIH.jpg. Created: 12 November 2013
+							
+				h3 Veamos otro video de la espirometría:
+				
+				div.banner-video.wow.fadeInUp
+					div.span12
+						div#video
+							div.embed-container
+								iframe(src="https://www.youtube.com/embed/_h4C7YHihMg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen)
+								
+				h3 Recomendaciones para el paciente antes de realizar el examen de espirometría.
+				
+				p Es necesario tener en cuenta la siguiente lista de chequeo de lo que se debe evitar previa realización de la espirometría (10):
+
+								
+								
+				//- Table
+				table.table.table-striped
+					caption Tabla 3.
+					thead
+						tr
+							th Actividad a evitar
+							th Tiempo antes de la realización de la Espirometría (en horas)
+					tbody
+						tr
+							td Consumo de bebidas alcohólicas
+							td 4
+						tr
+							td Consumo de alimentos principales
+							td 2
+						tr
+							td Ejercicio vigoroso
+							td 1/2
+						tr
+							td Fumar 
+							td >1
+					thead
+						tr
+							th Uso de medicamentos (Para prueba post broncodilatador)
+							th Tiempo antes de la realización de la Espirometría (en horas)
+					tbody
+						tr
+							td Broncodilatadores de acción corta 
+							td 6
+						tr
+							td Broncodilatadores de acción larga (combinaciones o preparaciones de uso dos veces al día) 
+							td 24
+						tr
+							td Tiotropio (o preparaciones de uso una vez al día) 
+							td 48
+							
+						tr
+							td(colspan='2').small Tomado y traducido por el autor de referencia 10.
+							
+				
+				h3 Definiciones de la espirometría:
+							
+				//- Acordion
+				div.accordion#accordion2
+					div.accordion-group
+						div.accordion-heading
+							a.accordion-toggle(data-toggle='collapse' data-parent='#accordion2' href='#collapseOne')
+								span Volumen residual 
+						div#collapseOne.accordion-body.collapse.in
+							div.accordion-inner
+								p olumen de aire que queda en el pulmón, que no sale y no se puede medir con la espirometría (9)
+								
+					div.accordion-group
+						div.accordion-heading
+							a.accordion-toggle(data-toggle='collapse' data-parent='#accordion2' href='#collapseTwo')
+								span Capacidad vital forzada (CVF)
+						div#collapseTwo.accordion-body.collapse
+							div.accordion-inner
+								p Es el volumen total de aire que se puede expulsar forzadamente después de una inspiración máxima. Su resultado depende de la colaboración del paciente, condición de la musculatura diafragmática y torácica, de la capacidad de distensión y retracción del pulmón, de la pleura, del tórax y del abdomen, de la resistencia de la vía aérea y del volumen residual. (9,11)
+								
+					div.accordion-group
+						div.accordion-heading
+							a.accordion-toggle(data-toggle='collapse' data-parent='#accordion2' href='#collapse3')
+								span Volumen espiratorio forzado en el primer segundo (VEF1)
+						div#collapse3.accordion-body.collapse
+							div.accordion-inner
+								p El volumen de aire que se expulsa en el primer segundo. Está determinado por los mismos factores que la CVF y disminuye en el caso de una obstrucción a la salida del flujo. En la EPOC es la causa de la disminución del cociente VEF1/CVF (<0,7). En un individuo sin enfermedad se expulsa en el primer segundo más del 70 a 80%  de la capacidad vital (VEF1/CVF MAYOR DE 70). En niños esta relación es más alta (> o = 80%) y en adultos mayores es menor del 70%.(9)
+								
+									
+				h3 Espirometría normal
+				
+				p Es posible obtener dos curvas diferentes, que permiten analizar la relación de velocidad de entrada y salida de aire (velocidad de flujo) con el volumen y otra que permite relacionar el volumen con el tiempo. 
+				p Las curvas normales pueden lucir similar a las siguientes:
+				
+				
+				//- Table
+				table.table.table-striped
+					caption Figura 2. Patrones de curva en espirometría normal
+					tbody
+						tr
+							td 
+								img(src='https://ubosquemoodle.unbosque.edu.co/diseno/cursos/nuevo-EPOC/images/mod-2/004.jpg')
+								p Adaptada de: Cimas Hernando E, Pérez Fernández JI. Técnica e interpretación de espirometría en atención primaria. Editorial Luzán 2003;5.
+							td 
+								img(src='https://ubosquemoodle.unbosque.edu.co/diseno/cursos/nuevo-EPOC/images/mod-2/005.jpg')
+								p Adaptada de: Cimas Hernando E, Pérez Fernández JI. Técnica e interpretación de espirometría en atención primaria. Editorial Luzán 2003;5.
+						tr
+							td Curva Volumen / tiempo
+								ul
+									li Ascenso rápido en el segundo 1
+									li Luego el ascenso es lento hasta alcanzar meseta (CVF)
+							td Curva Flujo / volumen
+								ul
+									li Ascenso rápido en el segundo 1 hasta el pico espiratorio forzado.
+									li Luego desciende en línea recta con una pendiente suave
+								| En la parte final se aplana levemente y termina
+
+
+				p Se puede presentar una forma de “capuchón” de la curva flujo/volumen en sujetos que poseen fuerza muscular y jorobas en jóvenes, como patrones frecuentes sin significado patológico. (12)
+				
+				
+				//- Table
+				table.table.table-striped
+					caption Figura 3. Alteraciones sin significado patológico del a curva flujo/volumen
+					tbody
+						tr
+							td 
+								img(src='https://ubosquemoodle.unbosque.edu.co/diseno/cursos/nuevo-EPOC/images/mod-2/006.jpg')
+								p Adaptada de: Cimas Hernando E, Pérez Fernández JI. Técnica e interpretación de espirometría en atención primaria. Editorial Luzán 2003;5.
+							td 
+								img(src='https://ubosquemoodle.unbosque.edu.co/diseno/cursos/nuevo-EPOC/images/mod-2/007.jpg')
+								p Adaptada de: Cimas Hernando E, Pérez Fernández JI. Técnica e interpretación de espirometría en atención primaria. Editorial Luzán 2003;5.
+						tr
+							td “Capuchón”
+							td “Joroba”
+				
+				
+				
+				h3 La espirometría adecuada
+							
+				p Los siguientes puntos son fundamentales para realizar la espirometría y obtener un resultado confiable (1,9): 
+				
+				//- Tabs
+				div.bs-docs
+					ul#myTab.nav.nav-tabs
+						li.active
+							a(href='#1' data-toggle='tab') 1
+						li
+							a(href='#2' data-toggle='tab') 2
+						li
+							a(href='#3' data-toggle='tab') 3
+					div#myTabContent.tab-content
+						div.tab-pane.fade.active.in#1
+							p Certificar que el espirómetro funcione correctamente, que esta calibrado y que se le está realizando el mantenimiento adecuado. 
+						div.tab-pane.fade#2
+							p La persona que realiza la prueba debe tener el entrenamiento en la técnica correcta para realizar el examen
+						div.tab-pane.fade#3
+							p Que el paciente haga el esfuerzo máximo y expulse todo el aire posible.		
+				
+							
+				p El paciente debe realizar 3 maniobras aceptables. Están se definen de la siguiente manera (9):
+				
+				//- Acordion
+				div.accordion#accordion3
+					div.accordion-group
+						div.accordion-heading
+							a.accordion-toggle(data-toggle='collapse' data-parent='#accordion3' href='#collapse6')
+								span Inicio adecuado
+						div#collapse6.accordion-body.collapse.in
+							div.accordion-inner
+								ul
+									li Inicio rápido, perpendicular, continuo, sin interrupciones. (Figura 2)
+									li Volumen extrapolado &lt;5% de la CVF o &lt; 150 ml. 
+
+								
+					div.accordion-group
+						div.accordion-heading
+							a.accordion-toggle(data-toggle='collapse' data-parent='#accordion3' href='#collapse7')
+								span Características del trazo: 
+						div#collapse7.accordion-body.collapse
+							div.accordion-inner
+								ul
+									li No irregularidades ni tos en el primer segundo
+									li El volumen aumenta, no disminuye en el trazo
+									li No hay terminación súbita de la espiración, aparición súbita de la meseta, ni caída abrupta del flujo 
+									
+					div.accordion-group
+						div.accordion-heading
+							a.accordion-toggle(data-toggle='collapse' data-parent='#accordion3' href='#collapse8')
+								span Final adecuado:  
+						div#collapse8.accordion-body.collapse
+							div.accordion-inner
+								ul
+									li Línea espiratoria logra meseta, sin cambios de volumen en más de 1 segundo
+									li Tiempo espiratorio 6 segundos o más (en los niños es 3 segundos). 
+
+
+				p Teniendo en cuenta lo anterior, el informe adecuado debe contener (9): 
+				
+				
+				//- Tabs
+				div.bs-docs
+					ul#myTab.nav.nav-tabs
+						li.active
+							a(href='#5' data-toggle='tab') 1
+						li
+							a(href='#6' data-toggle='tab') 2
+						li
+							a(href='#7' data-toggle='tab') 3
+						li
+							a(href='#8' data-toggle='tab') 4
+					div#myTabContent.tab-content
+						div.tab-pane.fade.active.in#5
+							p Tres maniobras aceptables, en donde
+							ul
+								li No hay variedad > 150 ml en las dos mejores medidas de CVF
+								li No hay variedad > 150 ml en las dos mejores medidas de VEF1
+
+						div.tab-pane.fade#6
+							p -	La CVF y VEF1 de curvas aceptables. Se reportan los mejores, así no sean de la misma medición
+						div.tab-pane.fade#7
+							p -	La mejor curva es la que la sumatoria del VEF1 mas la CVF da un mayor resultado
+						div.tab-pane.fade#8
+							p -	-	La gráfica y flujos de la mejor curva
+				
+				p Si no se logra lo anterior después de 8 maniobras, se debe suspender el examen y agendar nueva cita (9). 
+				
+				h3 Errores en la toma de la espirometría que generan anormalidades en las curvas.
+				
+				p Una de las principales razones para encontrar anormalidad en las curvas y por ende en el análisis de los resultados de la espirometría, es el error en la técnica por el paciente. Estos errores son evidentes durante la observación continua en la realización del examen o al observar las curvas (11). Estos errores pueden ser: 
+				
+				ol
+					li Inhalación incompleta
+					li Esfuerzo incompleto durante la exhalación 
+					li Inhalación adicional durante el examen
+					li Agarre inadecuado de la boquilla
+					li Inicio lento de la exhalación forzada 
+					li Exhalación incompleta
+					li Exhalación por la nariz
+					li Tos. 
+					
+					
+				h3 Ejemplos de curva volumen/tiempo anormales, debido a error en la técnica (11)
+				
+				
+				//- Acordion
+				div.accordion#accordion4
+					div.accordion-group
+						div.accordion-heading
+							a.accordion-toggle(data-toggle='collapse' data-parent='#accordion4' href='#collapse9')
+								span Tos
+						div#collapse9.accordion-body.collapse.in
+							div.accordion-inner
+								p Anormalidad en la gráfica
+								img(src='https://ubosquemoodle.unbosque.edu.co/diseno/cursos/nuevo-EPOC/images/mod-2/008.jpg')
+								
+					div.accordion-group
+						div.accordion-heading
+							a.accordion-toggle(data-toggle='collapse' data-parent='#accordion4' href='#collapse10')
+								span inicio lento de la exhalación forzada
+						div#collapse10.accordion-body.collapse
+							div.accordion-inner
+								p Anormalidad en la gráfica
+								img(src='https://ubosquemoodle.unbosque.edu.co/diseno/cursos/nuevo-EPOC/images/mod-2/009.jpg') 
+									
+					div.accordion-group
+						div.accordion-heading
+							a.accordion-toggle(data-toggle='collapse' data-parent='#accordion4' href='#collapse11')
+								span Inhalación extra durante la maniobra
+						div#collapse11.accordion-body.collapse
+							div.accordion-inner
+								p Anormalidad en la gráfica
+								img(src='https://ubosquemoodle.unbosque.edu.co/diseno/cursos/nuevo-EPOC/images/mod-2/010.jpg')
+								
+					div.accordion-group
+						div.accordion-heading
+							a.accordion-toggle(data-toggle='collapse' data-parent='#accordion4' href='#collapse12')
+								span Finalización temprana de la maniobra
+						div#collapse12.accordion-body.collapse
+							div.accordion-inner
+								p Anormalidad en la gráfica
+								img(src='https://ubosquemoodle.unbosque.edu.co/diseno/cursos/nuevo-EPOC/images/mod-2/011.jpg')
+			
+			
+				h3 Respuesta al broncodilatador
+				
+				p Esta prueba se realiza con broncodilatador de acción corta. En caso de que no haya contraindicaciones para el uso de β2, se usan 100 mcg inhalados de salbutamol cada 30 segundos por 4 dosis y se repite la espirometría de 15 a 30 minutos después. Si hay contraindicación para el β2, se usan 4 inhalaciones de bromuro de ipratropio que entrega 40 mcg por puff  (160 mcg) y se repite la espirometría 30 minutos después. Se considera como respuesta positiva al broncodilatador un aumento de la CV y/o del VEF1 de más de 200 ml y que esto represente más del 12% del valor basal (9), sugiriendo componente obstructivo reversible (Asma). 
+				
+				h3 Patrones de la espirometría
+				
+				//- Acordion
+				div.accordion#accordion5
+					div.accordion-group
+						div.accordion-heading
+							a.accordion-toggle(data-toggle='collapse' data-parent='#accordion5' href='#collapse13')
+								span Obstructivo
+						div#collapse13.accordion-body.collapse.in
+							div.accordion-inner
+								p Existe un obstáculo a la salida del aire que en la espirometría se evidencia como una espiración alargada, por lo que se tardará más tiempo en alcanzar la CVF; el VEF1 estará disminuido (sale menos aire en el primer segundo) y disminución del cociente VEF1/CVF (11,12)
+								
+								//- Table
+								table.table.table-striped
+									caption Figura 4. Espirometría Obstructiva
+									tbody
+										tr
+											td 
+												img(src='https://ubosquemoodle.unbosque.edu.co/diseno/cursos/nuevo-EPOC/images/mod-2/012.jpg')
+												p Adaptada de: Cimas Hernando E, Pérez Fernández JI. Técnica e interpretación de espirometría en atención primaria. Editorial Luzán 2003;5.
+											td 
+												img(src='https://ubosquemoodle.unbosque.edu.co/diseno/cursos/nuevo-EPOC/images/mod-2/013.jpg')
+												p Adaptada de: Cimas Hernando E, Pérez Fernández JI. Técnica e interpretación de espirometría en atención primaria. Editorial Luzán 2003;5.
+										tr
+											td Curva volumen tiempo
+											td Curva flujo volumen
+								
+					div.accordion-group
+						div.accordion-heading
+							a.accordion-toggle(data-toggle='collapse' data-parent='#accordion14' href='#collapse14')
+								span Restrictivo
+						div#collapse14.accordion-body.collapse
+							div.accordion-inner
+								p Este patrón refleja una menor capacidad para movilizar el flujo de aire, que puede ser debida a perdida de la elasticidad pulmonar, disminución en la movilización de la caja torácica, resecciones quirúrgicas de pulmón, entre otras. Se refleja en una reducción de la CVF, y del FEV1. Esta disminución proporcional lleva a que la relación VEF1/CVF permanezca normal (11,12)
+								
+								//- Table
+								table.table.table-striped
+									caption Figura 5
+									tbody
+										tr
+											td 
+												img(src='https://ubosquemoodle.unbosque.edu.co/diseno/cursos/nuevo-EPOC/images/mod-2/014.jpg')
+												p Adaptada de: Cimas Hernando E, Pérez Fernández JI. Técnica e interpretación de espirometría en atención primaria. Editorial Luzán 2003;5.
+											td 
+												img(src='https://ubosquemoodle.unbosque.edu.co/diseno/cursos/nuevo-EPOC/images/mod-2/015.jpg')
+												p Adaptada de: Cimas Hernando E, Pérez Fernández JI. Técnica e interpretación de espirometría en atención primaria. Editorial Luzán 2003;5.
+										tr
+											td Curva volumen tiempo
+											td Curva flujo volumen
+											
+					div.accordion-group
+						div.accordion-heading
+							a.accordion-toggle(data-toggle='collapse' data-parent='#accordion14' href='#collapse15')
+								span Mixto
+						div#collapse15.accordion-body.collapse
+							div.accordion-inner
+								p Este patrón se presenta en condiciones en las que coinciden patologías que generan obstrucción (Como la EPOC) y otra que genere restricción como fibrosis pulmonar y se ve disminuidos las tres mediciones: CVF, VEF1 y cociente VEF1/CVF. (12)
+				
+				
+				//- Table
+				table.table.table-striped
+					caption Tabla 4. Patrones de espirometría 
+					thead
+						tr
+							th
+							th VEF1/CVF
+							th CVF
+							th VEF1
+					tbody
+						tr
+							td Obstructivo
+							td Disminuido
+							td Normal
+							td Disminuido
+						tr
+							td Restrictivo
+							td Normal
+							td Disminuido
+							td Disminuido
+						tr
+							td Mixto
+							td Disminuido
+							td Disminuido
+							td Disminuido
+						tr
+							td(colspan='4').small Elaboración propia.
+							
+							
+				//- texto resaltado
+				div
+					div.resaltado-txt
+						div.span2
+							+icon_danger
+						div.span10
+							p Punto clave: Para hacer una adecuada interpretación de la espirometría, se debe revisar las curvas y luego los valores de los parámetros espiratorios en el siguiente orden:
+							ol
+								li VEF1/CVF
+								li CVF
+								li VEF
+				
+				
+				h3 Contraindicaciones para la realización de la espirometría (13)
+				
+				ul
+					li Contraindicaciones relativas:
+				
+					ol
+						li Enfermedad cardiovascular aguda o descompensada en los últimos tres meses (infarto agudo de miocardio, insuficiencia cardiaca, enfermedad cerebrovascular)
+						li Neumotórax en los noventa días previos, 
+						li Riesgo de hemoptisis o ruptura de aneurisma
+						li Antecedente de cirugía de tórax, abdomen, ojos u oídos en los últimos tres meses. 
+						li Infecciones respiratorias agudas en las últimas dos semanas
+						li Tuberculosis pulmonar activa 
+						li Embarazo avanzado o complicado
+						
+					li Contraindicaciones absolutas:
+					
+						ul
+							li Pacientes con traqueotomía o sonda pleural ya que los resultados que se obtendrán no serán confiables
+
+
+				h3 Clasificación de la severidad de la EPOC con la espirometría.
+				
+				p El diagnóstico de la EPOC se hace con un cociente VEF1/CVF >0.7, que debe mantenerse en la maniobra post – broncodilatador.  Adicional a este dato, la espirometría permite conocer la severidad de la obstrucción por la EPOC, y apoya en la selección del tratamiento (1).
+				
+				
+				//- Table
+				table.table.table-striped
+					caption Tabla 5. Estadio Gold de severidad basado en la espirometría
+					thead
+						tr
+							th Estadio GOLD
+							th Severidad
+							th Espirometría
+					tbody
+						tr
+							td I
+							td Leve 
+							td VEF1/CVF  &lt;0.7 y VEF1  ≥ 80% del esperado 
+						tr
+							td II
+							td Moderada 
+							td VEF1/CVF  &lt;0.7 y VEF1  ≥ 50% y &lt; 80% del esperado
+						tr
+							td III
+							td Severa 
+							td VEF1/CVF  &lt;0.7 y VEF1  ≥ 30% y &lt; 50% del esperado
+						tr
+							td IV
+							td Muy severa 
+							td VEF1/CVF  &lt;0.7 y VEF1 &lt; 30% del esperado
+						tr
+							td(colspan='4').small Tomado de: Global Strategy for the Diagnosis, Management, and Prevention of Chronic Obstructive Lung Disease 2019 Report. 2018 Nov 14.
+							
+				
+				h3 Otros exámenes de apoyo diagnóstico
+				
+				p La guía de práctica clínica del Ministerio de Salud Colombiano recomienda realizar radiografía de tórax, oximetría de pulso y gases arteriales para el diagnóstico diferencial de los pacientes con patología respiratoria crónica. (7)
+				
+							
+				//- progeso
+				div.progreso
+					h2 progreso
+					div#progreso30
+						
+						
+				
+						
+				
+				//- Material modulo
+				+material-modulo('material-mod-2')
+				
+				//- progrso y contador
+				+paginador('https://ubosquemoodle.unbosque.edu.co/mod/book/view.php?id=301274&chapterid=9027', 'back', 'https://ubosquemoodle.unbosque.edu.co/mod/book/view.php?id=301274&chapterid=9029', 'forward')
+	
+
+//- Final part of body
+//- Page transitions js
+include ../includes/js-body-ends.jade
+		
+		
+			

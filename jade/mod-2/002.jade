@@ -1,0 +1,104 @@
+include ../mixins.jade
+
+//- Head html tag
+include ../includes/header.jade
+
+//- Content
+div.curso-cc
+			
+	div.container-fluid
+		div.row-fluid
+			article.content-cc.article
+			
+				div.first_part
+					//- banner modulo
+					+banner('banner-2')
+				
+					//- menu
+					+menu
+			
+				+titulos-modulo('Módulo 2. Prevención Secundaria.')
+				
+				h3 2. Detección temprana de la EPOC
+				
+				p En abril de 2016, la comisión de servicios preventivos de EE.UU (US Preventive Services Task Force por su nombre en inglés), actualizó su recomendación del 2008 en contra de la tamización para EPOC en personas asintomáticas o sin antecedente familiar de deficiencia de alfa 1 antitripsina, mediante el uso de cuestionarios clínicos de predicción de riesgo pretest o de espirometría; pues no se encontró evidencia que la detección temprana de la EPOC alterara el curso de la enfermedad o mejorara su pronóstico (5).
+				p La guía conjunta publicada en el 2011 del American College of Physicians, el American College of Chest Physicians, la American Thoracic Society  y la European Respiratory Society, no recomienda usar la espirometría para la detección de la EPOC en pacientes asintomáticos, incluso en presencia de factores de riesgo, pues conlleva a realización de exámenes innecesarios, consumo de recursos y exposición a tratamiento, sin una consecuente reducción de la aparición de síntomas futuros. Adicionalmente, consideran que el resultado de la espirometría no tiene impacto sobre el abandono del consumo de tabaco o en prolongar los períodos de abstinencia (6). 
+				p En Colombia, la Guía de Práctica Clínica del Ministerio de Salud y Protección Social, no recomienda el uso de la espirometría para tamización en población asintomática, considerando que esta estrategia no representa costo-beneficio, ni es costo-efectiva (Por cada 11 espirometrías solicitadas a pacientes asintomáticos, tan solo se detecta 1 caso de la EPOC). No obstante, considera que dicha estrategia si resulta ser costo-efectiva, cuando se realiza tamización a pacientes con factores de riesgo mediante el uso de cuestionarios prediseñados (7). Por lo anterior, el Ministerio de Salud recomienda practicar el siguiente cuestionario a individuos mayores de 40 años que presenten uno o más factores de riesgo:
+
+								
+								
+				//- Table
+				table.table.table-striped
+					caption Tabla 2.
+					thead
+						tr
+							th N°
+							th PREGUNTA
+							th SI 
+							th NO
+					tbody
+						tr
+							td 1
+							td ¿Tose muchas veces la mayoría de los días?
+							td &nbsp;
+							td &nbsp;
+						tr
+							td 2
+							td ¿Tiene flemas o mocos la mayoría de los días?
+							td &nbsp;
+							td &nbsp;
+						tr
+							td 3
+							td ¿Se queda sin aire más fácilmente que otras personas de su edad?
+							td &nbsp;
+							td &nbsp;
+						tr
+							td 4
+							td ¿Es mayor de 40 años?
+							td &nbsp;
+							td &nbsp;
+						tr
+							td 5
+							td ¿Actualmente fuma o es un ex-fumador?
+							td &nbsp;
+							td &nbsp;
+						tr
+							td(colspan='4').small Modificada de: “Abecé detección temprana de la enfermedad pulmonar obstructiva crónica-EPOC”.  
+								a(href='https://www.minsalud.gov.co/Paginas/default.aspx') www.minsalud.gov.co 
+								br/ Sí contesta “sí” a tres preguntas o más, la guía del Ministerio recomienda solicitar espirometría pre y post broncodilatador (8). 
+				
+				
+								
+				//- texto resaltado
+				div
+					div.resaltado-txt
+						div.span2
+							+icon_danger
+						div.span10
+							p Punto clave: Es responsabilidad del personal de salud identificar factores de riesgo, insistir en el abandono de conductas nocivas asociadas a la EPOC, como el tabaquismo, y brindar asesoría y educación de calidad a cerca de la enfermedad, el autocuidado y la promoción de estilos de vida saludables.
+							+icon_book_more_info('https://www.minsalud.gov.co/sites/rid/Lists/BibliotecaDigital/RIDE/VS/PP/ENT/programa-cesacion-tabaco.pdf ')
+									
+								
+							
+				//- progeso
+				div.progreso
+					h2 progreso
+					div#progreso20
+						
+						
+				
+						
+				
+				//- Material modulo
+				+material-modulo('material-mod-2')
+				
+				//- progrso y contador
+				+paginador('https://ubosquemoodle.unbosque.edu.co/mod/book/view.php?id=301274&chapterid=9026', 'back', 'https://ubosquemoodle.unbosque.edu.co/mod/book/view.php?id=301274&chapterid=9028', 'forward')
+	
+
+//- Final part of body
+//- Page transitions js
+include ../includes/js-body-ends.jade
+		
+		
+			

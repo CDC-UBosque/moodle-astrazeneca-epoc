@@ -1,0 +1,102 @@
+include ../mixins.jade
+
+//- Head html tag
+include ../includes/header.jade
+
+//- Content
+div.curso-cc
+			
+	div.container-fluid
+		div.row-fluid
+			article.content-cc.article
+			
+				div.first_part
+					//- banner modulo
+					+banner('banner-1')
+				
+					//- menu
+					+menu
+			
+				+titulos-modulo('Módulo 1. Prevención Primaria.')
+					
+				h3 Factores de riesgo 
+				
+				p La EPOC es el resultado de la interacción entre el grado de exposición (inhalación) y la respuesta del individuo a los agentes nocivos; por lo tanto, se han considerado como factores de riesgo las condiciones propias del huésped que le ocasionan mayor susceptibilidad a desarrollar la enfermedad y los agentes que tienen la capacidad de producirla. Los factores de riesgo pueden ser modificables o no modificables (8).
+
+				p En el mundo, desde la década de los 50 se conoce que el principal factor de riesgo modificable para la EPOC es el tabaquismo y su relación causal ha sido establecida a través de numerosos estudios prospectivos de cohortes entre ellos el del British Medical Research Council (9) y del Framingham Heart Study Offspring (10,11).
+
+				p En países en vía de desarrollo, factores como la exposición a biomasa (principalmente a humo de leña para cocinar o calentar el ambiente) y otras exposiciones ambientales y laborales, tienen un impacto significativo sobre las alteraciones funcionales del sistema respiratorio; así como también lo tiene el antecedente de tuberculosis pulmonar; sin embargo, algunos autores han sugerido que, al ser una entidad en sí misma, esta patología no se catalogue como un factor de riesgo para la EPOC (2,4,12).
+
+				p En Colombia, especialmente en la población que reside a más de 2500 metros sobre el nivel del mar, la exposición al humo de la leña utilizada para cocinar o para calentar las casas es una causa frecuente de EPOC, los cambios en los hábitos y en la disponibilidad de servicios públicos como el gas natural son medidas costo-efectivas y pueden haber tenido un impacto favorable en la disminución de este factor (4,12).
+
+				p Dentro de los factores de riesgo no modificables se encuentran la edad mayor de 60 años y el género masculino (3).
+
+
+				h4 Factores de Riesgo Exposicionales
+				
+				//- Table
+				table.table.table-striped
+					caption Tabla 1. Factores de riesgo exposicionales
+					thead
+						tr
+							th FACTOR DE RIESGO
+							th DESCRIPCIÓN
+					tbody
+						tr
+							td 
+								img(src='https://ubosquemoodle.unbosque.edu.co/diseno/cursos/nuevo-EPOC/images/mod-1/002.jpg' alt='Módulo 1. Prevención Primaria.')
+							td Los fumadores de cigarrillo presentan una prevalencia más alta de síntomas respiratorios, una reducción más rápida del VEF1 (Volumen Espiratorio Forzado durante el primer segundo) y una mortalidad por EPOC más alta que los no fumadores. La mortalidad en los fumadores de pipa y cigarro es menor que en los fumadores de cigarrillo; sin embargo, es mayor al compararlos con los no fumadores. No todas las personas que fuman sufren de EPOC, lo cual sugiere que los factores genéticos podrían modificar el riesgo individual. La exposición pasiva al humo del cigarrillo aumenta la prevalencia de síntomas respiratorios y puede contribuir al desarrollo de la enfermedad (1,2,3,4).
+						tr
+							td 
+								img(src='https://ubosquemoodle.unbosque.edu.co/diseno/cursos/nuevo-EPOC/images/mod-1/003.jpg' alt='Módulo 1. Prevención Primaria.')
+							td En Colombia y otros países en vía de desarrollo (México, Bolivia, Perú y los países del Himalaya) la exposición al humo de leña y otros combustibles de origen orgánico (biomasa) como madera, carbón vegetal, otras materias vegetales y el estiércol en recintos cerrados, constituyen un factor de riesgo comprobado para el desarrollo de la EPOC. Esta exposición es más intensa en alturas mayores a 2500 m donde la leña no sólo se utiliza para cocinar sino para calentar el ambiente (1,4).
+						tr
+							td 
+								img(src='https://ubosquemoodle.unbosque.edu.co/diseno/cursos/nuevo-EPOC/images/mod-1/004.jpg' alt='Módulo 1. Prevención Primaria.')
+							td La contaminación ambiental urbana aumenta la frecuencia de síntomas respiratorios en la población en general y, especialmente en los pacientes con enfermedades cardíacas y pulmonares. Su papel como causa directa de EPOC no es tan importante como el del humo del cigarrillo, pero sí es un factor determinante en la frecuencia y la severidad de las exacerbaciones (1,2,3).
+						tr
+							td 
+								img(src='https://ubosquemoodle.unbosque.edu.co/diseno/cursos/nuevo-EPOC/images/mod-1/005.jpg' alt='Módulo 1. Prevención Primaria.')
+							td La exposición prolongada o intensa a partículas de polvo o sustancias químicas en el trabajo (vapores, irritantes, humos). La exposición a partículas de distintos materiales, irritantes, polvos orgánicos y agentes sensibilizantes puede inducir o incrementar la hiperreactividad bronquial en los pacientes con EPOC (1,2,3).
+						tr
+							td 
+								img(src='https://ubosquemoodle.unbosque.edu.co/diseno/cursos/nuevo-EPOC/images/mod-1/006.jpg' alt='Módulo 1. Prevención Primaria.')
+							td El antecedente de infecciones respiratorias graves en la infancia se ha asociado con una reducción de la función pulmonar, retardo del crecimiento del pulmón y aumento de los síntomas respiratorios en la edad adulta (1).
+						tr
+							td 
+								img(src='https://ubosquemoodle.unbosque.edu.co/diseno/cursos/nuevo-EPOC/images/mod-1/007.jpg' alt='Módulo 1. Prevención Primaria.')
+							td El nivel socioeducativo se ha sugerido como otro factor que aumenta el riesgo; sin embargo, no se ha aclarado si actúa de forma independiente, o por condicionar una mayor exposición a otros factores como: El cigarrillo, el humo de leña, la desnutrición o la contaminación (1,2,3,4).
+						tr
+							td(colspan='2').small Tabla 1. Graficas tomadas de https://icon-icons.com/es/icono/cigarrillo/39527. 
+								br/ https://icon-icons.com/es/icono/de-viaje-vacaciones-vacaciones-incendio-fuego-de-le%C3%B1a/89087
+								br/ https://icon-icons.com/es/buscar/iconos/?filtro=contaminacion
+								br/ https://www.freepik.es/vector-premium/ilustracion-vectorial-contaminacion-aire_2586286.htm
+				
+				
+				
+				
+				
+				
+							
+				//- progeso
+				div.progreso
+					h2 progreso
+					div#progreso30
+						
+						
+				
+						
+				
+				//- Material modulo
+				+material-modulo('material-mod-1')
+				
+				//- progrso y contador
+				+paginador('https://ubosquemoodle.unbosque.edu.co/mod/book/view.php?id=301266&chapterid=9017', 'back', 'https://ubosquemoodle.unbosque.edu.co/mod/book/view.php?id=301266&chapterid=9019', 'forward')
+	
+
+//- Final part of body
+//- Page transitions js
+include ../includes/js-body-ends.jade
+		
+		
+			

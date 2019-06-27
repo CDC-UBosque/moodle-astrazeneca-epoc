@@ -1,0 +1,152 @@
+// -----------------------
+// accordion
+// -----------------------
+
+.curso-cc,
+#region-main .curso-cc{
+	
+	.content-cc{
+		
+		.accordion{
+			
+			@include max-width;
+			margin: 0 auto 2rem;
+			
+			.accordion-group{
+				border: 0px;
+				border-radius: 0px;
+				margin-bottom: 0;
+				margin-top: 0px;
+				
+				/*.accordion-heading{
+					border-bottom: 1px solid $color_brand_blue;
+					
+					.accordion-toggle,
+					.accordion-toggle.collapsed{
+						background: $color_brand_bright_blue;
+						color: $color_brand_blue;
+						@include font_universal (
+							$font_family_line_height:22px,
+							$font_family_weight: 600,
+							$font_family_size: 16px,
+							$font_family_color: $color_brand_blue
+						);
+						
+						&:hover{
+							background: $color_brand_blue;
+							color: $color_white;
+						}
+						
+					}
+					
+				}*/
+				
+				.accordion-heading{
+					border-bottom: 1px solid $color_brand_blue;
+					
+					.accordion-toggle,
+					.accordion-toggle[aria-expanded="true"],
+					.accordion-toggle.collapsed[aria-expanded="true"]{
+						
+						padding-right: 7rem;
+						background: $color_brand_bright_blue;
+						@include font_universal (
+							$font_family_line_height:22px,
+							$font_family_weight: 600,
+							$font_family_size: 16px,
+							$font_family_color: $color_brand_blue
+						);
+						
+						&:hover{
+							background: $color_brand_blue;
+							color: $color_white;
+							
+							&:after{
+								color: $color_white;
+							}
+							
+						}
+						
+						&:before{
+							display: none;
+						}
+						
+						&:after{
+							content: "Ver menos";
+							position: absolute;
+							width: 6rem;
+							height: 1.8rem;
+						    top: 0.6rem;
+						    right: 0.5rem;
+						    font-style: italic;
+						    @include font_universal (
+								$font_family_line_height:16px,
+								$font_family_weight: 300,
+								$font_family_size: 12px,
+								$font_family_color: $color_brand_blue
+							);
+						}
+						
+					}
+					
+					.accordion-toggle.collapsed,
+					.accordion-toggle[aria-expanded="false"],
+					.accordion-toggle.collapsed[aria-expanded="false"]{
+						padding-right: 7rem;
+						background: $color_brand_bright_blue;
+						border: 1px solid $color_white;
+						
+						&:hover{
+							background: $color_brand_blue;
+							color: $color_white;
+							
+							&:after{
+								color: $color_white;
+							}
+							
+						}
+						
+						&:before{
+							display: none;
+						}
+						
+						&:after{
+							content: "Ver más";
+							position: absolute;
+							width: 6rem;
+							height: 1.8rem;
+						    top: 0.6rem;
+						    right: 0.5rem;
+						    @include font_universal (
+								$font_family_line_height:16px,
+								$font_family_weight: 300,
+								$font_family_size: 12px,
+								$font_family_color: $color_brand_blue
+							);
+						}
+						
+					}
+					
+				}
+				
+				.accordion-body{
+					margin-right: 2rem;
+					background: $color_light_background;
+					
+					.flaticon{
+						img{
+						    max-width: 25px;
+						    margin-right: .5rem;
+					    }
+					}
+					
+					
+				}
+				
+			}
+			
+		}
+		
+	}
+	
+}

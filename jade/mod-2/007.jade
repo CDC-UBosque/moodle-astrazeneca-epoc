@@ -1,0 +1,98 @@
+include ../mixins.jade
+
+//- Head html tag
+include ../includes/header.jade
+
+//- Content
+div.curso-cc
+			
+	div.container-fluid
+		div.row-fluid
+			article.content-cc.article
+			
+				div.first_part
+					//- banner modulo
+					+banner('banner-2')
+				
+					//- menu
+					+menu
+			
+				+titulos-modulo('Módulo 2. Prevención Secundaria.')
+				
+				h3 7. Clasificación ABCD para el enfoque terapéutico 
+				
+				p La clasificación de la gravedad de la limitación al flujo del aire en la EPOC se muestra en la Figura 7. Los puntos de corte espirométricos específicos se utilizan con fines de simplificar la clasificación. Cabe señalar que existe una débil correlación entre el VEF1, los síntomas y el deterioro del estado de salud del paciente (1), por esta razón la clasificación actual separa el grado de obstrucción (GOLD 1 2 3 4), de la valoración sintomática del paciente  que se realiza en conjunto con la evaluación del riesgo de sufrir exacerbaciones (ABCD). 
+				
+				//- Table
+				table.table.table-striped
+					caption Figura 7.  Modificado de Global Strategy for the Diagnosis, Management, and Prevention of Chronic Obstructive Lung Disease 2019 Report. 2018 Nov 14.
+					thead
+						tr
+							th Paso 1. Diagnóstico por espirometría
+							th(colspan='2') Paso 2. Limitación del flujo aéreo
+					tbody
+						tr
+							td(rowspan='5') VEF1/CVF post broncodilatador &lt; 0.7
+							td GOLD
+							td VEF1 (%)
+							
+						tr
+							td 1
+							td ≥ 80
+						tr
+							td 2
+							td 50 a 79
+						tr
+							td 3
+							td 30 a 49
+						tr
+							td 4
+							td &lt; 30
+							
+				h3 Paso 3. Evaluación de los síntomas/riesgo de exacerbaciones. 
+				
+				//- imagen o video				
+				div.banner-video
+					div.span9
+						div#video
+							figure.galeria
+								a.example-image-link(href='https://ubosquemoodle.unbosque.edu.co/diseno/cursos/nuevo-EPOC/images/mod-2/018.jpg' data-lightbox='example-1')
+									img.example-image(src='https://ubosquemoodle.unbosque.edu.co/diseno/cursos/nuevo-EPOC/images/mod-2/018.jpg' alt='Módulo 2. Prevención Secundaria.')
+					div.span3
+						div.img-footer
+							span Imagen: Gráfico adaptado de Global Iniciative for Chronic Obstructive Lung Disease GOLD 2019.
+							
+							
+							
+				p Ejemplo para usar la evaluación ABCD:
+				
+				ul
+					li Paciente masculino de 67 años con espirometría que muestra un cociente VEF1/CVF 0.6, VEF 45% del esperado, con una hospitalización en el último año por exacerbación y un CAT de 18 :
+					li Paso 1: Espirometría con cociente menor a 0.7
+					li Paso 2: Limitación al flujo aéreo GOLD 3 (45%)
+					li Paso 3: Una hospitalización en el último año relacionada a exacerbación con un CAT en 18, lo ubica en D.
+					li Paciente con EPOC GOLD 3 – D
+
+							
+				//- progeso
+				div.progreso
+					h2 progreso
+					div#progreso70
+						
+						
+				
+						
+				
+				//- Material modulo
+				+material-modulo('material-mod-2')
+				
+				//- progrso y contador
+				+paginador('https://ubosquemoodle.unbosque.edu.co/mod/book/view.php?id=301274&chapterid=9031', 'back', 'https://ubosquemoodle.unbosque.edu.co/mod/book/view.php?id=301274&chapterid=9033', 'forward')
+	
+
+//- Final part of body
+//- Page transitions js
+include ../includes/js-body-ends.jade
+		
+		
+			
