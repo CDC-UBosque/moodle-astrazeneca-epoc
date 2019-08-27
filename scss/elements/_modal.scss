@@ -1,0 +1,243 @@
+/* ======================= modal ======================= */
+body{
+	
+	.remodal{
+		width: auto;
+		background: $color_light_background;
+		text-align: center;
+		@include font_universal (
+			$font_family_line_height: 22px,
+			$font_family_weight: 300,
+			$font_family_size: 16px,
+			$font_family_color: $color_text
+		);
+		
+		h3{
+			font-size: 23px;
+			font-weight: 800;
+			text-align: center;
+		}
+		
+	}
+	
+	.remodal-close{
+		background: $color_brand_salmon;
+		border-radius: 1rem;
+		color: $color_white;
+		left: -10px;
+		top: -10px;
+		box-shadow: 0px 0px 9px rgba(0,0,0,0.4);
+	}
+	
+	.btn-orange{
+		background:$color_brand_salmon;
+		background-repeat:no-repeat;
+		padding:.4rem 1rem .4rem 1rem;
+		border-radius:3rem;
+		color:$color_white !important;
+		font-weight:600;
+		background-position:95%;
+		background-size:8px;
+		display:inline-block;
+		float:left;
+		margin:.4rem 0;
+		text-decoration:none;
+		min-width: auto;
+		border: 1px solid $color_brand_salmon;
+		
+		
+		&:hover{
+			background:$color_white;
+			color:$color_brand_salmon !important;
+			border: 1px solid $color_brand_salmon;
+		}
+		
+	}
+	
+	.fancybox-title-float-wrap {
+	    position: absolute;
+	    bottom: 0;
+	    right: 0;
+	    left: 0;
+	    margin-bottom: -44px;
+	    z-index: 8050;
+	    text-align: center;
+	    background: #E56B40;
+	    color: $color_white;
+	    text-align: left;
+	    padding: 0.5rem 1rem;
+	    
+	    .child {
+		    display: inline-block;
+		    margin-left: 0;
+		    padding: 2px 20px;
+		    background: none;
+		    background: none;
+		    -webkit-border-radius: 15px;
+		    -moz-border-radius: 15px;
+		    border-radius: 15px;
+		    text-shadow: none;
+		    color: $color_white;
+		    font-weight: bold;
+		    line-height: 24px;
+		    white-space: nowrap;
+			font-family: 'Muli',sans-serif;
+		}
+	    
+	}
+	
+	.fancybox-close {
+	    position: absolute;
+	    top: -18px;
+	    left: -18px;
+	    width: 36px;
+	    height: 36px;
+	    cursor: pointer;
+	    z-index: 8040;
+	    background: url(/diseno/cursos/compensar-gestion-riesgo/Images/Icons/wrong2.svg) #e56b41;
+	    border-radius: 2rem;
+	    color: $color_white;
+	    background-size: 19px;
+	    background-repeat: no-repeat;
+	    background-position: 50%;
+	}
+	
+}
+
+.content-cc{
+	
+	.modalq{
+		@include max-width;
+		@include display-grid;
+		
+		.questions-cc {
+			background:$color_light_background;
+			text-align:center;
+			margin-top:2rem;
+			
+			.hdr {
+				background:$color_brand_blue;
+				color:$color_white;
+				padding:.7rem;
+				@include font_universal (
+					$font_family_line_height: 22px,
+					$font_family_weight: 800,
+					$font_family_size: 16px,
+					$font_family_color: $color_white
+				);
+				
+				span {
+					background-size:20px;
+					background-repeat:no-repeat;
+					background-position:1%;
+					padding-left:1.5rem;
+				}
+				
+			}
+			
+			.btn-orange {
+				padding:.4rem 1rem;
+				text-decoration:none;
+				float:none;
+				font-size:13px;
+				display:inline-block;
+				margin-top:1rem;
+			}
+			
+			li {
+				background:$color_white;
+				border-bottom:2px solid $color_brand_blue;
+				
+				span {
+					display:inline-block;
+					width:80%;
+					text-align:left;
+				}
+				
+			}
+			
+			ol {
+				background:$color_white;
+				-webkit-margin-before:0;
+				-webkit-margin-after:0;
+				-webkit-margin-start:0;
+				-webkit-margin-end:0;
+				-webkit-padding-start:0;
+				width:91%;
+				margin:1rem auto;
+				padding:1.1rem 0 0 3rem;
+			}
+			
+			.options{
+				
+				.box-cc {
+					background:$color_white;
+					border-bottom:1px solid $color_brand_blue;
+					display:-webkit-box;
+					display:-ms-flexbox;
+					display: flex;
+					padding: 0 1rem;
+					
+					&:last-child{
+						border-bottom:0px;
+					}
+					
+					.btn-orange{
+						margin: 0.4rem 0;
+					}
+				
+			}
+				
+				.txt {
+					text-align:left;
+					
+					span {
+						font-size:22px;
+						font-weight:800;
+						display:inline-block;
+						vertical-align: top;
+						margin-top: 0.7rem;
+					}
+					
+					p {
+						display:inline-block;
+						width:90%;
+						text-align:left;
+						margin:.8rem 0 .8rem .8rem;
+						padding: 0;
+					}
+					
+				}
+				
+			}
+			
+		}
+		
+		.infoq-cc {
+			padding:1rem;
+			
+			.qst {
+				background-repeat:no-repeat;
+				background-size:20px;
+				padding:0 1rem;
+				font-size:17px;
+				text-align:left;
+				margin:.5rem auto 1rem;
+			}
+			
+		}
+		
+		.discl {
+			background:$color_white;
+			text-align:left;
+			padding:.5rem;
+			font-size:14px;
+			font-style:italic;
+			margin-top:.7rem;
+		}
+		
+	}
+	
+	
+	
+}

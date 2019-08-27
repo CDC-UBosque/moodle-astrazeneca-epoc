@@ -1,0 +1,53 @@
+include ../mixins.jade
+
+//- Head html tag
+include ../includes/header.jade
+
+//- Content
+div.curso-cc
+			
+	div.container-fluid
+		div.row-fluid
+			article.content-cc.article
+			
+				div.first_part
+					//- banner modulo
+					+banner('banner-0')
+				
+					//- menu
+					+menu
+			
+				+titulos-modulo('Módulo 0. Lineamientos')
+				
+				h3 Carta de bienvenida
+				
+				p Apreciados participantes del curso virtual de Manejo en la Atención Primaria de la EPOC:
+
+				p El desarrollo de la Atención Primaria en Salud (APS) como estrategia se ha venido implementando en Latinoamérica como un propósito de la región desde la  Resolución CD44.R6 del Consejo Directivo de la OPS.   En Colombia se han dado avances normativos como la Ley 1438 en la que el país se compromete a desarrollar la estrategia de la APS para fortalecer el Sistema General de Seguridad Social en Salud, la Ley 1751 que considera a la salud como un derecho fundamental, la Resolución 429 que adopta la Política de Atención Integral en Salud (PAIS) y el Modelo de Atención Integral en Salud (MIAS).
+
+				p El MIAS tiene diez componentes dentro de los que están las Redes Integrales de Prestadores de Servicios de Salud (RED), las Rutas Integrales de Atención en Salud (RIAS), la Gestión Integral del Riesgo en Salud (GIRS), el fortalecimiento Integral del Recurso Humano en Salud (RHS).    Dentro de las RED establece un trabajo en equipo de los prestadores primarios y prestadores complementarios.  Los primeros deben resolver, de forma progresiva el 80% de las situaciones en salud y direccionar el 20% restante de forma oportuna y adecuada.    Las RIAS incluyen además de diferentes rutas de promoción y prevención por cursos de vida dieciséis grupos de riesgo dentro de los que se encuentran las enfermedades respiratorias crónicas de las que la EPOC es uno de sus principales representantes.
+
+				p En este curso se tienen un enfoque de prevención en el que se incluye: en el módulo 1 la prevención primaria, se revisa la promoción y la prevención de la EPOC; en el módulo 2 la prevención secundaria, se revisa el diagnóstico precoz y tratamiento oportuno y actualizado de la EPOC; en el módulo 3 la prevención terciaria, la rehabilitación pulmonar y la oxigenoterapia  y en el módulo 4 la prevención cuaternaria, como evitar que nuestras acciones e intervenciones para la EPOC puedan hacer daño.
+
+				p Espero que este módulo contribuya a la gestión del riesgo en salud de la que debemos participar todos y a la formación del recurso humano en salud de los generalistas como somos los internistas, los médicos familiares y los médicos generales así como el trabajo en equipo con especialidades como la neumología para aportar un mejor conocimiento para la atención de nuestros pacientes
+						
+						
+				h4 Mauricio Alberto Rodríguez Escobar
+				h3 Director Académico curso virtual de manejo de la EPOC en Atención Primaria.
+				h3 Universidad El Bosque 
+
+						
+				
+				//- Material modulo
+				//- +material-modulo('material-mod-1')
+				
+				//- progrso y contador
+				+paginador('https://ubosquemoodle.unbosque.edu.co/mod/book/view.php?id=311787&chapterid=9193', 'back', 'https://ubosquemoodle.unbosque.edu.co/mod/book/view.php?id=311787&chapterid=9234', 'forward')
+	
+
+//- Final part of body
+//- Page transitions js
+include ../includes/js-body-ends.jade
+		
+		
+			

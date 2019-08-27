@@ -1,0 +1,686 @@
+include ../mixins.jade
+
+//- Head html tag
+include ../includes/header.jade
+
+//- Content
+div.curso-cc
+			
+	div.container-fluid
+		div.row-fluid
+			article.content-cc.article
+			
+				div.first_part
+					//- banner modulo
+					+banner('banner-2')
+				
+					//- menu
+					+menu
+			
+				+titulos-modulo('Módulo 2. Post-test')
+				
+				
+				// container content
+				.content-cc-interns.modalq
+					.questions-cc
+						.hdr
+							span 1. *La escala mMRC permite:
+						.infoq-cc
+							//- .qst
+							//- 	| La escala mMRC permite:
+							.options
+							
+								//- -------------- punto a
+								.box-cc
+									.txt.span9
+										span a
+										p Realizar una medición objetiva de la disnea
+									.span3
+										.remodal-bg.boton-POPS
+											a.btn-orange(href='#', data-remodal-target='modal1') Seleccionar
+										
+								//- -------------- punto b		
+								.box-cc
+									.txt.span9
+										span b
+										p Clasificar la severidad de la EPOC según el grado de obstrucción
+									.span3
+										.remodal-bg.boton-POPS
+											a.btn-orange(href='#', data-remodal-target='modal') Seleccionar
+								
+								//- -------------- punto c		
+								.box-cc
+									.txt.span9
+										span c
+										p Únicamente se usa para predecir el riesgo de mortalidad
+									.span3
+										.remodal-bg.boton-POPS
+											a.btn-orange(href='#', data-remodal-target='modal') Seleccionar
+								
+								//- -------------- punto d		
+								.box-cc
+									.txt.span9
+										span d
+										p Clasificar y predecir el riesgo de exacerbaciones
+									.span3
+										.remodal-bg.boton-POPS
+											a.btn-orange(href='#', data-remodal-target='modal') Seleccionar
+										
+					//- -------------- Pregunta 2				
+					.questions-cc
+						.hdr
+							span 2. *La pérdida de peso es un signo de buen pronóstico en la EPOC.
+						.infoq-cc
+							//- .qst
+							//- 	| La escala mMRC permite:
+							.options
+							
+								//- -------------- punto a
+								.box-cc
+									.txt.span9
+										span a
+										p Falso
+									.span3
+										.remodal-bg.boton-POPS
+											a.btn-orange(href='#', data-remodal-target='modal1') Seleccionar
+										
+								//- -------------- punto b		
+								.box-cc
+									.txt.span9
+										span b
+										p Verdadero
+									.span3
+										.remodal-bg.boton-POPS
+											a.btn-orange(href='#', data-remodal-target='modal') Seleccionar
+											
+											
+					//- -------------- Pregunta 3
+					.questions-cc
+						.hdr
+							span 3. *Paciente masculino de 50 años ex fumador desde hace 3 años, fumo por 15 años 10 cigarrillos diarios  (Índice Paquetes Año: 7.5), acude por cuadro clínico de 4 meses de evolución consistente en disnea mMRC Grado 2 y tos con expectoración hialina. Al examen físico presenta sibilancias ocasionales en bases pulmonares. No otros hallazgos de relevancia. De acuerdo a los datos previos y con relación a los criterios para la tamización con espirometría usted define:
+						.infoq-cc
+							//- .qst
+							//- 	| La escala mMRC permite:
+							.options
+							
+								//- -------------- punto a
+								.box-cc
+									.txt.span9
+										span a
+										p No realizar solicitud de espirometría, ya que es poco prevalente el diagnóstico de EPOC en pacientes de esta edad. 
+									.span3
+										.remodal-bg.boton-POPS
+											a.btn-orange(href='#', data-remodal-target='modal') Seleccionar
+										
+								//- -------------- punto b		
+								.box-cc
+									.txt.span9
+										span b
+										p Realizar espirometría. Por la edad del paciente, el antecedente de tabaquismo y los síntomas actuales, los cuales en conjunto aumentan la probabilidad para el desarrollo de la EPOC. 
+									.span3
+										.remodal-bg.boton-POPS
+											a.btn-orange(href='#', data-remodal-target='modal1') Seleccionar
+											
+								//- -------------- punto c
+								.box-cc
+									.txt.span9
+										span c
+										p Solicitar espirometría, porque según datos del caso, el paciente puede estar cursando con déficit de Alfa 1- antitripsina. 
+									.span3
+										.remodal-bg.boton-POPS
+											a.btn-orange(href='#', data-remodal-target='modal') Seleccionar
+											
+								//- -------------- punto d
+								.box-cc
+									.txt.span9
+										span d
+										p Solicitar valoración por neumología para estudio de este caso, por considerar que es un paciente complejo que requiere de pruebas mucho más especializdas. 
+									.span3
+										.remodal-bg.boton-POPS
+											a.btn-orange(href='#', data-remodal-target='modal') Seleccionar
+											
+											
+											
+					//- -------------- Pregunta 4
+					.questions-cc
+						.hdr
+							span 4. *Para realizar el diagnóstico definitivo de EPOC se requiere un resultado de espirometría post-broncodilatador con cociente VEF1/CVF  menor  a 0.7.
+						.infoq-cc
+							//- .qst
+							//- 	| La escala mMRC permite:
+							.options
+							
+								//- -------------- punto a
+								.box-cc
+									.txt.span9
+										span a
+										p Falso
+									.span3
+										.remodal-bg.boton-POPS
+											a.btn-orange(href='#', data-remodal-target='modal') Seleccionar
+										
+								//- -------------- punto b		
+								.box-cc
+									.txt.span9
+										span b
+										p Verdadero
+									.span3
+										.remodal-bg.boton-POPS
+											a.btn-orange(href='#', data-remodal-target='modal1') Seleccionar
+											
+											
+											
+					//- -------------- Pregunta 5
+					.questions-cc
+						.hdr
+							span 5. *Seleccione la opción verdadera.  Con respecto al volumen espiratorio forzado en el primer segundo es cierto:
+						.infoq-cc
+							//- .qst
+							//- 	| La escala mMRC permite:
+							.options
+							
+								//- -------------- punto a
+								.box-cc
+									.txt.span9
+										span a
+										p Es el volumen total de aire que se puede expulsar después de una espiración forzada.
+									.span3
+										.remodal-bg.boton-POPS
+											a.btn-orange(href='#', data-remodal-target='modal') Seleccionar
+										
+								//- -------------- punto b		
+								.box-cc
+									.txt.span9
+										span b
+										p Corresponde al volumen que queda en el pulmón después del primer segundo de la espirometría.
+									.span3
+										.remodal-bg.boton-POPS
+											a.btn-orange(href='#', data-remodal-target='modal') Seleccionar
+											
+								//- -------------- punto c
+								.box-cc
+									.txt.span9
+										span c
+										p En un individuo sin enfermedad  es superior al 70%
+									.span3
+										.remodal-bg.boton-POPS
+											a.btn-orange(href='#', data-remodal-target='modal1') Seleccionar
+											
+								//- -------------- punto d
+								.box-cc
+									.txt.span9
+										span d
+										p Siempre se debe realizar espirometría con broncodilatador para poder medirlo. 
+									.span3
+										.remodal-bg.boton-POPS
+											a.btn-orange(href='#', data-remodal-target='modal') Seleccionar
+											
+											
+											
+					//- -------------- Pregunta 6
+					.questions-cc
+						.hdr
+							span 6. *Un informe de espirometría adecuado debe presentar los siguientes elementos para su adecuada interpretación. Seleccione la o las respuestas correctas.
+						.infoq-cc
+							//- .qst
+							//- 	| La escala mMRC permite:
+							.options
+							
+								//- -------------- punto a
+								.box-cc
+									.txt.span9
+										span a
+										p Certificado de calibración del equipo.
+									.span3
+										.remodal-bg.boton-POPS
+											a.btn-orange(href='#', data-remodal-target='modal') Seleccionar
+										
+								//- -------------- punto b		
+								.box-cc
+									.txt.span9
+										span b
+										p Tres maniobras aceptables.
+									.span3
+										.remodal-bg.boton-POPS
+											a.btn-orange(href='#', data-remodal-target='modal') Seleccionar
+											
+								//- -------------- punto c
+								.box-cc
+									.txt.span9
+										span c
+										p Curva con inicio de espiración lento.
+									.span3
+										.remodal-bg.boton-POPS
+											a.btn-orange(href='#', data-remodal-target='modal') Seleccionar
+											
+								//- -------------- punto d
+								.box-cc
+									.txt.span9
+										span d
+										p Gráfica y flujos de la mejor maniobra.
+									.span3
+										.remodal-bg.boton-POPS
+											a.btn-orange(href='#', data-remodal-target='modal') Seleccionar
+											
+								//- -------------- punto e
+								.box-cc
+									.txt.span9
+										span e
+										p B y D son ciertas.
+									.span3
+										.remodal-bg.boton-POPS
+											a.btn-orange(href='#', data-remodal-target='modal1') Seleccionar
+											
+								//- -------------- punto f
+								.box-cc
+									.txt.span9
+										span f
+										p Todas las anteriores
+									.span3
+										.remodal-bg.boton-POPS
+											a.btn-orange(href='#', data-remodal-target='modal') Seleccionar
+											
+											
+											
+					//- -------------- Pregunta 7
+					.questions-cc
+						.hdr
+							span 7. *Responda falso o verdadero. Paciente de 68 años masculino con una espirometría que muestra un cociente VEF1/CVF de 0.6 con FEV 1  DE 70%, su clasificación según GOLD es EPOC estadio 1.
+						.infoq-cc
+							//- .qst
+							//- 	| La escala mMRC permite:
+							.options
+							
+								//- -------------- punto a
+								.box-cc
+									.txt.span9
+										span a
+										p Falso
+									.span3
+										.remodal-bg.boton-POPS
+											a.btn-orange(href='#', data-remodal-target='modal1') Seleccionar
+										
+								//- -------------- punto b		
+								.box-cc
+									.txt.span9
+										span b
+										p Verdadero
+									.span3
+										.remodal-bg.boton-POPS
+											a.btn-orange(href='#', data-remodal-target='modal') Seleccionar
+											
+											
+					//- -------------- Pregunta 8
+					.questions-cc
+						.hdr
+							span 8. *Cuál de los siguientes parámetros no se encuentra dentro de las variables de medición del Índice BODE:
+						.infoq-cc
+							//- .qst
+							//- 	| La escala mMRC permite:
+							.options
+							
+								//- -------------- punto a
+								.box-cc
+									.txt.span9
+										span a
+										p Índice de masa corporal
+									.span3
+										.remodal-bg.boton-POPS
+											a.btn-orange(href='#', data-remodal-target='modal') Seleccionar
+										
+								//- -------------- punto b		
+								.box-cc
+									.txt.span9
+										span b
+										p Grado de obstrucción al flujo aéreo
+									.span3
+										.remodal-bg.boton-POPS
+											a.btn-orange(href='#', data-remodal-target='modal') Seleccionar
+											
+								//- -------------- punto c
+								.box-cc
+									.txt.span9
+										span c
+										p Exacerbaciones
+									.span3
+										.remodal-bg.boton-POPS
+											a.btn-orange(href='#', data-remodal-target='modal1') Seleccionar
+											
+								//- -------------- punto d
+								.box-cc
+									.txt.span9
+										span d
+										p Disnea
+									.span3
+										.remodal-bg.boton-POPS
+											a.btn-orange(href='#', data-remodal-target='modal') Seleccionar
+											
+											
+							
+					//- -------------- Pregunta 9
+					.questions-cc
+						.hdr
+							span 9. *Según la propuesta de enfoque terapéutico de GOLD, un paciente grado 3 categoría B, se caracteriza por cuál de las siguientes características y cuál es el mejor esquema de tratamiento:
+						.infoq-cc
+							//- .qst
+							//- 	| La escala mMRC permite:
+							.options
+							
+								//- -------------- punto a
+								.box-cc
+									.txt.span9
+										span a
+										p Obstrucción con VEF1 entre 50% y 30%,  síntomas controlados y alto riesgo de exacerbación, se recomienda terapia de inicio con SAMA o SABA. 
+									.span3
+										.remodal-bg.boton-POPS
+											a.btn-orange(href='#', data-remodal-target='modal') Seleccionar
+										
+								//- -------------- punto b		
+								.box-cc
+									.txt.span9
+										span b
+										p Obstrucción con VEF1 entre 80% y 50%,  síntomas mal controlados y bajo riesgo de exacerbación, se recomienda terapia de inicio con LAMA y/o LABA. 
+									.span3
+										.remodal-bg.boton-POPS
+											a.btn-orange(href='#', data-remodal-target='modal') Seleccionar
+											
+								//- -------------- punto c
+								.box-cc
+									.txt.span9
+										span c
+										p Obstrucción con VEF1 entre 49% y 30%,  síntomas mal controlados y bajo riesgo de exacerbación, se recomienda terapia de inicio con LAMA y/o LABA.
+									.span3
+										.remodal-bg.boton-POPS
+											a.btn-orange(href='#', data-remodal-target='modal1') Seleccionar
+											
+								//- -------------- punto d
+								.box-cc
+									.txt.span9
+										span d
+										p Obstrucción con VEF1 entre 80% y 50%,  síntomas controlados y alto riesgo de exacerbación, se recomienda terapia de inicio con LAMA y/o LABA.
+									.span3
+										.remodal-bg.boton-POPS
+											a.btn-orange(href='#', data-remodal-target='modal') Seleccionar
+											
+											
+					//- -------------- Pregunta 10
+					.questions-cc
+						.hdr
+							span 10. *La principal causa de exacerbaciones en la EPOC son las infecciones bacterianas con un 50% de frecuencia. 
+						.infoq-cc
+							//- .qst
+							//- 	| La escala mMRC permite:
+							.options
+							
+								//- -------------- punto a
+								.box-cc
+									.txt.span9
+										span a
+										p Falso
+									.span3
+										.remodal-bg.boton-POPS
+											a.btn-orange(href='#', data-remodal-target='modal1') Seleccionar
+										
+								//- -------------- punto b		
+								.box-cc
+									.txt.span9
+										span b
+										p Verdadero
+									.span3
+										.remodal-bg.boton-POPS
+											a.btn-orange(href='#', data-remodal-target='modal') Seleccionar
+											
+											
+					//- -------------- Pregunta 11
+					.questions-cc
+						.hdr
+							span 11. *Doña Tulia es una paciente de 65 años con diagnóstico de EPOC hace 1 año. Cocinó con leña durante 25 años. Cuando se hizo el diagnóstico se clasificó como una paciente GOLD C, por lo que su tratamiento inicial fue:
+						.infoq-cc
+							//- .qst
+							//- 	| La escala mMRC permite:
+							.options
+							
+								//- -------------- punto a
+								.box-cc
+									.txt.span9
+										span a
+										p SAMA + SABA
+									.span3
+										.remodal-bg.boton-POPS
+											a.btn-orange(href='#', data-remodal-target='modal') Seleccionar
+										
+								//- -------------- punto b		
+								.box-cc
+									.txt.span9
+										span b
+										p SAMA o LAMA
+									.span3
+										.remodal-bg.boton-POPS
+											a.btn-orange(href='#', data-remodal-target='modal') Seleccionar
+											
+								//- -------------- punto c
+								.box-cc
+									.txt.span9
+										span c
+										p LABA + SABA
+									.span3
+										.remodal-bg.boton-POPS
+											a.btn-orange(href='#', data-remodal-target='modal') Seleccionar
+											
+								//- -------------- punto d
+								.box-cc
+									.txt.span9
+										span d
+										p LAMA
+									.span3
+										.remodal-bg.boton-POPS
+											a.btn-orange(href='#', data-remodal-target='modal1') Seleccionar
+											
+											
+											
+					//- -------------- Pregunta 12
+					.questions-cc
+						.hdr
+							span 12. *Hoy Doña Tulia viene a consulta refiriendo que a pesar de usar el inhalador como usted le enseño, sigue sintiéndose con mucha falta de aire. No ha tenido que ir a urgencias o a hospitalización recientemente. Según lo anterior Doña Tulia se beneficia de: 
+						.infoq-cc
+							//- .qst
+							//- 	| La escala mMRC permite:
+							.options
+							
+								//- -------------- punto a
+								.box-cc
+									.txt.span9
+										span a
+										p Iniciarle SABA asociado a su inhalador actual
+									.span3
+										.remodal-bg.boton-POPS
+											a.btn-orange(href='#', data-remodal-target='modal') Seleccionar
+										
+								//- -------------- punto b		
+								.box-cc
+									.txt.span9
+										span b
+										p Quitarle su inhalador actual y dejarla únicamente con un LABA
+									.span3
+										.remodal-bg.boton-POPS
+											a.btn-orange(href='#', data-remodal-target='modal') Seleccionar
+											
+								//- -------------- punto c
+								.box-cc
+									.txt.span9
+										span c
+										p Asociarle un LABA a su inhalador actual
+									.span3
+										.remodal-bg.boton-POPS
+											a.btn-orange(href='#', data-remodal-target='modal1') Seleccionar
+											
+								//- -------------- punto d
+								.box-cc
+									.txt.span9
+										span d
+										p Retirar el inhalador actual, iniciar corticoide inhalado y considerar azitromicina
+									.span3
+										.remodal-bg.boton-POPS
+											a.btn-orange(href='#', data-remodal-target='modal') Seleccionar
+											
+											
+					//- -------------- Pregunta 13
+					.questions-cc
+						.hdr
+							span 13. *¿Qué esquema de vacunación le recomienda a doña Tulia en este momento? (Refiere como único antecedente vacunal reciente la influenza hace dos años, resto niega) 
+						.infoq-cc
+							//- .qst
+							//- 	| La escala mMRC permite:
+							.options
+							
+								//- -------------- punto a
+								.box-cc
+									.txt.span9
+										span a
+										p Una dosis de PCV13 y una dosis de influenza
+									.span3
+										.remodal-bg.boton-POPS
+											a.btn-orange(href='#', data-remodal-target='modal1') Seleccionar
+										
+								//- -------------- punto b		
+								.box-cc
+									.txt.span9
+										span b
+										p Una dosis de PPSV23 y una dosis de influenza
+									.span3
+										.remodal-bg.boton-POPS
+											a.btn-orange(href='#', data-remodal-target='modal') Seleccionar
+											
+								//- -------------- punto c
+								.box-cc
+									.txt.span9
+										span c
+										p Una dosis de PPSV23 y una dosis de PCV13
+									.span3
+										.remodal-bg.boton-POPS
+											a.btn-orange(href='#', data-remodal-target='modal') Seleccionar
+											
+								//- -------------- punto d
+								.box-cc
+									.txt.span9
+										span d
+										p Ninguna de las anteriores 
+									.span3
+										.remodal-bg.boton-POPS
+											a.btn-orange(href='#', data-remodal-target='modal') Seleccionar
+											
+											
+					//- -------------- Pregunta 14
+					.questions-cc
+						.hdr
+							span 14. *En cuál de los siguientes casos usted recomendaría el inicio de tratamiento con corticoide inhalado: 
+						.infoq-cc
+							//- .qst
+							//- 	| La escala mMRC permite:
+							.options
+							
+								//- -------------- punto a
+								.box-cc
+									.txt.span9
+										span a
+										p Paciente en quien se identifica una neumonía bacteriana
+									.span3
+										.remodal-bg.boton-POPS
+											a.btn-orange(href='#', data-remodal-target='modal') Seleccionar
+										
+								//- -------------- punto b		
+								.box-cc
+									.txt.span9
+										span b
+										p Conteo de eosinófilos mayor a 300
+									.span3
+										.remodal-bg.boton-POPS
+											a.btn-orange(href='#', data-remodal-target='modal1') Seleccionar
+											
+								//- -------------- punto c
+								.box-cc
+									.txt.span9
+										span c
+										p Eosinófilos menores a 100 con VEF1 &lt;50% y bronquitis crónica
+									.span3
+										.remodal-bg.boton-POPS
+											a.btn-orange(href='#', data-remodal-target='modal') Seleccionar
+											
+								//- -------------- punto d
+								.box-cc
+									.txt.span9
+										span d
+										p B y C son verdaderas
+									.span3
+										.remodal-bg.boton-POPS
+											a.btn-orange(href='#', data-remodal-target='modal') Seleccionar
+											
+											
+											
+											
+											
+					//- -------------- modal	window result correcto
+					.remodal(data-remodal-id='modal1')
+						a.remodal-close(data-remodal-action='close')
+						div
+							div
+								img(src='https://ubosquemoodle.unbosque.edu.co/diseno/cursos/nuevo-EPOC/images/svg/good.svg')
+							div
+								h3 Correcto
+							div
+								a.btn-orange.remodal-confirm(data-remodal-action='confirm', href='#') Continuar
+								
+					//- -------------- modal	window result incorrecto	
+					.remodal(data-remodal-id='modal')
+						a.remodal-close(data-remodal-action='close')
+						div
+							div
+								img(src='https://ubosquemoodle.unbosque.edu.co/diseno/cursos/nuevo-EPOC/images/svg/wrong.svg')
+							div
+								h3 Incorrecto
+							div
+								a.btn-orange.remodal-confirm(data-remodal-action='confirm', href='#') Continuar
+											
+																
+											
+											
+						
+					.discl *Éstas preguntas no tienen calificación
+					// end container content
+
+
+				
+				
+					//- texto resaltado
+				div
+					div.span10.resaltado-txt
+						p En el siguiente enlace puede ingresar a realizar la evaluación calificable 
+						a(href="https://ubosquemoodle.unbosque.edu.co/mod/quiz/view.php?id=303135" target="_blank" class="forward") Comenzar evaluación
+
+
+
+
+				
+							
+				//- progeso
+				//- div.progreso
+				//- 	h2 progreso
+				//- 	div#progreso100
+						
+						
+				
+						
+				
+				//- Material modulo
+				+material-modulo('material-mod-2')
+				
+				//- progrso y contador
+				+paginador('#', 'disabled', '#', 'disabled')
+	
+
+//- Final part of body
+//- Page transitions js
+include ../includes/js-body-ends.jade
+		
+		
+			

@@ -1,0 +1,108 @@
+include ../mixins.jade
+
+//- Head html tag
+include ../includes/header.jade
+
+//- Content
+div.curso-cc
+			
+	div.container-fluid
+		div.row-fluid
+			article.content-cc.article
+			
+				div.first_part
+					//- banner modulo
+					+banner('banner-0')
+				
+					//- menu
+					+menu
+			
+				+titulos-modulo('Módulo 0. Lineamientos')
+				
+				h3 Contenidos
+
+				//- Table
+				table.table.table-striped
+					thead
+						tr
+							th Modulo
+							th Nombre Módulo
+							th Nombre Conferencista
+							th Especialidad
+							th Temas 
+					tbody
+						tr
+							td(rowspan='2') Módulo 1
+							td(rowspan='2') Prevención primaria de la EPOC
+							td Carmen Patricia Villamil Molina
+							td Md. Especialista en Medicina Familiar
+							td(rowspan='2') Definición
+								br/ Etiología
+								br/ Factores de riesgo y factores protectores
+								br/ Epidemiología 
+								br/ Fisiología y fisiopatología 
+								br/ Promoción de la salud y prevención (Individual, colectiva, poblacional)
+						tr
+							td Andrea del Pilar Rincón Garzon 
+							td Md. Especialista en Medicina Familiar
+							
+						tr
+							td(rowspan='2') Modulo 2
+							td(rowspan='2') Prevención secundaria de la EPOC
+							td Andrea Patricia Bermudez 
+							td Md. Especialista en Medicina Familiar
+							td(rowspan='2') Manifestaciones clínicas 
+								br/ Detección temprana  
+								br/ Diagnóstico 
+								br/ Pruebas de función respiratoria Clasificación 
+								br/ Algoritmos de tratamiento 
+								br/ Diagnóstico diferencial 
+								br/ Manejo de exacerbaciones
+						tr
+							td Carlos Aldana Patiño
+							td Md. Especialista en Medicina Familiar
+							
+						tr
+							td(rowspan='2') Modulo 3
+							td(rowspan='2') Prevención terciaria de la EPOC
+							td John Eduardo Bastidas Mesa
+							td Md. Especialista en Neumología
+							td(rowspan='2') Definición de Rehabilitación Pulmonar (RP) Beneficios de la Rehabilitación pulmonar 
+								br/ Selección del paciente (indicación y contraindicaciones) 
+								br/ Como prescribirla adecuadamente (RP) 
+								br/ Educación del paciente (TIPs)
+								br/ Oxigenoterapia (Cómo-Cuánto-cuándo)
+						tr
+							td Germán Díaz Santos
+							td Md. Especialista en Neumología 
+							
+						tr
+							td(rowspan='2') Modulo 4
+							td(rowspan='2') Prevención cuaternaria de la EPOC
+							td John Eduardo Bastidas Mesa
+							td Md. Especialista en Neumología
+							td(rowspan='2') Factores pronósticos en EPOC 
+								br/ Comorbilidades en EPOC EPOC y enfermedad cardiovascular
+								br/ EPOC y cáncer 
+								br/ EPOC Y enfermedades Psiquiátricas 
+								br/ EPOC Y SAHOS 
+								br/ Cuidados paliativos en el EPOC
+						tr
+							td Germán Díaz Santos
+							td Md. Especialista en Neumología 
+
+						
+				
+				//- Material modulo
+				//- +material-modulo('material-mod-1')
+				
+				//- progrso y contador
+				+paginador('https://ubosquemoodle.unbosque.edu.co/mod/book/view.php?id=311787&chapterid=9234', 'back', 'https://ubosquemoodle.unbosque.edu.co/mod/book/view.php?id=311787&chapterid=9192', 'forward')
+	
+
+//- Final part of body
+//- Page transitions js
+include ../includes/js-body-ends.jade
+		
+		
+			

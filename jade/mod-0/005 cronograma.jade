@@ -1,0 +1,164 @@
+include ../mixins.jade
+
+//- Head html tag
+include ../includes/header.jade
+
+//- Content
+div.curso-cc
+			
+	div.container-fluid
+		div.row-fluid
+			article.content-cc.article
+			
+				div.first_part
+					//- banner modulo
+					+banner('banner-0')
+				
+					//- menu
+					+menu
+			
+				+titulos-modulo('Módulo 0. Lineamientos')
+				
+				h3 Cronograma
+				
+				
+				table.table.table-striped
+					thead
+						tr
+							th Módulos
+							th Actividades
+							th Inicio
+							th Cierre
+							th Porcentaje
+					tbody
+						tr
+							td Módulo 0
+							td
+							td
+								span 12 de Agosto
+							td
+								span 19 de Agosto
+							td
+						tr
+							td(rowspan="3") Módulo 1
+							td
+							td
+								span 20 de Agosto
+							td
+								span 1 de Septiembre
+							td
+						tr
+							td
+								span Videoconferencia
+							td(colspan="2")
+								span Miércoles 
+								| 28 de Agosto: 7:30 pm a 9:00 pm
+								span
+							td
+								span 4%
+						tr
+							td Evaluación
+							td 28 de Agosto
+							td
+							td
+								span 22%
+						tr
+							td(rowspan="3") Módulo 2
+							td
+							td
+								span 1 de Septiembre
+							td
+								span 23 de 
+								span Septiembre
+							td
+						tr
+							td
+								span Videoconferencia
+							td(colspan="2")
+								| Miércoles 18 de 
+								span Septiembre
+								| : 
+								span 7:30 pm a 9:00 pm
+							td 4%
+						tr
+							td Evaluación
+							td
+								span 18 de 
+								span Septiembre
+							td
+								span
+							td
+								span 22%
+						tr
+							td(rowspan="3") Módulo 3
+							td
+								span
+							td
+								span 23 de 
+								span Septiembre
+							td
+								span 07 de Octubre
+							td
+						tr
+							td
+								span Videoconferencia
+							td(colspan="2")
+								| Miércoles 2 de 
+								span Octubre
+								| : 
+								span 7:30 pm a 9:00 pm
+							td 4%
+						tr
+							td Evaluación
+							td 2 de Octubre
+							td
+							td 22%
+						tr
+							td(rowspan="3") Módulo 4
+							td
+							td
+								span 07 de Octubre
+							td
+								span 21 de Octubre
+							td
+						tr
+							td
+								span Videoconferencia
+							td(colspan="2")
+								| Miércoles 16 de Octubre: 
+								span 7:30 pm a 9:00 pm
+							td 4%
+						tr
+							td
+								span Evaluación
+							td
+								span 16 de Octubre
+							td
+								span
+							td
+								span 22%
+						tr
+							td(colspan="2")
+								span
+									span Semana de recuperación
+							td(colspan="3")
+								span
+									span 21 de Octubre al 28 de Octubre
+						
+						
+				
+						
+				
+				//- Material modulo
+				//- +material-modulo('material-mod-1')
+				
+				//- progrso y contador
+				+paginador('https://ubosquemoodle.unbosque.edu.co/mod/book/view.php?id=311787&chapterid=9235', 'back', '#', 'disabled')
+	
+
+//- Final part of body
+//- Page transitions js
+include ../includes/js-body-ends.jade
+		
+		
+			

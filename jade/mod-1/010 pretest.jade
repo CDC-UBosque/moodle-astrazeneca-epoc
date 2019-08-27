@@ -1,0 +1,310 @@
+include ../mixins.jade
+
+//- Head html tag
+include ../includes/header.jade
+
+//- Content
+div.curso-cc
+			
+	div.container-fluid
+		div.row-fluid
+			article.content-cc.article
+			
+				div.first_part
+					//- banner modulo
+					+banner('banner-2')
+				
+					//- menu
+					+menu
+			
+				+titulos-modulo('Módulo 1. Post-test')
+				
+				p A continuación, encontrará una serie de preguntas que le ayudarán a reafianzar los conocimientos del Módulo 1.
+				
+				p Rosa  María, es una paciente de  67 años,  natural   de Bogotá D.C.,   procedente  de  Ciudad Bolívar,  trabajó durante  30 años en un asadero de carne a la llanera.  
+				p Consulta  por  cuadro  de  6 meses  de  tos  seca  a productiva,  expectoración  amarilla ,  verdosa. Acompañada  dificultad  para  respirar,  disnea  que ha progresado  de  leve  a moderada.
+				p RxS  Síntomas  dispépticos ocasionales.
+				p Antecedentes :  Patológicos:   HTA  Familiares: Madre  HTA Qx: Cesárea.  Niega licor, niega  cigarrillo. Farmacológicos;  Enalapril  20mg  cada  12 horas . Niega  alergias medicamentosas  - Vive con su  esposo  Jorge,  quien  ha  sido  fumador  toda  la  vida y  su  hijo  de 42 años,  quien  es fumador  ocasional. Es  sedentaria.  
+
+				p EF / Alerta, hidratada  orientada  afebril  TA  128/76 FC 78 FR 18   Saturación 88% FIO 21% Rinoscopia, cornetes  hipertróficos sin cambios de  coloración.  Orofaringe congestiva,  amígdalas grado I ,  escurrimiento no  hay posterior.  RsCs rítmicos,  sin  soplos, RsRs  sin  agregados  mv  disminuido  en  bases pulmonares.  RsIs+ abdomen  blando  depresible no  doloroso, no masas, no megalias.  No  hay  déficit neurológico,  Extremidades eutróficas sin edemas, pulsos + perfusión  distal  conservada.  
+				
+				p Responda falso o verdadero.   
+				
+				
+				// container content
+				.content-cc-interns.modalq
+										
+					//- -------------- Pregunta 1
+					.questions-cc
+						.hdr
+							span 1. *En los síntomas respiratorios que tiene Rosa hay poca contribución por la exposición  pasiva  a humo  de  cigarrillo, ya que esta exposición no aporta al desarrollo de la EPOC.
+						.infoq-cc
+							//- .qst
+							//- 	| La escala mMRC permite:
+							.options
+							
+								//- -------------- punto a
+								.box-cc
+									.txt.span9
+										span a
+										p Falso
+									.span3
+										.remodal-bg.boton-POPS
+											a.btn-orange(href='#', data-remodal-target='modal1') Seleccionar
+										
+								//- -------------- punto b		
+								.box-cc
+									.txt.span9
+										span b
+										p Verdadero
+									.span3
+										.remodal-bg.boton-POPS
+											a.btn-orange(href='#', data-remodal-target='modal') Seleccionar
+											
+											
+					//- -------------- Pregunta 2
+					.questions-cc
+						.hdr
+							span 2. *En Colombia y otros países en vía de desarrollo (México, Bolivia, Perú y los países del Himalaya) la exposición al humo de leña y otros combustibles de origen orgánico (biomasa) como madera, carbón vegetal, otras materias vegetales y el estiércol en recintos cerrados, constituyen un factor de riesgo comprobado para el desarrollo de la EPOC.
+						.infoq-cc
+							//- .qst
+							//- 	| La escala mMRC permite:
+							.options
+							
+								//- -------------- punto a
+								.box-cc
+									.txt.span9
+										span a
+										p Falso
+									.span3
+										.remodal-bg.boton-POPS
+											a.btn-orange(href='#', data-remodal-target='modal') Seleccionar
+										
+								//- -------------- punto b		
+								.box-cc
+									.txt.span9
+										span b
+										p Verdadero
+									.span3
+										.remodal-bg.boton-POPS
+											a.btn-orange(href='#', data-remodal-target='modal2') Seleccionar
+											
+											
+											
+					//- -------------- Pregunta 3
+					.questions-cc
+						.hdr
+							span 3. *Rosa,  debería evitar  realizar  actividad física diaria,  ya  que favorece  la hospitalización  por exacerbación grave.
+						.infoq-cc
+							//- .qst
+							//- 	| La escala mMRC permite:
+							.options
+							
+								//- -------------- punto a
+								.box-cc
+									.txt.span9
+										span a
+										p Falso
+									.span3
+										.remodal-bg.boton-POPS
+											a.btn-orange(href='#', data-remodal-target='modal3') Seleccionar
+										
+								//- -------------- punto b		
+								.box-cc
+									.txt.span9
+										span b
+										p Verdadero
+									.span3
+										.remodal-bg.boton-POPS
+											a.btn-orange(href='#', data-remodal-target='modal') Seleccionar
+											
+											
+											
+					//- -------------- Pregunta 4
+					.questions-cc
+						.hdr
+							span 4. *Rosa  tiene  mayor riesgo (probabilidad)  de presentar  EPOC;  que  Jorge;  ya  que el  estudio  PREPOCOL desarrollado por Caballero y colaboradores, demostró  que  la prevalencia de la EPOC fue  menor  en hombres  que en mujeres.
+						.infoq-cc
+							//- .qst
+							//- 	| La escala mMRC permite:
+							.options
+							
+								//- -------------- punto a
+								.box-cc
+									.txt.span9
+										span a
+										p Falso
+									.span3
+										.remodal-bg.boton-POPS
+											a.btn-orange(href='#', data-remodal-target='modal4') Seleccionar
+										
+								//- -------------- punto b		
+								.box-cc
+									.txt.span9
+										span b
+										p Verdadero
+									.span3
+										.remodal-bg.boton-POPS
+											a.btn-orange(href='#', data-remodal-target='modal') Seleccionar
+											
+											
+					//- -------------- Pregunta 5
+					.questions-cc
+						.hdr
+							span 5. *La inhalación aguda de aire contaminado con partículas nocivas como los productos de la combustión, el humo del cigarrillo y sus derivados, causa inflamación aguda de la vía aérea en toda su extensión, con el desarrollo de la EPOC, esta respuesta es modificada y aumentada en relación al tiempo de exposición y las particularidades del individuo.
+						.infoq-cc
+							//- .qst
+							//- 	| La escala mMRC permite:
+							.options
+							
+								//- -------------- punto a
+								.box-cc
+									.txt.span9
+										span a
+										p Falso
+									.span3
+										.remodal-bg.boton-POPS
+											a.btn-orange(href='#', data-remodal-target='modal') Seleccionar
+										
+								//- -------------- punto b		
+								.box-cc
+									.txt.span9
+										span b
+										p Verdadero
+									.span3
+										.remodal-bg.boton-POPS
+											a.btn-orange(href='#', data-remodal-target='modal2') Seleccionar
+											
+					//- -------------- Pregunta 6
+					.questions-cc
+						.hdr
+							span 6. *Rosa  podría  tener un  Diagnostico  de EPOC,  ya  que  este,  es el resultado de la interacción entre el grado de exposición (inhalación) y la respuesta del individuo a los agentes nocivos.
+						.infoq-cc
+							//- .qst
+							//- 	| La escala mMRC permite:
+							.options
+							
+								//- -------------- punto a
+								.box-cc
+									.txt.span9
+										span a
+										p Falso
+									.span3
+										.remodal-bg.boton-POPS
+											a.btn-orange(href='#', data-remodal-target='modal') Seleccionar
+										
+								//- -------------- punto b		
+								.box-cc
+									.txt.span9
+										span b
+										p Verdadero
+									.span3
+										.remodal-bg.boton-POPS
+											a.btn-orange(href='#', data-remodal-target='modal2') Seleccionar
+											
+											
+											
+											
+											
+					//- -------------- modal	window result correcto
+					.remodal(data-remodal-id='modal1')
+						a.remodal-close(data-remodal-action='close')
+						div
+							div
+								img(src='https://ubosquemoodle.unbosque.edu.co/diseno/cursos/nuevo-EPOC/images/svg/good.svg')
+							div
+								h3 Correcto
+								p La exposición pasiva al humo del cigarrillo aumenta la prevalencia de síntomas respiratorios y puede contribuir al desarrollo de la enfermedad.
+							div
+								a.btn-orange.remodal-confirm(data-remodal-action='confirm', href='#') Continuar
+								
+					//- -------------- modal	window result correcto
+					.remodal(data-remodal-id='modal3')
+						a.remodal-close(data-remodal-action='close')
+						div
+							div
+								img(src='https://ubosquemoodle.unbosque.edu.co/diseno/cursos/nuevo-EPOC/images/svg/good.svg')
+							div
+								h3 Correcto
+								p La medición objetiva de la actividad física diaria constituye un factor pronóstico independiente de mortalidad por todas las causas, así como de hospitalización por exacerbación grave.
+							div
+								a.btn-orange.remodal-confirm(data-remodal-action='confirm', href='#') Continuar
+								
+								
+					//- -------------- modal	window result correcto
+					.remodal(data-remodal-id='modal4')
+						a.remodal-close(data-remodal-action='close')
+						div
+							div
+								img(src='https://ubosquemoodle.unbosque.edu.co/diseno/cursos/nuevo-EPOC/images/svg/good.svg')
+							div
+								h3 Correcto
+								p En Colombia, según el estudio PREPOCOL desarrollado por Caballero y colaboradores, la prevalencia de la EPOC fue de 8,9%, siendo mayor en hombres 13,6% que en mujeres 6,6% respectivamente.
+							div
+								a.btn-orange.remodal-confirm(data-remodal-action='confirm', href='#') Continuar
+								
+					//- -------------- modal	window result correcto
+					.remodal(data-remodal-id='modal2')
+						a.remodal-close(data-remodal-action='close')
+						div
+							div
+								img(src='https://ubosquemoodle.unbosque.edu.co/diseno/cursos/nuevo-EPOC/images/svg/good.svg')
+							div
+								h3 Correcto
+							div
+								a.btn-orange.remodal-confirm(data-remodal-action='confirm', href='#') Continuar
+								
+					//- -------------- modal	window result incorrecto	
+					.remodal(data-remodal-id='modal')
+						a.remodal-close(data-remodal-action='close')
+						div
+							div
+								img(src='https://ubosquemoodle.unbosque.edu.co/diseno/cursos/nuevo-EPOC/images/svg/wrong.svg')
+							div
+								h3 Incorrecto	
+							div
+								a.btn-orange.remodal-confirm(data-remodal-action='confirm', href='#') Continuar
+											
+											
+						
+					.discl *Éstas preguntas no tienen calificación
+					// end container content
+					
+					
+
+				//- texto resaltado
+				div
+					div.span10.resaltado-txt
+						p En el siguiente enlace puede ingresar a realizar la evaluación calificable
+						a(href="https://ubosquemoodle.unbosque.edu.co/mod/quiz/view.php?id=303134" target="_blank" class="forward") Comenzar evaluación calificable
+				
+				
+
+
+
+
+
+				
+							
+				//- progeso
+				//- div.progreso
+				//- 	h2 progreso
+				//- 	div#progreso100
+						
+						
+				
+						
+				
+				//- Material modulo
+				+material-modulo('material-mod-1')
+				
+				//- progrso y contador
+				+paginador('#', 'disabled', '#', 'disabled')
+	
+
+//- Final part of body
+//- Page transitions js
+include ../includes/js-body-ends.jade
+		
+		
+			

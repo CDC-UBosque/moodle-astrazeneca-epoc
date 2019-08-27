@@ -19,6 +19,12 @@ div.curso-cc
 			
 				+titulos-modulo('Módulo 2. Prevención Secundaria.')
 				
+				//- texto resaltado
+				div
+					div.span10.resaltado-txt
+						p En el siguiente enlace puede ingresar a realizar un pretest (no calificable)
+						a(href="https://ubosquemoodle.unbosque.edu.co/mod/quiz/view.php?id=312559" target="_blank" class="forward") Comenzar pretest
+				
 				p Objetivo:  
 				
 				ul
@@ -28,13 +34,15 @@ div.curso-cc
 				
 				p La presencia de tos crónica con o sin esputo y disnea, asociados a los factores de riesgo tratados en el módulo 1 en pacientes mayores de 40 años (tabaquismo, exposición al humo de biomasa, etc.) debe hacer sospechar la EPOC.  Aunque los síntomas de la EPOC pueden preceder la aparición de la obstrucción de la vía aérea por varios años y su manifestación es variable, la tos y el esputo se presentan en más de un 30% de los pacientes con la enfermedad (1). El impacto de los síntomas sobre la calidad de vida, el aumento de la intensidad de estos, o un episodio agudo de hospitalización, pueden llevar a consultar al paciente por primera vez por la EPOC (2)
 				
+				
+				
 				//- Acordion
 				div.accordion#accordion2
 					div.accordion-group
 						div.accordion-heading
-							a.accordion-toggle(data-toggle='collapse' data-parent='#accordion2' href='#collapseOne')
+							a.accordion-toggle(data-toggle='collapse' data-parent='#accordion2' href='#collapseOne' aria-expanded="false")
 								span Disnea
-						div#collapseOne.accordion-body.collapse.in
+						div#collapseOne.accordion-body.collapse
 							div.accordion-inner
 								p Es descrita por el paciente como una sensación de dificultad o necesidad de mayor esfuerzo para respirar, pesadez en el pecho, jadeo o asfixia. Es un síntoma cardinal de la EPOC y que en mayor medida afecta negativamente la calidad de vida del paciente. Debido a la variedad interindividuo que puede presentarse con este síntoma, se recomienda su medición con la escala MRCm 
 									a(href='#tabla1') (Ver Tabla 1) 
@@ -42,7 +50,7 @@ div.curso-cc
 								
 					div.accordion-group
 						div.accordion-heading
-							a.accordion-toggle(data-toggle='collapse' data-parent='#accordion2' href='#collapseTwo')
+							a.accordion-toggle(data-toggle='collapse' data-parent='#accordion2' href='#collapseTwo' aria-expanded="false")
 								span Tos
 						div#collapseTwo.accordion-body.collapse
 							div.accordion-inner
@@ -60,7 +68,7 @@ div.curso-cc
 									
 					div.accordion-group
 						div.accordion-heading
-							a.accordion-toggle(data-toggle='collapse' data-parent='#accordion2' href='#collapse3')
+							a.accordion-toggle(data-toggle='collapse' data-parent='#accordion2' href='#collapse3' aria-expanded="false")
 								span Expectoración
 						div#collapse3.accordion-body.collapse
 							div.accordion-inner
@@ -69,7 +77,7 @@ div.curso-cc
 								
 					div.accordion-group
 						div.accordion-heading
-							a.accordion-toggle(data-toggle='collapse' data-parent='#accordion2' href='#collapse4')
+							a.accordion-toggle(data-toggle='collapse' data-parent='#accordion2' href='#collapse4' aria-expanded="false")
 								span Sibilancias con opresión torácica
 						div#collapse4.accordion-body.collapse
 							div.accordion-inner
@@ -77,7 +85,7 @@ div.curso-cc
 								
 					div.accordion-group
 						div.accordion-heading
-							a.accordion-toggle(data-toggle='collapse' data-parent='#accordion2' href='#collapse5')
+							a.accordion-toggle(data-toggle='collapse' data-parent='#accordion2' href='#collapse5' aria-expanded="false")
 								span Pérdida de peso y anorexia
 						div#collapse5.accordion-body.collapse
 							div.accordion-inner
@@ -85,7 +93,7 @@ div.curso-cc
 								
 					div.accordion-group
 						div.accordion-heading
-							a.accordion-toggle(data-toggle='collapse' data-parent='#accordion2' href='#collapse6')
+							a.accordion-toggle(data-toggle='collapse' data-parent='#accordion2' href='#collapse6' aria-expanded="false")
 								span Síncope
 						div#collapse6.accordion-body.collapse
 							div.accordion-inner
@@ -93,7 +101,7 @@ div.curso-cc
 								
 					div.accordion-group
 						div.accordion-heading
-							a.accordion-toggle(data-toggle='collapse' data-parent='#accordion2' href='#collapse7')
+							a.accordion-toggle(data-toggle='collapse' data-parent='#accordion2' href='#collapse7' aria-expanded="false")
 								span Edema de miembros inferiores
 						div#collapse7.accordion-body.collapse
 							div.accordion-inner
@@ -101,7 +109,7 @@ div.curso-cc
 								
 					div.accordion-group
 						div.accordion-heading
-							a.accordion-toggle(data-toggle='collapse' data-parent='#accordion2' href='#collapse8')
+							a.accordion-toggle(data-toggle='collapse' data-parent='#accordion2' href='#collapse8' aria-expanded="false")
 								span Depresión / ansiedad
 						div#collapse8.accordion-body.collapse
 							div.accordion-inner
