@@ -9,7 +9,7 @@
 	#menu_curso{
 		position: relative;
 		top: -32px;
-		@include max-width;
+		//@include max-width;
 		
 		@media (max-width: 767px){
 			top: -6px;

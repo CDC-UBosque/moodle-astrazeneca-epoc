@@ -1,0 +1,129 @@
+include ../mixins.jade
+
+//- Head html tag
+include ../includes/header.jade
+
+//- Content
+div.curso-cc
+			
+	div.container-fluid
+		div.row-fluid
+			article.content-cc.article
+			
+				div.first_part
+					//- banner modulo
+					+banner('banner-4')
+				
+					//- menu
+					+menu
+			
+				+titulos-modulo('Módulo 4. Prevención Cuaternaria.')
+				
+				//- texto resaltado
+				//- div
+				//- 	div.span10.resaltado-txt
+				//- 		p En el siguiente enlace puede ingresar a realizar un pretest (no calificable)
+				//- 		a(href="https://ubosquemoodle.unbosque.edu.co/mod/quiz/view.php?id=312559" target="_blank" class="forward") Comenzar pretest
+				
+				h3 Factores pronósticos en la Enfermedad Pulmonar Obstructiva Crónica (EPOC)
+				
+				p Se han identificado una serie de factores como indicadores del pronóstico para la EPOC, entre los cuales tenemos: (Tabla 1)
+				
+				//- Table
+				table.table.table-striped
+					caption Tabla 1. Factores pronósticos en la EPOC.
+					thead
+						tr
+							th Factor
+							th Explicación
+							th Bibliografía
+					tbody
+						tr
+							td Volumen espiratorio forzado en un segundo (VEF<sub>1</sub>)
+							td Previo al broncodilatador evalúa la gravedad, supervivencia y predice cambios en la función pulmonar. El VEF<sub>1</sub> post-bronchodilator sirve para establecer supervivencia, pero ambos (pre y post-broncodilatador) tienen una alta variabilidad. 
+							td (3,4)
+							
+						tr
+							td Hiperreactividad y respuesta broncodilatadora
+							td La hiperreactividad bronquial con Metacolina (4 mg/ml) está asociado a una caída mayor de la función pulmonar (VEF<sub>1</sub>) y aumento de la mortalidad en 2 veces, lo mismo pasa al parecer con la Histamina, pero no se conoce esta asociación con la respuesta a broncodilatadores.
+							td (5)
+							
+						tr
+							td Peso corporal
+							td El Índice de Masa Corporal (IMC) y el índice de masa libre de grasa (Fat Free Mass Index con sus siglas en ingles FFMI), son predictores de mortalidad cuando esta disminuidos, sobre todo el FFMI.
+							td (6)
+							
+						tr
+							td Índice BODE
+							td Es un índice multidimensional para establecer la probabilidad de muerte en un paciente con EPOC y puede predecir hospitalizaciones. Está compuesto por peso (IMC), VEF<sub>1</sub>, grado de disnea (mMRC) y caminata de 6 minutos (capacidad de ejercicio). El BODE modificado (BODEm) se diferencia de la versión original por la utilización de un cuestionario de disnea alternativo (cuestionario de San George). 
+							td (7)
+							
+							
+						tr
+							td Fenotipos de la EPOC
+							td 1-EPOC Enfisematoso (enfisema grave), aumento de mortalidad:  
+								ul
+									li Edad ≥70 años
+									li Uso de oxígeno suplementario
+									li Capacidad Pulmonar Total &lt;140% del predicho
+									li Volumen Residual ≥262% del predicho
+									li Carga de trabajo máxima durante la prueba de ejercicio cardiopulmonar integrado ≤25 w en mujeres, ≤40 w en hombres
+									li Índice BODE ≥7 
+									li Aumento de enfisema y/o flujo sanguíneo a las zonas inferiores del pulmón. 	
+								br/ 2-EPOC exacerbadores: mortalidad posterior a una exacerbación. 
+								br/ Mortalidad a corto plazo (intrahospitalarias) son: 
+								ul
+									li Edad avanzada 
+									li Estancia hospitalaria prolongada previo al ingreso en la UCI 
+									li Disfunción respiratoria grave 
+									li Disfunción orgánica no respiratoria grave 		
+								
+								br/ El 10 % de los pacientes con EPOC hospitalizados con una exacerbación aguda de la EPOC mueren durante el ingreso hospitalario. Se aumenta en 25% si necesitan ventilación mecánica invasiva.
+								br/ B- Mortalidad a largo plazo: 
+								
+								ul
+									li Albúmina sérica baja
+									li IMC disminuido
+									li Enfermedad pulmonar avanzada 
+									li Disfunción orgánica no respiratoria
+									
+								br/ A 4 años solo sobrevive el 50% de los pacientes con EPOC que presentan exacerbación que requiera hospitalización.
+								br/ Sin embargo, todos estos factores tienen múltiples variables de confusión como las infecciones.
+								
+							td (8-10)
+							
+							
+						tr
+							td Otros
+							td Tanto la hipercapnia, PCR y presencia de falla respiratoria al ingreso, se han estudiado como posibles factores predictores de mortalidad, pero no tienen evidencia concluyente.
+							td (11-14)
+							
+							
+				h3 Comorbilidades en la Enfermedad Pulmonar Obstructiva Crónica
+				
+				p El 42% de los pacientes con EPOC muere de enfermedades no respiratorias (15), por lo cual deben buscarse siempre comorbilidades que puedan tener y ser controladas para que el tratamiento propiamente dicho del EPOC tenga el mejor resultado.
+				
+				
+							
+				//- progeso
+				div.progreso
+					h2 progreso
+					div#progreso20
+						
+						
+				
+						
+				
+				//- Material modulo
+				+material-modulo('material-mod-4')
+				
+				//- progrso y contador
+				+paginador('https://ubosquemoodle.unbosque.edu.co/mod/book/view.php?id=318877&chapterid=9266', 'back', 'https://ubosquemoodle.unbosque.edu.co/mod/book/view.php?id=318877&chapterid=9268', 'forward')
+	
+
+//- Final part of body
+//- Page transitions js
+include ../includes/js-body-ends.jade
+		
+		
+			

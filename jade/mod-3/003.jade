@@ -1,0 +1,64 @@
+include ../mixins.jade
+
+//- Head html tag
+include ../includes/header.jade
+
+//- Content
+div.curso-cc
+			
+	div.container-fluid
+		div.row-fluid
+			article.content-cc.article
+			
+				div.first_part
+					//- banner modulo
+					+banner('banner-3')
+				
+					//- menu
+					+menu
+			
+				+titulos-modulo('Módulo 3. Prevención Terciaria.')
+				
+				h3 3. Selección de pacientes: 
+				
+				p El éxito de un programa de rehabilitación pulmonar depende de qué tan bien se realice la selección de los pacientes, por tal motivo se deben tener claras las indicaciones y las contraindicaciones. 
+				
+				h3 3.1.	Indicaciones de rehabilitación pulmonar
+				
+				p Las indicaciones de rehabilitación pulmonar no están totalmente definidas. Pero los expertos y guías de manejo recomiendan que los pacientes con EPOC estable clasificados como GOLD estadios B, C y D se benefician de la rehabilitación pulmonar. (4)
+				p No existe una evidencia fuerte a favor de su uso en otras patologías respiratorias, pero puede utilizarse en bronquiectasias o fibrosis quística, asma (14,15), enfermedades neuromusculares y manejo de la tos de forma ineficaz, antes y después de cirugía torácica, incluyendo el trasplante pulmonar (16,17), enfermedad pulmonar intersticial (18) e hipertensión pulmonar (19). Sin embargo, para aquellos pacientes con otras enfermedades con síntomas respiratorios limitantes que tienen un deterioro importante de su calidad de vida, pueden tener algún grado de beneficio. (3,4). También parece que beneficia el control de síntomas del paciente con cáncer de pulmón (20,21)
+				
+				h3 3.2.	Contraindicaciones
+				
+				p No existe una contraindicación absoluta para la rehabilitación pulmonar, pero existen enfermedades o comorbilidades que aumentan el riesgo de complicaciones durante el ejercicio o dificultan la adherencia. (4)
+				p Enfermedades cardiovasculares agudizadas o no controladas como enfermedad coronaria, arritmias, aneurismas, falla cardiaca no compensada, hipertensión no controlada. (4)
+				p También se debe considerar aquellos pacientes que por comorbilidades osteo-musculares no puedan realizar ejercicio como artritis, artrosis, distrofias musculares con gran limitación. (4)
+				p Enfermedades psiquiátricas que impidan colaborar como Demencia, Retraso psicomotor global. (4)
+				p No hay contraindicación en cuanto a la edad, ni fragilidad, ni la gravedad de su patología respiratoria. La hipercapnia crónica debida a la EPOC tampoco es contraindicación. (22)
+				p Si el paciente presento una exacerbación reciente se debe esperar dos semanas para el inicio de rehabilitación pulmonar. (4)
+
+				
+				
+							
+				//- progeso
+				div.progreso
+					h2 progreso
+					div#progreso30
+						
+						
+				
+						
+				
+				//- Material modulo
+				+material-modulo('material-mod-3')
+				
+				//- progrso y contador
+				+paginador('https://ubosquemoodle.unbosque.edu.co/mod/book/view.php?id=317768&chapterid=9243', 'back', 'https://ubosquemoodle.unbosque.edu.co/mod/book/view.php?id=317768&chapterid=9245', 'forward')
+	
+
+//- Final part of body
+//- Page transitions js
+include ../includes/js-body-ends.jade
+		
+		
+			

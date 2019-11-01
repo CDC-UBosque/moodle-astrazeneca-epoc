@@ -1,0 +1,85 @@
+include ../mixins.jade
+
+//- Head html tag
+include ../includes/header.jade
+
+//- Content
+div.curso-cc
+			
+	div.container-fluid
+		div.row-fluid
+			article.content-cc.article
+			
+				div.first_part
+					//- banner modulo
+					+banner('banner-4')
+				
+					//- menu
+					+menu
+			
+				+titulos-modulo('Módulo 4. Prevención Cuaternaria.')
+				
+				
+				h3 Enfermedad Pulmonar Obstructiva Crónica y otras comorbilidades
+				
+				p Existen muchas comorbilidades que pueden acompañar esta clase de pacientes, pero las que más se destacan en el ambiente hospitalario y están descritas son:
+				
+				//- Table
+				table.table.table-striped
+					caption Tabla 2. Principales enfermedades cardiovasculares comórbidas en el paciente con EPOC.
+					thead
+						tr
+							th Comorbilidades
+							th Explicación
+							th Bibliografía
+					tbody
+						tr
+							td Diabetes Mellitus
+							td La asociación entre la EPOC con diabetes es frecuente, pero de forma concomitante tiene mayor riesgo de exacerbación y mortalidad. Esta combinación también se asocia con síndrome metabólico, el cual es una forma frecuente. 
+							td (27)
+							
+						tr
+							td Osteoporosis
+							td La presencia de fracturas vertebrales representa entre 20 al 80% y osteoporosis/osteopenia más del 35%, sobre todo cuando el paciente está clasificado como grave, por la necesidad de múltiples esquemas con corticoides tanto orales como inhalados.
+							td (28)
+							
+						tr
+							td Enfermedad por reflujo gastroesofágico (ERGE)
+							td La incidencia de ERGE es mayor comparado con comparado con la población general.  Debe buscarse signos y síntomas sugerentes e inicio de tratamiento empírico. No se conoce del todo su relación en la asociación con exacerbaciones. 
+							td (29)
+							
+						tr
+							td Falla renal
+							td Se ha encontrado de forma frecuente con insuficiencia renal (disminución de la tasa de filtración glomerular), pero no hay en el momento una certeza del papel en su asociación.  
+							td (30)
+							
+				
+				h3 Índice COTE
+				
+				p Es una herramienta creada para evaluar las comorbilidades de la EPOC y el riesgo de mortalidad a 4 años. Un umbral igual o superior a 4 puntos aumenta la mortalidad 2.2 veces. (15)
+							
+						
+				
+							
+				//- progeso
+				div.progreso
+					h2 progreso
+					div#progreso40
+						
+						
+				
+						
+				
+				//- Material modulo
+				+material-modulo('material-mod-4')
+				
+				//- progrso y contador
+				+paginador('https://ubosquemoodle.unbosque.edu.co/mod/book/view.php?id=318877&chapterid=9268', 'back', 'https://ubosquemoodle.unbosque.edu.co/mod/book/view.php?id=318877&chapterid=9270', 'forward')
+	
+
+//- Final part of body
+//- Page transitions js
+include ../includes/js-body-ends.jade
+		
+		
+			

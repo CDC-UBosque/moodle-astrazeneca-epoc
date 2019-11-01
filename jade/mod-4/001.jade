@@ -1,0 +1,64 @@
+include ../mixins.jade
+
+//- Head html tag
+include ../includes/header.jade
+
+//- Content
+div.curso-cc
+			
+	div.container-fluid
+		div.row-fluid
+			article.content-cc.article
+			
+				div.first_part
+					//- banner modulo
+					+banner('banner-4')
+				
+					//- menu
+					+menu
+			
+				+titulos-modulo('Módulo 4. Prevención Cuaternaria.')
+				
+				//- texto resaltado
+				//- div
+				//- 	div.span10.resaltado-txt
+				//- 		p En el siguiente enlace puede ingresar a realizar un pretest (no calificable)
+				//- 		a(href="https://ubosquemoodle.unbosque.edu.co/mod/quiz/view.php?id=312559" target="_blank" class="forward") Comenzar pretest
+				
+				h3 Autores:
+				
+				p: b GERMÁN DIAZ-SANTOS
+					br/ Médico Internista 
+					br/ Epidemiólogo
+					br/ Especialista en Neumología - Universidad El Bosque
+					br/ Especialista en Trastornos Respiratorios Durante el Dormir - UNAM
+					
+				p: b JOHN EDUARDO BASTIDAS
+					br/ Médico Internista 
+					br/ Especialista en Neumología - Universidad El Bosque
+					br/ Especialista en Oncología Torácica - UNAM
+				
+				p Desde el año de 1995, Marc Jamoulle en el comité de clasificación internacional propone la definición de prevención cuaternaria, como todas las medidas encaminadas a identificar los pacientes en riesgo por mala prescripción, tanto en métodos diagnósticos como en intervenciones terapéuticas y sugiriendo cómo estas deben ser correctas (conocidas actualmente como seguridad del paciente) (1). Esto con el fin de evitar sobrediagnóstico con estudios sin un propósito, sobretratamiento con medicaciones que no tengan ningún beneficio y evitando el tamizaje excesivo que cause daños por parte del personal de salud. Se debe tener un enfoque individual para el manejo del paciente, comunicación directa con este, buscar procedimientos justos y necesarios, con base en medicina basada en la evidencia (manteniendo principios éticos de beneficencia, justicia, no maleficencia y autonomía), garantizando la total transparencia. (2) Teniendo en cuenta estos principios debemos tratar a nuestro paciente con Enfermedad Pulmonar Obstructiva Crónica (EPOC), para lo cual debemos conocer el pronóstico, comorbilidades y el manejo paliativo.
+							
+				//- progeso
+				div.progreso
+					h2 progreso
+					div#progreso10
+						
+						
+				
+						
+				
+				//- Material modulo
+				+material-modulo('material-mod-4')
+				
+				//- progrso y contador
+				+paginador('#', 'disabled', 'https://ubosquemoodle.unbosque.edu.co/mod/book/view.php?id=318877&chapterid=9267', 'forward')
+	
+
+//- Final part of body
+//- Page transitions js
+include ../includes/js-body-ends.jade
+		
+		
+			

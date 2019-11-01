@@ -1,0 +1,102 @@
+include ../mixins.jade
+
+//- Head html tag
+include ../includes/header.jade
+
+//- Content
+div.curso-cc
+			
+	div.container-fluid
+		div.row-fluid
+			article.content-cc.article
+			
+				div.first_part
+					//- banner modulo
+					+banner('banner-4')
+				
+					//- menu
+					+menu
+			
+				+titulos-modulo('Módulo 4. Prevención Cuaternaria.')
+				
+				
+				h3 Enfermedades cardiovasculares en Enfermedad Pulmonar Obstructiva Crónica
+				
+				p Son una de las más frecuentes comorbilidades en el paciente con EPOC. Principalmente son enfermedad coronaria, falla cardiaca, arritmias, enfermedad arterial periférica e hipertensión. (Tabla 2) 
+				
+				//- Table
+				table.table.table-striped
+					caption Tabla 2. Principales enfermedades cardiovasculares comórbidas en el paciente con EPOC.
+					thead
+						tr
+							th Factor
+							th Explicación
+							th Bibliografía
+					tbody
+						tr
+							td Enfermedad coronaria
+							td Se presenta 5 veces más frecuente en los pacientes con EPOC, por lo cual siempre se debe estar en búsqueda de indicios que la sugieran.
+							td (16)
+							
+						tr
+							td Falla cardíaca
+							td 20-30% de los pacientes dependiendo la edad. Se puede presentar con componente sistólico y/o diastólico, en paciente estable o exacerbado y/o causando la exacerbación. Ante la sospecha se recomienda realizar estudios adicionales (NT-proBNP [fracción amino-terminal del propéptido natriurético cerebral] y ecocardiograma)
+							td (17)
+							
+						tr
+							td Enfermedad Cerebro vascular
+							td El riesgo de presentar un evento isquémico cerebral aumenta posterior a una exacerbación. Se asocia a inflamación y alteraciones en las plaquetas.
+							td (18)
+							
+						tr
+							td Arritmias
+							td La arritmia más frecuente en los pacientes con EPOC es la fibrilación auricular. En cuanto más cae las pruebas de función pulmonar más prevalente se vuelve. Su tratamiento no se diferencia de los pacientes sin EPOC.
+							td (19)
+							
+						tr
+							td Enfermedad arterial periférica
+							td Por las alteraciones que produce el tabaquismo en el endotelio es frecuente encontrar esta comorbilidad en pacientes con EPOC, dificultándoles el desplazamiento. Una de las formas de tamizarla recomendada es la utilización del índice tobillo /brazo.
+							td (20)
+							
+						tr
+							td Hipertensión Arterial sistémica
+							td Comorbilidad común, contribuyendo al compromiso isquémico y daños ventriculares, por lo cual debe recibir tratamiento una vez sea detectado.
+							td (15)
+							
+				
+				h3 Enfermedades Psiquiátricas en Enfermedad Pulmonar Obstructiva Crónica
+				
+				p Depresión y ansiedad: la depresión y ansiedad es prevalente en los pacientes con EPOC encontrándose desde 20% hasta 90% dependiendo del paciente. El tener esta comorbilidad disminuye la calidad de vida y aumenta la mortalidad. Empeora cuando se asocia a tabaquismo activo, por lo cual siempre se recomienda realizar la búsqueda de esta comorbilidad para consejería e inicio de tratamiento para abandono de tabaquismo, de resto no se diferencia del tratamiento convencional de esta patología (21) Además, los familiares y/o cuidadores también pueden presentar los mimos síntomas (ansiedad= 64% y depresión=34%) (22) Los médicos debemos realizar la búsqueda constante de estas comorbilidades en el paciente y familiares y/o cuidadores.
+				p Deterioro cognitivo: los pacientes con EPOC grave pueden cursar con disfunción cognitiva, esto posiblemente por alteraciones en el intercambio gaseoso y por alteraciones vasculares causadas por el cigarrillo. (23)
+				
+				h3 Apnea Obstructiva del Sueño en pacientes con Enfermedad Pulmonar Obstructiva Crónica
+				
+				p Los trastornos respiratorios durante el dormir se asocian hasta en el 40% de los pacientes con EPOC. Este apartado engloba todo lo que es: hipoxemia relacionada con el sueño, hipoventilación relacionada con el sueño y Apnea tanto obstructiva como central (24), pero al compararse con población general tienen la misma prevalencia en cuanto a la apnea obstructiva.
+				
+				h3 Cáncer de Pulmón en la Enfermedad Pulmonar Obstructiva Crónica
+				
+				p La EPOC es considerada como el principal factor de riesgo independiente para el cáncer de pulmón (25) y esta es la comorbilidad que causa más muertes en estos pacientes. El riesgo de sufrir cáncer de pulmón en pacientes con EPOC es mayor a 4 veces. Los factores de riesgo son edad >60 años, enfisema, IPA (índice paquetes/año >60) e IMC &lt;25. (26)
+				
+							
+				//- progeso
+				div.progreso
+					h2 progreso
+					div#progreso30
+						
+						
+				
+						
+				
+				//- Material modulo
+				+material-modulo('material-mod-4')
+				
+				//- progrso y contador
+				+paginador('https://ubosquemoodle.unbosque.edu.co/mod/book/view.php?id=318877&chapterid=9267', 'back', 'https://ubosquemoodle.unbosque.edu.co/mod/book/view.php?id=318877&chapterid=9269', 'forward')
+	
+
+//- Final part of body
+//- Page transitions js
+include ../includes/js-body-ends.jade
+		
+		
+			

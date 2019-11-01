@@ -1,0 +1,115 @@
+include ../mixins.jade
+
+//- Head html tag
+include ../includes/header.jade
+
+//- Content
+div.curso-cc
+			
+	div.container-fluid
+		div.row-fluid
+			article.content-cc.article
+			
+				div.first_part
+					//- banner modulo
+					+banner('banner-4')
+				
+					//- menu
+					+menu
+			
+				+titulos-modulo('Módulo 4. Prevención Cuaternaria.')
+				
+				
+				h3 Cuidados Paliativos en la Enfermedad Pulmonar Obstructiva Crónica
+				
+				p El principal objetivo de la atención con intensión paliativa en los pacientes con EPOC es aliviar el sufrimiento en todas las etapas de la enfermedad (no se limita a la atención del final de la vida). Gracias a esto es imperativo siempre informar a los pacientes y a sus familias sobre la enfermedad, pronóstico y coordinar los tipos de cuidados paliativos. (47) 
+				p Los temas para abordar durante las discusiones de planificación de la atención avanzada incluyen diagnóstico, pronóstico, objetivos de atención del paciente, valores y creencias. Siempre se debe analizar los valores y objetivos de los pacientes con intensión paliativa, explicando la atención avanzada, antes de pedirles que realicen la elección de ventilación mecánica o reanimación cerebro-cardio-pulmonar (RCCP). El uso de estos cuidados ha demostrado que disminuye las consultas innecesarias y puede reducirle costos al sistema (48)		
+				
+				h3 Indicaciones para una consulta de cuidados paliativos 
+
+				p No se han establecido las indicaciones para una consulta formal a cuidados paliativos para pacientes con enfermedad pulmonar crónica. Sin embargo, existen algunas situaciones en las cuales se recomienda la valoración por este especialista. (49) (Tabla 4) Sin embargo, no es tan fácil establecer el pronóstico del paciente con EPOC (mas no imposible) por lo cual el inicio de los cuidados paliativos no debe ser basado en la esperanza de vida, sino en las necesidades del paciente de acuerdo a la sintomatología. (50) 
+				
+				
+				//- Table
+				table.table.table-striped
+					caption Tabla 4. Criterios para considerar una derivación de cuidados paliativos en pacientes con enfermedad pulmonar crónica. (49,50)
+					thead
+						tr
+							th Características del paciente
+					tbody
+						tr
+							td 
+								ul
+									li Opciones limitadas para el tratamiento
+									li Síntomas físicos (dolor, disnea o tos), que son refractarios al tratamiento convencional
+									li Alta carga de síntomas o puntaje de angustia
+									li Incapacidad para participar en la planificación de la atención anticipada y el plan de atención
+									li Incertidumbre sobre el pronóstico o la trayectoria de la enfermedad.
+									li Deterioro cognitivo
+									li Condiciones comórbidas graves o múltiples.
+									li Barreras de comunicación relacionadas con el lenguaje, alfabetización o problemas físicos.
+									li Solicitud de muerte acelerada
+									li Confinamiento en casa
+									
+					thead
+						tr
+							th Circunstancias sociales o cuestiones relacionadas con el duelo anticipado.
+					tbody
+						tr
+							td 
+								p Acceso limitado a la atención
+									br/ Factores familiares, incluyendo:
+									
+								ul
+									li Limitaciones de la familiar/cuidador
+									li Apoyo familiar inadecuado
+									li Discordia familiar
+									li Historia de relación (es) intensamente dependiente (s)
+									li Preocupaciones de los padres sobre el cuidado de dependientes.
+									li Limitaciones financieras
+									li Duelo no resuelto o múltiples pérdidas previas.
+									li Crisis espiritual o existencial.
+									li Necesidad de coordinación de atención en múltiples sitios.
+				
+				
+				
+				h3 Introducir los cuidados paliativos a los pacientes y sus familias 
+				
+				p Se recomienda utilizar el término "atención de apoyo" en lugar de cuidados paliativos para los pacientes, informar que este se enfoca en el manejo de síntomas, comunicación de las metas y deseos de los pacientes (Valores y creencias). (51) 
+				p La discusión debe realizarse cuando el paciente está relativamente estable, no durante los episodios de exacerbación, para que pueda participar plenamente de la decisión. Se recomienda realizar cuando se inicie un nuevo tratamiento (se escalone para control de síntomas), cuando no existan más opciones terapéuticas, disminución de la función pulmonar, exacerbaciones y/o hospitalizaciones frecuentes (>3 episodios en 1 año), se considere al paciente candidato para trasplante pulmonar. (51)
+				p Se debe iniciar enfocándose en los síntomas (disnea progresiva), aumento del requerimiento de oxígeno, disminución de las pruebas de función pulmonar, mayor dependencia del cuidador o la última hospitalización/visita a urgencias. (51)
+				p Una vez en el tema, se debe discutir la comprensión del paciente sobre su enfermedad y su pronóstico, como se evalúa y controlan los síntomas, discutir los objetivos de la atención y planificación de la atención avanzada, coordinar esta y ayudar a planificar la atención al final de la vida, incluida la determinación de la necesidad y momento del cuidado de hospicio (modelo de cuidados paliativos que se ofrece a los pacientes con una enfermedad terminal que se encuentran al final de su vida - generalmente con una expectativa de vida estimada de 6 meses o menos) cuando la terapia curativa o la de prolongación de la vida es negativa). Puede ser beneficioso incluir cuidadores y/o familiares para además evaluar la necesidad de tratamiento específicas (ventilación mecánica y/o RCCP). (51)
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+							
+				//- progeso
+				div.progreso
+					h2 progreso
+					div#progreso80
+						
+						
+				
+						
+				
+				//- Material modulo
+				+material-modulo('material-mod-4')
+				
+				//- progrso y contador
+				+paginador('https://ubosquemoodle.unbosque.edu.co/mod/book/view.php?id=318877&chapterid=9272', 'back', 'https://ubosquemoodle.unbosque.edu.co/mod/book/view.php?id=318877&chapterid=9274', 'forward')
+	
+
+//- Final part of body
+//- Page transitions js
+include ../includes/js-body-ends.jade
+		
+		
+			

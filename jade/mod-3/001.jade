@@ -1,0 +1,64 @@
+include ../mixins.jade
+
+//- Head html tag
+include ../includes/header.jade
+
+//- Content
+div.curso-cc
+			
+	div.container-fluid
+		div.row-fluid
+			article.content-cc.article
+			
+				div.first_part
+					//- banner modulo
+					+banner('banner-3')
+				
+					//- menu
+					+menu
+			
+				+titulos-modulo('Módulo 3. Prevención Terciaria.')
+				
+				//- texto resaltado
+				//- div
+				//- 	div.span10.resaltado-txt
+				//- 		p En el siguiente enlace puede ingresar a realizar un pretest (no calificable)
+				//- 		a(href="https://ubosquemoodle.unbosque.edu.co/mod/quiz/view.php?id=312559" target="_blank" class="forward") Comenzar pretest
+				
+				h3 Autores:
+				
+				p: b GERMÁN DIAZ-SANTOS
+					br/ Médico Internista 
+					br/ Epidemiólogo
+					br/ Especialista en Neumología - Universidad El Bosque
+					br/ Especialista en Trastornos Respiratorios Durante el Dormir - UNAM
+					
+				p: b JOHN EDUARDO BASTIDAS
+					br/ Médico Internista 
+					br/ Especialista en Neumología - Universidad El Bosque
+					br/ Especialista en Oncología Torácica - UNAM
+				
+				p Para la prevención terciaria en la EPOC (Enfermedad Pulmonar Obstructiva Crónica) se intensifican todas las acciones para el control y seguimiento de los pacientes para desacelerar la progresión de la enfermedad y entre ellas estas la rehabilitación pulmonar la cual puede ayudar a disminuir todos los efectos en la pérdida de la salud, facilitando la adaptación a la enfermedad y prevenir o disminuir nuevas recaídas por lo cual es el tema central de este módulo.
+							
+				//- progeso
+				div.progreso
+					h2 progreso
+					div#progreso10
+						
+						
+				
+						
+				
+				//- Material modulo
+				+material-modulo('material-mod-3')
+				
+				//- progrso y contador
+				+paginador('#', 'disabled', 'https://ubosquemoodle.unbosque.edu.co/mod/book/view.php?id=317768&chapterid=9243', 'forward')
+	
+
+//- Final part of body
+//- Page transitions js
+include ../includes/js-body-ends.jade
+		
+		
+			

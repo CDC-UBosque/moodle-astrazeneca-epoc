@@ -1,0 +1,85 @@
+include ../mixins.jade
+
+//- Head html tag
+include ../includes/header.jade
+
+//- Content
+div.curso-cc
+			
+	div.container-fluid
+		div.row-fluid
+			article.content-cc.article
+			
+				div.first_part
+					//- banner modulo
+					+banner('banner-4')
+				
+					//- menu
+					+menu
+			
+				+titulos-modulo('Módulo 4. Prevención Cuaternaria.')
+				
+				
+				h3 Manejo de la Enfermedad Pulmonar Obstructiva Crónica refractaria
+				
+				p La mayoría de los pacientes con EPOC, pueden lograr el control de los síntomas y exacerbaciones con intervenciones como el abandono del tabaquismo, vacunas (influenza y neumococo), rehabilitación pulmonar e inhaladores. (31) Sin embargo, un pequeño grupo de ellos persisten con los síntomas o presentan exacerbaciones recurrentes, estos pacientes podría entrar en la categoría de EPOC refractaria, aunque este término no está del todo aceptado. 
+				p Generalmente los pacientes con EPOC acusan disnea que es su principal motivo de consulta, además de tos, expectoración, sibilancias y dolor torácico. También pueden referir pérdida de peso, trastornos del sueño y anorexia. Recomendamos realizar los siguientes pasos en el paciente con EPOC refractario: 
+				
+				ol 
+					li Siempre se debe evaluar la adherencia, técnica de la inhalación y dosis del inhalador instaurado por el médico tratante. (Tabla 3) (11)
+				
+				//- Table
+				table.table.table-striped
+					caption Tabla 3. Adherencia y técnica del uso de inhaladores.
+					thead
+						tr
+							th Adherencia
+							th Técnica (11)
+					tbody
+						tr
+							td 
+								p La adherencia en los pacientes con EPOC no es superior al 41%. (32) Este evento se asocia a mayor presencia de exacerbaciones y aumento de los costos en la salud. (33) Por lo cual se debe siempre preguntar a los pacientes sobre el uso de sus inhaladores.
+								p También debe preguntarse sobre diferentes barreras en la atención en salud (faltas en la entrega, gastos adicionales, preocupación por efectos adversos, etc) (34)
+							td 
+								p EL tratamiento con los inhaladores puede ser diferente dependiendo del inhalador formulado:
+
+								p Inhaladores de dosis medidas presurizadas (pMDI): más conocidos como inhaladores de rescate, pueden tener problemas con la administración de pMDI, especialmente con la coordinación de la respiración con la mano. 
+
+								p Inhaladores de polvo seco (DPI): tienen la ventaja de ser activados por la respiración, por lo tanto, menos sujetos a problemas con la coordinación y la inhalación. Estos requieren un umbral de flujo inspiratorio mínimo, que los pacientes con EPOC avanzada no pueden a veces no llegar a generar. 
+
+								p Inhaladores de niebla fina (SMI): opción alternativa que dependen menos del flujo inspiratorio incluyen pMDI y SMI.
+
+								p Otras opciones:
+									br/ Cámara para inhaladores de dosis medidas
+									br/ Medicamentos nebulizados 
+
+				ol(start='2') 
+					li Se deben solicitar pruebas de función pulmonar e imágenes torácicas (radiografía de tórax PA y lateral o Tomografía de alta resolución), pues como ya se mencionó, esta enfermedad se puede asociar con aparición de neoplasias, alteraciones intersticiales concomitantes o enfisema.  (11)
+					li Si la oximetría de pulso esta baja o limítrofe se recomienda la realización de gases arteriales esto dará peso a una alteración pulmonar o extrapulmonar y evaluar si hay hipercapnia asociada. También se puede utilizar la camina de 6 minutos, que tiene la ventaja de evaluar la saturación, disnea y capacidad en ejercicio. Esto podría establecer la necesidad de oxígeno domiciliario continuo. (11)
+					li EKG para evaluar arritmias o isquemia y/o ecocardiograma (transtorácico o transesofágico) para evaluar signos indirectos de hipertensión pulmonar o alteraciones valvulares. (11)
+					
+				p Después de evaluar alteraciones propias de la enfermedad se debe buscar enfermedades concomitantes (comorbilidades) no compensadas o exacerbantes de la EPOC.
+				
+							
+				//- progeso
+				div.progreso
+					h2 progreso
+					div#progreso50
+						
+						
+				
+						
+				
+				//- Material modulo
+				+material-modulo('material-mod-4')
+				
+				//- progrso y contador
+				+paginador('https://ubosquemoodle.unbosque.edu.co/mod/book/view.php?id=318877&chapterid=9269', 'back', 'https://ubosquemoodle.unbosque.edu.co/mod/book/view.php?id=318877&chapterid=9271', 'forward')
+	
+
+//- Final part of body
+//- Page transitions js
+include ../includes/js-body-ends.jade
+		
+		
+			

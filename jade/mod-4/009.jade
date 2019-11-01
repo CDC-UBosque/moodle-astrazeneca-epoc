@@ -1,0 +1,108 @@
+include ../mixins.jade
+
+//- Head html tag
+include ../includes/header.jade
+
+//- Content
+div.curso-cc
+			
+	div.container-fluid
+		div.row-fluid
+			article.content-cc.article
+			
+				div.first_part
+					//- banner modulo
+					+banner('banner-4')
+				
+					//- menu
+					+menu
+			
+				+titulos-modulo('Módulo 4. Prevención Cuaternaria.')
+				
+				
+				h3 Manejo de los síntomas
+				
+				p Los cuidados paliativos también pueden ayudar al control de los síntomas avanzados de la EPOC como lo son la disnea, tos expectoración y hemoptisis entre otros. (52) Pero, siempre son complementarios al tratamiento convencional del EPOC (No los remplazan). 
+
+				p Disnea: hasta el 94% de los pacientes con EPOC grave, tienen disnea moderada a grave no controlada.  (53) Esta influye la calidad de vida tanto del paciente como del cuidador. (54) El tratamiento de la disnea se clasifica como farmacológico y no farmacológico. (55) (Tabla 5)
+				
+				
+				//- Table
+				table.table.table-striped
+					caption Tabla 5. Tratamiento de la disnea en paciente con EPOC avanzado.
+					thead
+						tr
+							th Tratamiento
+							th Opción
+							th Recomendación
+					tbody
+						tr
+							td(rowspan='3') Farmacológicos
+							td Opioides 
+							td Son la primera elección farmacológica recomendada por expertos en el tema (56), pero por temor a los efectos adversos de estos medicamentos no son tan utilizados en la práctica médica. (57). Se recomienda siempre asociar laxantes con estos medicamentos para disminuir los efectos gastrointestinales como lo es el estreñimiento.
+						tr
+							td Ansiolíticos
+							td Ideal cuando existe rasgos de ansiedad no tratada (58) sin embargo la evidencia no es concluyente para su uso generalizado en los pacientes con EPOC. (59)
+						tr
+							td Oxígeno suplementario 
+							td Es recomendado si este es requerido.
+							
+						tr
+							td(rowspan='2') No farmacológico
+							td Ventilación mecánica no invasiva 
+							td Medida de soporte vital y para comodidad posterior al renunciar a las medidas de soporte vital. (60), también para disnea para paliación en el contexto de cáncer terminal con poca evidencia. (61) 
+						tr
+							td Rehabilitación pulmonar, ergonomía y estrategias para adaptación 
+							td (32,62)
+							
+				p También, deben de tenerse en cuenta tratamiento de comorbilidades o complicaciones del EPOC.
+				p Los pacientes con EPOC pueden presentar crisis de disnea. Cuando esta se presenta debe llamar por ayuda, observar y evaluar la gravedad de la dificultad respiratoria, suministrar la medicación (morfina, inhaladores o tratamiento para ansiedad), ventilar (abrir las ventanas), suministrar oxigeno si está indicado, tranquilizar al paciente y tomarse su tiempo. (62)
+				p Tos: primero se debe primero establecer cuál es la etiología de la tos y descartarse otras causas de esta. Una vez establecida que no hay otra causa controlable, pueden utilizarse opioides que están recomendados para la tos refractaria en estos casos. (63)
+
+				p Hemoptisis: cuando el paciente presenta hemoptisis, es un síntoma que sin importar la cantidad puede causar alarma, por lo cual se debe explicar, calmar al paciente y a los familiares. Cuando es masiva se recomienda posicionar al paciente sobre el pulmón sangrante para enlentecer el flujo. Esto puede llevar a una caída de la volemia y fallecimiento del paciente.  (62)
+							
+							
+							
+							
+							
+							
+							
+				
+				
+				
+				h3 Cuidadores
+				
+				p EL 50-80% de los pacientes con EPOC avanzado pueden requerir ayuda con las actividades cotidianas del paciente, de cuidadores y/o familiares. (64) Estos tienen que interrumpir sus actividades para cumplir con dichas ayudas, esto conlleva a una carga financiera y a su vez esta ayuda aumenta con el acercamiento al final de la vida del paciente. (65)				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+							
+				//- progeso
+				div.progreso
+					h2 progreso
+					div#progreso90
+						
+						
+				
+						
+				
+				//- Material modulo
+				+material-modulo('material-mod-4')
+				
+				//- progrso y contador
+				+paginador('https://ubosquemoodle.unbosque.edu.co/mod/book/view.php?id=318877&chapterid=9273', 'back', 'https://ubosquemoodle.unbosque.edu.co/mod/book/view.php?id=318877&chapterid=9275', 'forward')
+	
+
+//- Final part of body
+//- Page transitions js
+include ../includes/js-body-ends.jade
+		
+		
+			

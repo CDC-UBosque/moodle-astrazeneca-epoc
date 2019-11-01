@@ -1,0 +1,72 @@
+include ../mixins.jade
+
+//- Head html tag
+include ../includes/header.jade
+
+//- Content
+div.curso-cc
+			
+	div.container-fluid
+		div.row-fluid
+			article.content-cc.article
+			
+				div.first_part
+					//- banner modulo
+					+banner('banner-3')
+				
+					//- menu
+					+menu
+			
+				+titulos-modulo('Módulo 3. Prevención Terciaria.')
+				
+				h3 4. Como prescribirla adecuadamente (RP)
+				
+				p Se debe seleccionar el paciente para ser incluido en un programa de rehabilitación pulmonar, teniendo en cuenta una buena evaluación clínica, imágenes y pruebas de función pulmonar y caminata de seis minutos. (23, 3)
+				p El número mínimo de sesiones para que la rehabilitación pulmonar tenga los mejores resultados son ocho sesiones y no se ha mostrado un beneficio adicional cuando se extiende más de 12 sesiones, por lo cual no se recomienda en el paciente con EPOC; estas se pueden realizar dos veces por semana. (3). Sin embargo, es muy importante entender que el programa de rehabilitación pulmonar es individualizado y debe ser supervisado por el medico neumólogo. 
+				
+				h3 5. Educación del paciente (TIPs)
+				
+				p Uno de los componentes más importantes de la rehabilitación pulmonar es la educación del paciente para lograr cambios en la conducta. (24)
+				p En la educación del paciente se enfatiza en el abandono del tabaquismo, oxigenoterapia (si la requiere), nutrición, actividad física, uso adecuado de medicamentos (inhaladores), vacunación oportuna, estrategias para el autocuidado (comprender, reconocer y tratar los síntomas de su enfermedad) y signos de alarma. (25)
+				p El abandono del tabaquismo (si el paciente no lo ha realizado) es uno de los objetivos más importantes para lograr los beneficios en la rehabilitación pulmonar, debiendo enfatizarse en los riesgos del tabaquismo y derivación al paciente a programas de abandono del tabaquismo. (26)
+				p La valoración nutricional es importante porque los pacientes con EPOC tienen alto riesgo de obesidad por las limitaciones en la actividad física y los efectos adversos de los medicamentos utilizados. (4)
+				p Se debe evaluar en los pacientes las técnicas inhalatorias, dosis y frecuencias de uso en los pacientes. (4)
+				p Evaluar y recordar al paciente el plan de acción o estrategias para el control de síntomas entre los cuales se deben de tener cuenta el manejo de esquemas de crisis en casa, vacunación y ejercicio físico. (27-29)
+				p En la figura 1 esquematizamos cuales son las condiciones ideales para realizar la rehabilitación pulmonar.
+				
+				
+				//- imagen o video				
+				div.banner-video
+					div.span9
+						div#video
+							figure.galeria
+								a.example-image-link(href='https://ubosquemoodle.unbosque.edu.co/diseno/cursos/nuevo-EPOC/images/mod-3/001.jpg' data-lightbox='example-1')
+									img.example-image(src='https://ubosquemoodle.unbosque.edu.co/diseno/cursos/nuevo-EPOC/images/mod-3/001.jpg' alt='image-1')
+					div.span3
+						div.img-footer
+							span Figura 1. Flujograma para realizar rehabilitación pulmonar en el paciente con EPOC. (Elaboración propia)
+				
+				
+							
+				//- progeso
+				div.progreso
+					h2 progreso
+					div#progreso50
+						
+						
+				
+						
+				
+				//- Material modulo
+				+material-modulo('material-mod-3')
+				
+				//- progrso y contador
+				+paginador('https://ubosquemoodle.unbosque.edu.co/mod/book/view.php?id=317768&chapterid=9244', 'back', 'https://ubosquemoodle.unbosque.edu.co/mod/book/view.php?id=317768&chapterid=9246', 'forward')
+	
+
+//- Final part of body
+//- Page transitions js
+include ../includes/js-body-ends.jade
+		
+		
+			

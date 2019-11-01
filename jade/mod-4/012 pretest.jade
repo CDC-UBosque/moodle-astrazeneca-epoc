@@ -1,0 +1,881 @@
+include ../mixins.jade
+
+//- Head html tag
+include ../includes/header.jade
+
+//- Content
+div.curso-cc
+			
+	div.container-fluid
+		div.row-fluid
+			article.content-cc.article
+			
+				div.first_part
+					//- banner modulo
+					+banner('banner-2')
+				
+					//- menu
+					+menu
+			
+				+titulos-modulo('Módulo 4. Caso clínico')
+				
+				ul
+					li Paciente masculino (Pepe) 77 años. 
+					li Antecedentes: HTA, DM, apnea del sueño.
+					li IPApnea = 35, trabajo en construcción por 20 años sin protección respiratoria. Refiere tos y expectoración hialina.
+					li Al examen físico: buenas condiciones generales signos vitales de FC:88xmin FR:18xmin TA: 120/81 Peso:49 Kg Talla: 160 cm. 
+					li Rx de tórax con Enfisema apical bilateral y signos indirectos de cardiomegalia. BNP de 46 (Normal).
+					
+				p *¿Con esta información, el paciente tienen un Dx de EPOC?<br/> ¿Cuál sería el mejor manejo para este paciente?
+				
+				
+				// container content
+				.content-cc-interns.modalq
+					.questions-cc
+						.hdr
+							span *¿Con esta información, el paciente tiene un Dx de EPOC?
+
+						.infoq-cc
+							//- .qst
+							//- 	| La escala mMRC permite:
+							.options
+							
+								//- -------------- punto a
+								.box-cc
+									.txt.span9
+										span a
+										p Verdadero
+									.span3
+										.remodal-bg.boton-POPS
+											a.btn-orange(href='#', data-remodal-target='modalpregunta1-incorrecto') Seleccionar
+										
+								//- -------------- punto b		
+								.box-cc
+									.txt.span9
+										span b
+										p Falso
+									.span3
+										.remodal-bg.boton-POPS
+											a.btn-orange(href='#', data-remodal-target='modalpregunta1-correcto') Seleccionar
+											
+				
+				h3 Curva flujo-Volumen del paciente
+				
+				//- imagen o video				
+				div.banner-video
+					div.span9
+						div#video
+							figure.galeria
+								a.example-image-link(href='https://ubosquemoodle.unbosque.edu.co/diseno/cursos/nuevo-EPOC/images/mod-4/003.jpg' data-lightbox='example-2')
+									img.example-image(src='https://ubosquemoodle.unbosque.edu.co/diseno/cursos/nuevo-EPOC/images/mod-4/003.jpg' alt='image-1')
+					div.span3
+						div.img-footer
+							span ¿Con esta información  como clasificaría al paciente de acuerdo al GOLD? <br/>¿Qué otra información requeriría para clasificar adecuadamente al paciente y darle la mejor opción de manejo?
+								
+								
+				
+				
+											
+				// container content
+				.content-cc-interns.modalq
+					.questions-cc
+						.hdr
+							span *De acuerdo a esto como clasificaría
+
+						.infoq-cc
+							//- .qst
+							//- 	| La escala mMRC permite:
+							.options
+							
+								//- -------------- punto a
+								.box-cc
+									.txt.span9
+										span a
+										p EPOC GOLD 1 Leve
+									.span3
+										.remodal-bg.boton-POPS
+											a.btn-orange(href='#', data-remodal-target='modalpregunta2-correcto') Seleccionar
+										
+								//- -------------- punto b		
+								.box-cc
+									.txt.span9
+										span b
+										p EPOC GOLD 2 Moderado
+									.span3
+										.remodal-bg.boton-POPS
+											a.btn-orange(href='#', data-remodal-target='modalpregunta2-incorrecto') Seleccionar
+											
+								//- -------------- punto c		
+								.box-cc
+									.txt.span9
+										span c
+										p EPOC GOLD 3 Grave
+									.span3
+										.remodal-bg.boton-POPS
+											a.btn-orange(href='#', data-remodal-target='modalpregunta2-incorrecto') Seleccionar
+											
+								//- -------------- punto d
+								.box-cc
+									.txt.span9
+										span d
+										p EPOC GOLD 4 Muy grave
+									.span3
+										.remodal-bg.boton-POPS
+											a.btn-orange(href='#', data-remodal-target='modalpregunta2-incorrecto') Seleccionar
+											
+											
+											
+				h3 ¿Qué otra información requeriría para clasificar adecuadamente al paciente y darle la mejor opción de manejo?
+				
+				p Se requiere aplicar la Escala mMRC ( Medical Research Council) para evaluar la severidad de la disnea o CAT para evaluar de forma simple su calidad de vida.
+				
+				p Saber si ha tenido exacerbaciones.
+				
+				p Se requiere saber el manejo previo que tenia el paciente y verificar si lo esta haciendo adecuadamente.
+				
+				table.table.table-striped
+					caption Escala MRCm ( Medical Research Council) (2)
+					thead
+						tr
+							th Grado
+							th Dificultad respiratoria
+					tbody
+						tr
+							td 0
+							td Ausencia de disnea excepto al realizar ejercicio intenso
+						tr
+							td(style='border: 2px solid red;') 1
+							td(style='border: 2px solid red;') Disnea al andar deprisa o al subir una cuesta poco pronunciada
+						tr
+							td 2
+							td Incapacidad para mantener el paso de otras personas de la misma edad, caminando en llano, debido a la dificultad respiratoria, o tener que parar a descansar al andar en llano al propio paso
+						tr
+							td 3
+							td Tener que parar a descansar al andar unos 100 metros o a los pocos minutos de andar en llano
+						tr
+							td 4
+							td La disnea impide al paciente salir de casa o aparece con actividades como vestirse o desvestirse
+				
+				
+				//- imagen o video				
+				div.banner-video
+					div.span9
+						div#video
+							figure.galeria
+								a.example-image-link(href='https://ubosquemoodle.unbosque.edu.co/diseno/cursos/nuevo-EPOC/images/mod-4/004.jpg' data-lightbox='example-2')
+									img.example-image(src='https://ubosquemoodle.unbosque.edu.co/diseno/cursos/nuevo-EPOC/images/mod-4/004.jpg' alt='image-1')
+					div.span3
+						div.img-footer
+							span 
+											
+										
+				// container content
+				.content-cc-interns.modalq
+					.questions-cc
+						.hdr
+							span *El paciente no ha tenido exacerbaciones de acuerdo  a esto el paciente esta clasificado como:
+
+						.infoq-cc
+							//- .qst
+							//- 	| La escala mMRC permite:
+							.options
+							
+								//- -------------- punto a
+								.box-cc
+									.txt.span9
+										span a
+										p GOLD 1 A
+									.span3
+										.remodal-bg.boton-POPS
+											a.btn-orange(href='#', data-remodal-target='modalpregunta3-correcto') Seleccionar
+										
+								//- -------------- punto b		
+								.box-cc
+									.txt.span9
+										span b
+										p GOLD 1 B
+									.span3
+										.remodal-bg.boton-POPS
+											a.btn-orange(href='#', data-remodal-target='modalpregunta3-incorrecto') Seleccionar
+											
+								//- -------------- punto c		
+								.box-cc
+									.txt.span9
+										span c
+										p GOLD 1 C
+									.span3
+										.remodal-bg.boton-POPS
+											a.btn-orange(href='#', data-remodal-target='modalpregunta3-incorrecto') Seleccionar
+											
+								//- -------------- punto d
+								.box-cc
+									.txt.span9
+										span d
+										p GOLD 1 D
+									.span3
+										.remodal-bg.boton-POPS
+											a.btn-orange(href='#', data-remodal-target='modalpregunta3-incorrecto') Seleccionar
+											
+											
+
+					
+					
+				br/
+				br/
+				h2 Caso clínico
+				
+				ul
+					li El paciente estaba con manejo de SAMA+SABA+ corticoide inhalado
+					li Retorna a la consulta 
+					li Tuvo una exacerbación de la EPOC hace 3 meses, por la que fue hospitalizado y requirió optimización de manejo broncodilatador.  Salió con un LAMA y la espirometría no ha tenido mayores cambios.
+					
+				h3 ¿Como haría el seguimiento y el manejo de este paciente ?
+					
+				//- imagen o video				
+				div.banner-video
+					div.span9
+						div#video
+							figure.galeria
+								a.example-image-link(href='https://ubosquemoodle.unbosque.edu.co/diseno/cursos/nuevo-EPOC/images/mod-4/006.jpg' data-lightbox='example-2')
+									img.example-image(src='https://ubosquemoodle.unbosque.edu.co/diseno/cursos/nuevo-EPOC/images/mod-4/006.jpg' alt='image-1')
+					div.span3
+						div.img-footer
+							span 
+					
+					
+				h3 Conteo de eosinófilos en sangre
+				
+				ul
+					li Trae un hemograma con 
+					li Leucocitos 9,40 10^3/ul
+					li Eosinófilos 0,20 10^3/ul
+					li Eosinófilos 2,30 %	
+					
+				p El paciente refiere que no ha mejorado de la disnea con el nuevo medicamento desde la salida de la hospitalización Escala MRCm 2, pero ha estado estable, persiste con tos y expectoración hialina.  No ha tenido unas nuevas exacerbaciones.
+				
+				// container content
+				.content-cc-interns.modalq
+					.questions-cc
+						.hdr
+							span *Conteo de eosinófilos en sangre, ¿con cuál opción esta de acuerdo usted?
+
+						.infoq-cc
+							//- .qst
+							//- 	| La escala mMRC permite:
+							.options
+							
+								//- -------------- punto a
+								.box-cc
+									.txt.span9
+										span a
+										p Tiene conteo de esinófilos menor de 100
+									.span3
+										.remodal-bg.boton-POPS
+											a.btn-orange(href='#', data-remodal-target='modalpregunta4-incorrecto') Seleccionar
+										
+								//- -------------- punto b		
+								.box-cc
+									.txt.span9
+										span b
+										p Tienen un conteo de eosinófilos entre 100 y 300
+									.span3
+										.remodal-bg.boton-POPS
+											a.btn-orange(href='#', data-remodal-target='modalpregunta4-correcto') Seleccionar
+											
+								//- -------------- punto c		
+								.box-cc
+									.txt.span9
+										span c
+										p Tienen un conteo de eosinófilos mayor de 300
+									.span3
+										.remodal-bg.boton-POPS
+											a.btn-orange(href='#', data-remodal-target='modalpregunta4-incorrecto') Seleccionar
+											
+								//- -------------- punto d
+								.box-cc
+									.txt.span9
+										span d
+										p Para este paciente no importa como este el conteo de eosinófilos ya que esta estable.
+									.span3
+										.remodal-bg.boton-POPS
+											a.btn-orange(href='#', data-remodal-target='modalpregunta4-incorrecto') Seleccionar
+											
+											
+											
+				// container content
+				.content-cc-interns.modalq
+					.questions-cc
+						.hdr
+							span *La disnea se aumentó respecto al grado que tenía antes de la hospitalización (una exacerbación en el último año), la tos y la expectoración persisten estables.  Los eosinófilos en sangre están entre 100 y 300. ¿Cuál sería la mejor opción de manejo en lo farmacológico?
+
+						.infoq-cc
+							//- .qst
+							//- 	| La escala mMRC permite:
+							.options
+							
+								//- -------------- punto a
+								.box-cc
+									.txt.span9
+										span a
+										p Sigo con el LAMA igual
+									.span3
+										.remodal-bg.boton-POPS
+											a.btn-orange(href='#', data-remodal-target='modalpregunta5-incorrecto') Seleccionar
+										
+								//- -------------- punto b		
+								.box-cc
+									.txt.span9
+										span b
+										p Adiciono el LABA  y quedaría con LAMA y LABA
+									.span3
+										.remodal-bg.boton-POPS
+											a.btn-orange(href='#', data-remodal-target='modalpregunta5-incorrecto') Seleccionar
+											
+								//- -------------- punto c		
+								.box-cc
+									.txt.span9
+										span c
+										p Le cambio a un LABA con Corticoide inhalado
+									.span3
+										.remodal-bg.boton-POPS
+											a.btn-orange(href='#', data-remodal-target='modalpregunta5-correcto') Seleccionar
+											
+								//- -------------- punto d
+								.box-cc
+									.txt.span9
+										span d
+										p Le cambio a LABA, LAMA y Corticoide inhalado
+									.span3
+										.remodal-bg.boton-POPS
+											a.btn-orange(href='#', data-remodal-target='modalpregunta5-incorrecto') Seleccionar
+				
+				
+				h3 ¿Cómo calcular el pronóstico del paciente?
+				
+				p Se pueden utilizar las escalas de BODEx y BODE  entre otras.
+				
+				// container content
+				.content-cc-interns.modalq
+					.questions-cc
+						.hdr
+							span *¿Cuál sería el puntaje del BODEx de este paciente? 
+
+						.infoq-cc
+							//- .qst
+							//- 	| La escala mMRC permite:
+							.options
+							
+								//- -------------- punto a
+								.box-cc
+									.txt.span9
+										span a
+										p 1
+									.span3
+										.remodal-bg.boton-POPS
+											a.btn-orange(href='#', data-remodal-target='modalpregunta6-incorrecto') Seleccionar
+										
+								//- -------------- punto b		
+								.box-cc
+									.txt.span9
+										span b
+										p 2
+									.span3
+										.remodal-bg.boton-POPS
+											a.btn-orange(href='#', data-remodal-target='modalpregunta6-incorrecto') Seleccionar
+											
+								//- -------------- punto c		
+								.box-cc
+									.txt.span9
+										span c
+										p 3
+									.span3
+										.remodal-bg.boton-POPS
+											a.btn-orange(href='#', data-remodal-target='modalpregunta6-correcto') Seleccionar
+											
+								//- -------------- punto d
+								.box-cc
+									.txt.span9
+										span d
+										p 4
+									.span3
+										.remodal-bg.boton-POPS
+											a.btn-orange(href='#', data-remodal-target='modalpregunta6-incorrecto') Seleccionar
+											
+								//- -------------- punto e
+								.box-cc
+									.txt.span9
+										span e
+										p 5 - 6
+									.span3
+										.remodal-bg.boton-POPS
+											a.btn-orange(href='#', data-remodal-target='modalpregunta6-incorrecto') Seleccionar
+											
+								//- -------------- punto f
+								.box-cc
+									.txt.span9
+										span f
+										p 7 - 8
+									.span3
+										.remodal-bg.boton-POPS
+											a.btn-orange(href='#', data-remodal-target='modalpregunta6-incorrecto') Seleccionar
+											
+								//- -------------- punto g
+								.box-cc
+									.txt.span9
+										span g
+										p 8 - 9
+									.span3
+										.remodal-bg.boton-POPS
+											a.btn-orange(href='#', data-remodal-target='modalpregunta6-incorrecto') Seleccionar
+				
+				
+				h3 ¿Cómo calcular el pronóstico del paciente?
+				p Se pueden utilizar las escalas de BODEx y BODE  entre otras.
+				
+				// container content
+				.content-cc-interns.modalq
+					.questions-cc
+						.hdr
+							span *¿Cuál sería el puntaje del BODE de este paciente en caso de que se desplazara entre 250 – 349 metros en 3 minutos?
+
+						.infoq-cc
+							//- .qst
+							//- 	| La escala mMRC permite:
+							.options
+							
+								//- -------------- punto a
+								.box-cc
+									.txt.span9
+										span a
+										p 1
+									.span3
+										.remodal-bg.boton-POPS
+											a.btn-orange(href='#', data-remodal-target='modalpregunta7-incorrecto') Seleccionar
+										
+								//- -------------- punto b		
+								.box-cc
+									.txt.span9
+										span b
+										p 2
+									.span3
+										.remodal-bg.boton-POPS
+											a.btn-orange(href='#', data-remodal-target='modalpregunta7-incorrecto') Seleccionar
+											
+								//- -------------- punto c		
+								.box-cc
+									.txt.span9
+										span c
+										p 3
+									.span3
+										.remodal-bg.boton-POPS
+											a.btn-orange(href='#', data-remodal-target='modalpregunta7-correcto') Seleccionar
+											
+								//- -------------- punto d
+								.box-cc
+									.txt.span9
+										span d
+										p 4
+									.span3
+										.remodal-bg.boton-POPS
+											a.btn-orange(href='#', data-remodal-target='modalpregunta7-incorrecto') Seleccionar
+											
+								//- -------------- punto e
+								.box-cc
+									.txt.span9
+										span e
+										p 5 - 6
+									.span3
+										.remodal-bg.boton-POPS
+											a.btn-orange(href='#', data-remodal-target='modalpregunta7-incorrecto') Seleccionar
+											
+								//- -------------- punto f
+								.box-cc
+									.txt.span9
+										span f
+										p 7 - 8
+									.span3
+										.remodal-bg.boton-POPS
+											a.btn-orange(href='#', data-remodal-target='modalpregunta7-incorrecto') Seleccionar
+											
+								//- -------------- punto g
+								.box-cc
+									.txt.span9
+										span g
+										p 8 - 9
+									.span3
+										.remodal-bg.boton-POPS
+											a.btn-orange(href='#', data-remodal-target='modalpregunta7-incorrecto') Seleccionar
+											
+											
+				
+				// container content
+				.content-cc-interns.modalq
+					.questions-cc
+						.hdr
+							span *¿Se beneficiaria este paciente de rehabilitación pulmonar?
+
+						.infoq-cc
+							//- .qst
+							//- 	| La escala mMRC permite:
+							.options
+							
+								//- -------------- punto a
+								.box-cc
+									.txt.span9
+										span a
+										p No por que el paciente esta clasificado inicialmente como Gold 1 A
+									.span3
+										.remodal-bg.boton-POPS
+											a.btn-orange(href='#', data-remodal-target='modalpregunta8-incorrecto') Seleccionar
+										
+								//- -------------- punto b		
+								.box-cc
+									.txt.span9
+										span b
+										p Si por que si reclasifico al paciente estaría en un Gold 1 D y ya pasaron 3 meses
+									.span3
+										.remodal-bg.boton-POPS
+											a.btn-orange(href='#', data-remodal-target='modalpregunta8-mejorrespuestas') Seleccionar
+											
+								//- -------------- punto c		
+								.box-cc
+									.txt.span9
+										span c
+										p Si por que si reclasifico al paciente estaría en un Gold 1 D  y se debería haber iniciado 2 semanas después de la hospitalización
+									.span3
+										.remodal-bg.boton-POPS
+											a.btn-orange(href='#', data-remodal-target='modalpregunta8-correcto') Seleccionar
+											
+								//- -------------- punto d
+								.box-cc
+									.txt.span9
+										span d
+										p No por que tiene muchas comorbilidades HTA, DM, Apnea del sueño 
+									.span3
+										.remodal-bg.boton-POPS
+											a.btn-orange(href='#', data-remodal-target='modalpregunta8-incorrecto') Seleccionar
+				
+				
+				
+				
+					
+					
+					
+					
+					
+					
+					
+											
+					//- --------------						
+					//- -------------- modal	window pregunta 1
+					//- --------------			
+					//- -------------- modal	window result correcto
+					.remodal(data-remodal-id='modalpregunta1-correcto')
+						a.remodal-close(data-remodal-action='close')
+						div
+							div
+								img(src='https://ubosquemoodle.unbosque.edu.co/diseno/cursos/nuevo-EPOC/images/svg/good.svg')
+							div
+								h3 Correcto
+							div
+								p Se requiere tener una espirometría para CONFIRMAR la obstrucción del flujo aéreo. 
+							div
+								a.btn-orange.remodal-confirm(data-remodal-action='confirm', href='#') Continuar
+								
+					//- -------------- modal	window result incorrecto	
+					.remodal(data-remodal-id='modalpregunta1-incorrecto')
+						a.remodal-close(data-remodal-action='close')
+						div
+							div
+								img(src='https://ubosquemoodle.unbosque.edu.co/diseno/cursos/nuevo-EPOC/images/svg/wrong.svg')
+							div
+								h3 Incorrecto
+							div
+								a.btn-orange.remodal-confirm(data-remodal-action='confirm', href='#') Continuar
+					
+								
+					//- --------------						
+					//- -------------- modal	window pregunta 2
+					//- --------------			
+					//- -------------- modal	window result correcto
+					.remodal(data-remodal-id='modalpregunta2-correcto')
+						a.remodal-close(data-remodal-action='close')
+						div
+							div
+								img(src='https://ubosquemoodle.unbosque.edu.co/diseno/cursos/nuevo-EPOC/images/svg/good.svg')
+							div
+								h3 Correcto
+							div
+								p Espirometría: VEF1/CVF: &lt;0.7 (66,38) – VEF1 con un valor del 83% del esperado. Gold 1 
+								table.table.table-striped
+									caption Clasificación de la gravedad de la EPOC según GOLD:
+									thead
+										tr
+											th Estadio GOLD
+											th Gravedad
+											th Espirometría
+									tbody
+										tr
+											td(style='border: 2px solid red;') 1
+											td(style='border: 2px solid red;') Leve
+											td(style='border: 2px solid red;') VEF1/CVF  &lt;0.7 y VEF1  ≥ 80% del esperado
+										tr
+											td 2
+											td Moderada
+											td VEF1/CVF  &lt;0.7 y VEF1  ≥ 50% y &lt; 79% del esperado
+										tr
+											td 3
+											td Grave
+											td VEF1/CVF  &lt;0.7 y VEF1  ≥ 30% y &lt; 49% del esperado
+										tr
+											td 4
+											td Muy Grave
+											td VEF1/CVF  &lt;0.7 y VEF1 &lt; 30% del esperado
+							div
+								a.btn-orange.remodal-confirm(data-remodal-action='confirm', href='#') Continuar
+								
+					//- -------------- modal	window result incorrecto	
+					.remodal(data-remodal-id='modalpregunta2-incorrecto')
+						a.remodal-close(data-remodal-action='close')
+						div
+							div
+								img(src='https://ubosquemoodle.unbosque.edu.co/diseno/cursos/nuevo-EPOC/images/svg/wrong.svg')
+							div
+								h3 Incorrecto
+							div
+								a.btn-orange.remodal-confirm(data-remodal-action='confirm', href='#') Continuar
+								
+					//- --------------						
+					//- -------------- modal	window pregunta 3
+					//- --------------			
+					//- -------------- modal	window result correcto
+					.remodal(data-remodal-id='modalpregunta3-correcto')
+						a.remodal-close(data-remodal-action='close')
+						div
+							div
+								img(src='https://ubosquemoodle.unbosque.edu.co/diseno/cursos/nuevo-EPOC/images/svg/good.svg')
+							div
+								h3 Correcto
+							div
+								img.example-image(src='https://ubosquemoodle.unbosque.edu.co/diseno/cursos/nuevo-EPOC/images/mod-4/005.jpg' width='100%' height='auto')
+								
+							div
+								a.btn-orange.remodal-confirm(data-remodal-action='confirm', href='#') Continuar
+								
+					//- -------------- modal	window result incorrecto	
+					.remodal(data-remodal-id='modalpregunta3-incorrecto')
+						a.remodal-close(data-remodal-action='close')
+						div
+							div
+								img(src='https://ubosquemoodle.unbosque.edu.co/diseno/cursos/nuevo-EPOC/images/svg/wrong.svg')
+							div
+								h3 Incorrecto
+							div
+								a.btn-orange.remodal-confirm(data-remodal-action='confirm', href='#') Continuar
+								
+					//- --------------						
+					//- -------------- modal	window pregunta 4
+					//- --------------			
+					//- -------------- modal	window result correcto
+					.remodal(data-remodal-id='modalpregunta4-correcto')
+						a.remodal-close(data-remodal-action='close')
+						div
+							div
+								img(src='https://ubosquemoodle.unbosque.edu.co/diseno/cursos/nuevo-EPOC/images/svg/good.svg')
+							div
+								h3 Correcto
+							div
+								ul
+									li Leucocitos 9,40 10^3/ul
+									li Eosinófilos 2,30 %
+									li Leucocitos 9,40 10^3/ul = 9400 X 2,3 (porcentaje de eosinófilos)/100  = 230   
+								
+							div
+								a.btn-orange.remodal-confirm(data-remodal-action='confirm', href='#') Continuar
+								
+					//- -------------- modal	window result incorrecto	
+					.remodal(data-remodal-id='modalpregunta4-incorrecto')
+						a.remodal-close(data-remodal-action='close')
+						div
+							div
+								img(src='https://ubosquemoodle.unbosque.edu.co/diseno/cursos/nuevo-EPOC/images/svg/wrong.svg')
+							div
+								h3 Incorrecto
+							div
+								a.btn-orange.remodal-confirm(data-remodal-action='confirm', href='#') Continuar
+								
+								
+					//- --------------						
+					//- -------------- modal	window pregunta 5
+					//- --------------			
+					//- -------------- modal	window result correcto
+					.remodal(data-remodal-id='modalpregunta5-correcto')
+						a.remodal-close(data-remodal-action='close')
+						div
+							div
+								img(src='https://ubosquemoodle.unbosque.edu.co/diseno/cursos/nuevo-EPOC/images/svg/good.svg')
+							div
+								h3 Correcto
+							div
+								p El paciente tuvo una exacerbación en el ultimo año, los corticoides inhalados han demostrado disminución de las exacerbaciones, particularmente en los pacientes que tienen un conteo de eosinófilos mayor de  300  aunque también en los pacientes que tienen un conteo de eosinófilos mayor de 100
+								p Hay que tener en cuenta que los  corticoides inhalados tienen efectos secundarios como aumentar el riesgo de neumonía.  Este paciente no ha tenido neumonía. (vale la pena verificar si está adecuadamente vacunado) 
+								p Si no tuviera ese conteo de eosinófilos la combinación LABA-LAMA seria la mejor opción  
+								img.example-image(src='https://ubosquemoodle.unbosque.edu.co/diseno/cursos/nuevo-EPOC/images/mod-4/007.jpg' width='100%' height='auto')
+								
+							div
+								a.btn-orange.remodal-confirm(data-remodal-action='confirm', href='#') Continuar
+								
+					//- -------------- modal	window result incorrecto	
+					.remodal(data-remodal-id='modalpregunta5-incorrecto')
+						a.remodal-close(data-remodal-action='close')
+						div
+							div
+								img(src='https://ubosquemoodle.unbosque.edu.co/diseno/cursos/nuevo-EPOC/images/svg/wrong.svg')
+							div
+								h3 Incorrecto
+							div
+								a.btn-orange.remodal-confirm(data-remodal-action='confirm', href='#') Continuar
+								
+								
+					//- --------------						
+					//- -------------- modal	window pregunta 6
+					//- --------------			
+					//- -------------- modal	window result correcto
+					.remodal(data-remodal-id='modalpregunta6-correcto')
+						a.remodal-close(data-remodal-action='close')
+						div
+							div
+								img(src='https://ubosquemoodle.unbosque.edu.co/diseno/cursos/nuevo-EPOC/images/svg/good.svg')
+							div
+								h3 Correcto
+							div
+								p En caso de no tener la caminata en 6 minutos, se puede realizar el BODEx, útil en EPOC leve a moderado.  Puntajes mayor de 5  aplicar el BODE (caminata de 6 minutos)   
+								img.example-image(src='https://ubosquemoodle.unbosque.edu.co/diseno/cursos/nuevo-EPOC/images/mod-4/008.jpg' width='100%' height='auto')
+								
+							div
+								a.btn-orange.remodal-confirm(data-remodal-action='confirm', href='#') Continuar
+								
+					//- -------------- modal	window result incorrecto	
+					.remodal(data-remodal-id='modalpregunta6-incorrecto')
+						a.remodal-close(data-remodal-action='close')
+						div
+							div
+								img(src='https://ubosquemoodle.unbosque.edu.co/diseno/cursos/nuevo-EPOC/images/svg/wrong.svg')
+							div
+								h3 Incorrecto
+							div
+								a.btn-orange.remodal-confirm(data-remodal-action='confirm', href='#') Continuar
+								
+								
+					//- --------------						
+					//- -------------- modal	window pregunta 7
+					//- --------------			
+					//- -------------- modal	window result correcto
+					.remodal(data-remodal-id='modalpregunta7-correcto')
+						a.remodal-close(data-remodal-action='close')
+						div
+							div
+								img(src='https://ubosquemoodle.unbosque.edu.co/diseno/cursos/nuevo-EPOC/images/svg/good.svg')
+							div
+								h3 Correcto
+							div
+								img.example-image(src='https://ubosquemoodle.unbosque.edu.co/diseno/cursos/nuevo-EPOC/images/mod-4/009.jpg' width='100%' height='auto')
+								
+							div
+								a.btn-orange.remodal-confirm(data-remodal-action='confirm', href='#') Continuar
+								
+					//- -------------- modal	window result incorrecto	
+					.remodal(data-remodal-id='modalpregunta7-incorrecto')
+						a.remodal-close(data-remodal-action='close')
+						div
+							div
+								img(src='https://ubosquemoodle.unbosque.edu.co/diseno/cursos/nuevo-EPOC/images/svg/wrong.svg')
+							div
+								h3 Incorrecto
+							div
+								a.btn-orange.remodal-confirm(data-remodal-action='confirm', href='#') Continuar
+								
+								
+					//- --------------						
+					//- -------------- modal	window pregunta 8
+					//- --------------			
+					//- -------------- modal	window result correcto
+					.remodal(data-remodal-id='modalpregunta8-correcto')
+						a.remodal-close(data-remodal-action='close')
+						div
+							div
+								img(src='https://ubosquemoodle.unbosque.edu.co/diseno/cursos/nuevo-EPOC/images/svg/good.svg')
+							div
+								h3 Correcto
+							div
+								p Los pacientes con EPOC estable clasificados como GOLD estadios B, C y D se benefician de la rehabilitación pulmonar. Si el paciente presento una exacerbación reciente se debe esperar dos semanas para el inicio de rehabilitación pulmonar.
+								img.example-image(src='https://ubosquemoodle.unbosque.edu.co/diseno/cursos/nuevo-EPOC/images/mod-4/010.jpg' width='100%' height='auto')
+								
+							div
+								a.btn-orange.remodal-confirm(data-remodal-action='confirm', href='#') Continuar
+								
+					//- -------------- modal	window result incorrecto	
+					.remodal(data-remodal-id='modalpregunta8-incorrecto')
+						a.remodal-close(data-remodal-action='close')
+						div
+							div
+								img(src='https://ubosquemoodle.unbosque.edu.co/diseno/cursos/nuevo-EPOC/images/svg/wrong.svg')
+							div
+								h3 Incorrecto
+							div
+								a.btn-orange.remodal-confirm(data-remodal-action='confirm', href='#') Continuar
+								
+					//- -------------- modal	window result incorrecto	
+					.remodal(data-remodal-id='modalpregunta8-mejorrespuestas')
+						a.remodal-close(data-remodal-action='close')
+						div
+							div
+								img(src='https://ubosquemoodle.unbosque.edu.co/diseno/cursos/nuevo-EPOC/images/svg/wrong.svg')
+							div
+								h3 Hay una mejor respuesta
+							div
+								a.btn-orange.remodal-confirm(data-remodal-action='confirm', href='#') Continuar
+											
+																
+											
+											
+						
+					.discl *Éstas preguntas no tienen calificación
+					// end container content
+
+
+				
+				
+					//- texto resaltado
+				div
+					div.span10.resaltado-txt
+						p En el siguiente enlace puede ingresar a realizar la evaluación calificable 
+						a(href="https://ubosquemoodle.unbosque.edu.co/mod/quiz/view.php?id=311191" target="_blank" class="forward") Comenzar evaluación
+
+
+
+
+				
+							
+				//- progeso
+				//- div.progreso
+				//- 	h2 progreso
+				//- 	div#progreso100
+						
+						
+				
+						
+				
+				//- Material modulo
+				+material-modulo('material-mod-4')
+				
+				//- progrso y contador
+				+paginador('https://ubosquemoodle.unbosque.edu.co/mod/book/view.php?id=318877&chapterid=9275', 'back', '#', 'disabled')
+	
+
+//- Final part of body
+//- Page transitions js
+include ../includes/js-body-ends.jade
+		
+		
+			

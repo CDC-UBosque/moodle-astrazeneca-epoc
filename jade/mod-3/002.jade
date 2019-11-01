@@ -1,0 +1,90 @@
+include ../mixins.jade
+
+//- Head html tag
+include ../includes/header.jade
+
+//- Content
+div.curso-cc
+			
+	div.container-fluid
+		div.row-fluid
+			article.content-cc.article
+			
+				div.first_part
+					//- banner modulo
+					+banner('banner-3')
+				
+					//- menu
+					+menu
+			
+				+titulos-modulo('Módulo 3. Prevención Terciaria.')
+				
+				h3 1. Definición de Rehabilitación Pulmonar (RP)
+				
+				p Múltiples sociedades expertas en el tema se han reunido para dar la definición actualizada y completa que hasta el momento se conoce:
+				p "Es intervención integral basada en una evaluación exhaustiva del paciente, seguida de terapias adaptadas que incluyen, entrenamiento físico, educación y cambio en el estilo de vida, entre otras, para mejorar el estado físico y psicológico de las personas con enfermedades respiratorias crónicas y promover el cumplimiento a largo plazo de conductas que mejoren la salud”. (1,2)
+				p A pesar de que el entrenamiento físico, educación y terapia respiratoria son fundamental en la rehabilitación pulmonar actualmente se aconseja adicionar terapia ocupacional, psicología e intervención nutricional (3,4).
+				
+				h3 2. Beneficios de la Rehabilitación pulmonar
+				
+				p Los pacientes con enfermedad pulmonar obstructiva crónica (EPOC) generalmente disminuyen la actividad física ya que esta produce o aumenta la disnea, restringiendo la movilidad del paciente. En general la rehabilitación pulmonar puede ayudar a disminuir la disnea, mejora de la calidad de vida relacionada con la salud, disminuye los días de hospitalización y utilización de recursos de la salud. 
+				p Los beneficios probados al momento de la Rehabilitación Pulmonar son los siguientes (tabla 1): (5-11)
+				
+				//- Table
+				table.table.table-striped
+					//- caption Tabla 1. Beneficios en realizar Rehabilitación pulmonar en pacientes con EPOC
+					thead
+						tr
+							th Tabla 1. Beneficios en realizar Rehabilitación pulmonar en pacientes con EPOC
+					tbody
+						tr
+							td 1. Mejorar la capacidad de ejercicio
+						tr
+							td 2. Reduce la percepción de la disnea
+						tr
+							td 3. Reduce el número de hospitalizaciones y días hospitalarios
+						tr
+							td 4. Mejora la calidad de vida
+						tr
+							td 5. Reduce la ansiedad y depresión asociada a EPOC
+						tr
+							td 6. Mejora la fuerza y entrenamiento de los miembros superiores 
+						tr
+							td 7. Entrenar los músculos respiratoria mejora el paciente más cuando hay debilidad de estos.
+						tr
+							td 8. Mejora la supervivencia
+						tr
+							td 9. Mayor auto eficiencia y conocimiento de su enfermedad.
+						tr
+							td 10. Potencia el uso de broncodilatadores de larga acción. 
+						tr
+							td 11. Aumento la resistencia muscular y los efectos perdurar después de entrenamiento
+							
+							
+				p El impacto de la rehabilitación pulmonar en la mortalidad de los pacientes con EPOC tiene estudios a favor y otros en contra. (12,13)
+
+				
+				
+							
+				//- progeso
+				div.progreso
+					h2 progreso
+					div#progreso20
+						
+						
+				
+						
+				
+				//- Material modulo
+				+material-modulo('material-mod-3')
+				
+				//- progrso y contador
+				+paginador('https://ubosquemoodle.unbosque.edu.co/mod/book/view.php?id=317768&chapterid=9242', 'back', 'https://ubosquemoodle.unbosque.edu.co/mod/book/view.php?id=317768&chapterid=9244', 'forward')
+	
+
+//- Final part of body
+//- Page transitions js
+include ../includes/js-body-ends.jade
+		
+		
+			
